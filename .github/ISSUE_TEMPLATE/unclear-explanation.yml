@@ -1,0 +1,12 @@
+name: Unclear explanation
+description: A task or explanation is confusing
+labels: [content, clarity]
+body:
+  - type: input
+    id: where
+    attributes: { label: Page URL or task/question id }
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes: { label: What was confusing? }
+    validations: { required: true }

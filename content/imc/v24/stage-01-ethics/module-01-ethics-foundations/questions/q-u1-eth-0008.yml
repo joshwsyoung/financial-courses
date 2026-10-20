@@ -1,0 +1,37 @@
+id: q-u1-eth-0008
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.4
+difficulty: 2
+tags: []
+stem: An option passes the 'rules' test because it breaks no law or policy. What should you do next?
+options:
+  - id: a
+    text: Choose it, because legal compliance is sufficient
+  - id: b
+    text: Also test whose interests it puts first and whether you could justify it openly
+  - id: c
+    text: Reject it, because any legal option is suspect
+  - id: d
+    text: Refer it to the regulator for approval
+correct: b
+explanation: Passing the rules test is necessary but not sufficient. You should also consider whose interests
+  come first and whether you could defend the choice in public.
+distractor_notes:
+  a: Legal compliance is the minimum standard, not the whole test.
+  c: Being legal is not a reason to reject an option.
+  d: Regulators do not pre-approve everyday decisions.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

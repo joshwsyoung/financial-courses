@@ -1,0 +1,27 @@
+# England, Wales and Northern Ireland rates (Scotland has its own income tax bands).
+# STATUS: review. Figures need checking against gov.uk by a reviewer before publishing.
+tax_year: 2026-27
+jurisdiction: rUK
+status: review
+values:
+  personal_allowance: { value: 12570, units: GBP, note: "Reduced by £1 for every £2 of adjusted net income over £100,000" }
+  pa_taper_threshold: { value: 100000, units: GBP }
+  basic_rate: { value: 0.20, units: rate }
+  basic_rate_band: { value: 37700, units: GBP, note: "Taxable income above the personal allowance" }
+  higher_rate: { value: 0.40, units: rate }
+  higher_rate_threshold: { value: 50270, units: GBP, note: "Gross income, assuming the full personal allowance" }
+  additional_rate: { value: 0.45, units: rate }
+  additional_rate_threshold: { value: 125140, units: GBP }
+  isa_annual_limit: { value: 20000, units: GBP }
+  lisa_annual_limit: { value: 4000, units: GBP, note: "Counts towards the overall ISA limit" }
+  junior_isa_limit: { value: 9000, units: GBP }
+  dividend_allowance: { value: 500, units: GBP }
+  cgt_annual_exempt_amount: { value: 3000, units: GBP }
+provenance:
+  sources:
+    - https://www.gov.uk/income-tax-rates
+    - https://www.gov.uk/individual-savings-accounts
+  licence: Open Government Licence v3.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

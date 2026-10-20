@@ -1,0 +1,26 @@
+id: q-u1-eth-0016
+type: gapfill
+unit: unit1
+lo:
+  - u1.eth.5
+difficulty: 2
+tags: []
+stem: "Complete the Conduct Rule: you must pay due regard to the interests of customers and treat them ______."
+answer:
+  kind: text
+  accepted:
+    - fairly
+explanation: "Individual Conduct Rule 4: you must pay due regard to the interests of customers and treat them fairly."
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

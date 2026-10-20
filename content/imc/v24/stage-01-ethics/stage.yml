@@ -1,0 +1,13 @@
+id: ethics
+title: Ethics and professionalism
+unit: unit1
+topic: ethics
+order: 1
+summary: Why ethics matters in finance, how to handle conflicts, and the FCA rules that turn good conduct into obligations.
+test: { count: 10, pass_mark: 0.7 }
+provenance:
+  sources: ["original"]
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

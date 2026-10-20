@@ -1,0 +1,39 @@
+id: q-u1-eth-0009
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.4
+  - u1.eth.3
+difficulty: 3
+tags: []
+stem: A broker offers a fund manager a lavish trip shortly before the manager helps decide which brokers the
+  firm will use. Which response best fits the ethical decision framework?
+options:
+  - id: a
+    text: Accept, as long as compliance is told afterwards
+  - id: b
+    text: Accept, because the trip includes some research meetings
+  - id: c
+    text: Decline the trip and report the offer to compliance
+  - id: d
+    text: Accept, but give the broker a slightly smaller share of business to compensate
+correct: c
+explanation: The benefit is large and tied to a decision the manager will make, so even with disclosure it
+  could sway or appear to sway judgement. Avoiding the conflict and telling compliance is the best response.
+distractor_notes:
+  a: Disclosure after the fact does not cure a serious, closely timed conflict.
+  b: Adding research meetings does not change the size or timing of the benefit.
+  d: Adjusting business to 'compensate' is still letting the gift influence the decision.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

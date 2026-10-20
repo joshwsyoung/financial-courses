@@ -1,0 +1,37 @@
+{
+  "name": "financial-courses",
+  "private": true,
+  "description": "Free, open source, self-paced finance courses. First syllabus: CFA UK IMC (unofficial).",
+  "license": "MIT",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm validate && pnpm --filter web build",
+    "export": "pnpm build && echo 'Static site written to apps/web/out'",
+    "start": "pnpm --filter web start",
+    "validate": "tsx scripts/validate-content.ts",
+    "test": "vitest run",
+    "typecheck": "pnpm -r typecheck",
+    "e2e": "pnpm --filter web e2e"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4",
+    "yaml": "^2.8.1",
+    "zod": "^3.25.76",
+    "@ofc/content": "workspace:*"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "@tailwindcss/oxide",
+      "unrs-resolver"
+    ]
+  }
+}

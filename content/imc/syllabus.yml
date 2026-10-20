@@ -1,0 +1,60 @@
+# IMC syllabus index. Facts and structure only (spec 4.1).
+# LO ids below are PROVISIONAL (u1.eth.1 style) until mapped to the official LO ids in the
+# published v24 syllabus. LO summaries are our own paraphrases; never paste official LO text.
+id: imc
+name: CFA UK Level 4 Certificate in Investment Management
+short_name: IMC
+awarding_body: CFA UK
+version: "24"
+valid_from: 2026-12-01
+valid_to: 2027-11-30
+current_dir: v24
+weight_basis: percent
+notes:
+  - Unit figures copied from the draft spec (CFA UK site, Oct 2026, v23). Verify for v24.
+  - Topic weight bands are PLACEHOLDERS until read from the published syllabus.
+units:
+  - id: unit1
+    name: The Investment Environment
+    questions: 85
+    duration_min: 100
+    pass_mark_range: [65, 75]
+    recommended_hours: 100
+  - id: unit2
+    name: Investment Practice
+    questions: 105
+    duration_min: 140
+    pass_mark_range: [60, 70]
+    recommended_hours: 140
+topics:
+  - { id: ethics, unit: unit1, name: Ethics and professionalism, weight_band: [20, 30] }
+  - { id: uk-tax, unit: unit1, name: UK taxation, weight_band: [20, 30] }
+  - { id: markets-regulation, unit: unit1, name: Markets and regulation, weight_band: [25, 35] }
+  - { id: client-advice, unit: unit1, name: Client objectives and advice, weight_band: [15, 25] }
+  - { id: investment-maths, unit: unit2, name: Investment maths, weight_band: [10, 20] }
+  - { id: products, unit: unit2, name: Investment products, weight_band: [30, 40] }
+  - { id: theories, unit: unit2, name: Theories and models, weight_band: [10, 20] }
+  - { id: portfolio, unit: unit2, name: Portfolio management, weight_band: [15, 25] }
+  - { id: performance, unit: unit2, name: Performance measurement, weight_band: [5, 15] }
+los:
+  - { id: u1.eth.1, unit: unit1, topic: ethics, verified: false, summary: Tell ethical behaviour apart from legal compliance and explain why finance needs both }
+  - { id: u1.eth.2, unit: unit1, topic: ethics, verified: false, summary: Explain how trust underpins financial services and who the stakeholders are }
+  - { id: u1.eth.3, unit: unit1, topic: ethics, verified: false, summary: Spot conflicts of interest and describe ways firms manage them }
+  - { id: u1.eth.4, unit: unit1, topic: ethics, verified: false, summary: Apply a structured framework to an ethical dilemma }
+  - { id: u1.eth.5, unit: unit1, topic: ethics, verified: false, summary: Describe the FCA individual Conduct Rules and who they apply to }
+  - { id: u1.eth.6, unit: unit1, topic: ethics, verified: false, summary: Describe the Consumer Duty, its cross-cutting rules and four outcomes }
+  - { id: u1.tax.1, unit: unit1, topic: uk-tax, verified: false, summary: Calculate income tax on employment income using the personal allowance and rate bands }
+  - { id: u1.tax.2, unit: unit1, topic: uk-tax, verified: false, summary: Describe ISA subscription limits and the tax treatment of ISA returns }
+  - { id: u1.mkt.1, unit: unit1, topic: markets-regulation, verified: false, summary: Describe the role of the FCA and PRA in UK financial regulation }
+  - { id: u1.adv.1, unit: unit1, topic: client-advice, verified: false, summary: Identify a client's objectives, constraints and attitude to risk }
+  - { id: u2.math.1, unit: unit2, topic: investment-maths, verified: false, summary: Calculate present and future values of single sums }
+  - { id: u2.prod.1, unit: unit2, topic: products, verified: false, summary: Calculate the current yield of a bond }
+  - { id: u2.thy.1, unit: unit2, topic: theories, verified: false, summary: Explain diversification and the difference between systematic and specific risk }
+  - { id: u2.port.1, unit: unit2, topic: portfolio, verified: false, summary: Describe strategic and tactical asset allocation }
+  - { id: u2.perf.1, unit: unit2, topic: performance, verified: false, summary: Calculate a simple holding period return }
+provenance:
+  sources: ["https://www.cfauk.org"]
+  licence: Facts and structure only; paraphrased. See README licence notes.
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

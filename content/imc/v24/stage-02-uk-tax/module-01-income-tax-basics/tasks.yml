@@ -1,0 +1,18 @@
+provenance:
+  sources: ["https://www.gov.uk/income-tax-rates", "https://www.gov.uk/individual-savings-accounts"]
+  licence: CC BY-SA 4.0 (gov.uk facts under Open Government Licence v3.0)
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending
+tasks:
+  - { id: tax-bands, type: read, title: "The personal allowance and rate bands", minutes: 2, lo: [u1.tax.1], file: bands.md }
+  - { id: tax-worked-basic, type: worked_example, title: "Worked example: tax on a £60,000 salary", minutes: 3, lo: [u1.tax.1], file: worked-60k.md }
+  - { id: tax-q-basic, type: question, title: "Check: basic-rate taxpayer", minutes: 1, lo: [u1.tax.1], question: q-u1-tax-0001 }
+  - { id: tax-drill-basic, type: calc_drill, title: "Drill: basic-rate income tax", minutes: 3, lo: [u1.tax.1],
+      drill: { prompt: "Salary of £{salary}, no other income, full personal allowance, 2026-27 rUK rates. Income tax due (£)?",
+               inputs: { salary: { min: 15000, max: 50000, step: 500 } },
+               formula: "(salary - 12570) * 0.2", tolerance: 1, units: "£", rounds: 5 } }
+  - { id: tax-fc-pa, type: flashcard, title: "Flashcard: personal allowance", minutes: 1, lo: [u1.tax.1],
+      front: "What is the standard personal allowance for 2026-27?", back: "£12,570. It is reduced by £1 for every £2 of adjusted net income over £100,000." }
+  - { id: tax-isas, type: read, title: "ISAs in one page", minutes: 2, lo: [u1.tax.2], file: isas.md }
+  - { id: tax-q-isa, type: question, title: "Check: ISA limit", minutes: 1, lo: [u1.tax.2], question: q-u1-tax-0004 }

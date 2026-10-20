@@ -1,0 +1,19 @@
+name: Syllabus change
+description: A learning outcome was added, changed or removed in a new syllabus version
+labels: [syllabus]
+body:
+  - type: input
+    id: version
+    attributes: { label: Syllabus version, placeholder: "25" }
+    validations: { required: true }
+  - type: input
+    id: lo
+    attributes: { label: Learning outcome id }
+    validations: { required: true }
+  - type: dropdown
+    id: change
+    attributes: { label: Change, options: [Added, Changed, Removed] }
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes: { label: Summary of the change (paraphrase, do not paste official text) }

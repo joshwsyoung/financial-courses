@@ -1,0 +1,37 @@
+id: q-u1-tax-0001
+type: gapfill
+unit: unit1
+lo:
+  - u1.tax.1
+difficulty: 2
+stem: Alex earns a salary of £30,000 in 2026-27, has no other income and lives in England. How much income tax
+  does Alex pay, in pounds?
+answer:
+  kind: numeric
+  value: 3486
+  tolerance: 1
+  units: £
+calc:
+  formula: (salary - pa) * 0.2
+  inputs:
+    salary: 30000
+    pa: 12570
+  tolerance: 0.5
+explanation: Taxable income is £30,000 − £12,570 = £17,430. All of it falls in the basic rate band, so tax is
+  £17,430 × 20% = £3,486.
+tags: []
+tax_year: 2026-27
+syllabus_versions:
+  - "24"
+source_refs:
+  - gov.uk:income-tax-rates
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - https://www.gov.uk/income-tax-rates
+  licence: CC BY-SA 4.0 (gov.uk facts under Open Government Licence v3.0)
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+dist
+coverage
+.env*.local
+.vercel
+test-results
+playwright-report
+*.tsbuildinfo
+.DS_Store
+# generated at build time (spec 3: audio is not stored in Git)
+public/audio

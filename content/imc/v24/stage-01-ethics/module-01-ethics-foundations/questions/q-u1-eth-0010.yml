@@ -1,0 +1,36 @@
+id: q-u1-eth-0010
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.5
+difficulty: 1
+tags: []
+stem: Which of the following is one of the FCA individual Conduct Rules?
+options:
+  - id: a
+    text: You must maximise your firm's profits
+  - id: b
+    text: You must act with integrity
+  - id: c
+    text: You must hold a Level 6 qualification
+  - id: d
+    text: You must never accept any gift
+correct: b
+explanation: "'You must act with integrity' is individual Conduct Rule 1."
+distractor_notes:
+  a: Profit maximisation is not a Conduct Rule.
+  c: Qualification requirements come from other rules, not the Conduct Rules.
+  d: Gifts are dealt with by firms' inducement and conflicts rules, not an outright ban in the Conduct Rules.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

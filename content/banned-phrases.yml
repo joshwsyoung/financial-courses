@@ -1,0 +1,15 @@
+# Phrases that suggest copied or forbidden material (spec 4.2). CI fails if any appear in
+# task bodies, question stems, scenarios or explanations. Patterns are case-insensitive regexes.
+phrases:
+  - pattern: "©\\s*(CFA|Kaplan|300 ?hours)"
+    reason: copyright notice from a third party; content must be original
+  - pattern: "all rights reserved"
+    reason: copyright notice; content must be original
+  - pattern: "official training manual (says|states|chapter|p\\.|page)"
+    reason: quoting or citing the Official Training Manual is not allowed
+  - pattern: "brain ?dump"
+    reason: real exam questions from memory are forbidden
+  - pattern: "(from|taken from|as seen in) the (real|live|official) (exam|mock)"
+    reason: official exam or mock questions are forbidden
+  - pattern: "\\bkaplan\\b|300 ?hours"
+    reason: third-party prep provider content is forbidden

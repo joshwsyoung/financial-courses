@@ -1,0 +1,37 @@
+id: q-u1-eth-0012
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.5
+difficulty: 2
+tags: []
+stem: Who do the FCA individual Conduct Rules apply to?
+options:
+  - id: a
+    text: Only senior managers
+  - id: b
+    text: Only staff who give investment advice
+  - id: c
+    text: Most staff at firms within SM&CR, apart from purely ancillary roles
+  - id: d
+    text: Only staff who hold a professional qualification
+correct: c
+explanation: The individual Conduct Rules apply to almost everyone at an SM&CR firm. Purely ancillary roles,
+  such as catering or security, are excluded.
+distractor_notes:
+  a: Senior managers have extra rules, but the individual rules reach much wider.
+  b: The rules are not limited to advisers.
+  d: Holding a qualification is not the test.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

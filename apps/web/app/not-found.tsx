@@ -1,0 +1,10 @@
+import Link from "next/link";
+
+export default function NotFound() {
+  return (
+    <div className="space-y-3">
+      <h1 className="text-3xl font-bold">Page not found</h1>
+      <Link href="/" className="underline">Back to the dashboard</Link>
+    </div>
+  );
+}

@@ -1,0 +1,16 @@
+name: Outdated tax figure
+description: A rate, band or allowance is out of date
+labels: [content, tax]
+body:
+  - type: input
+    id: year
+    attributes: { label: Tax year, placeholder: "2026-27" }
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes: { label: Which figure, and what is the correct value? }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: gov.uk or HMRC link }
+    validations: { required: true }

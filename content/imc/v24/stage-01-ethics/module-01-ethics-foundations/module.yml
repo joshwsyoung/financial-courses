@@ -1,0 +1,12 @@
+id: ethics-foundations
+title: Ethics foundations
+order: 1
+summary: Ethics versus law, trust and stakeholders, conflicts of interest, a decision framework, the Conduct Rules and the Consumer Duty.
+los: [u1.eth.1, u1.eth.2, u1.eth.3, u1.eth.4, u1.eth.5, u1.eth.6]
+status: review
+provenance:
+  sources: ["original", "https://www.handbook.fca.org.uk/handbook/COCON/2/1.html", "https://www.fca.org.uk/firms/consumer-duty"]
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

@@ -1,0 +1,22 @@
+# The single source for the "What you pay for" panel (spec 8.2). Maintainers update this file.
+last_verified: 2026-10-20
+sources:
+  - https://www.cfauk.org
+fees:
+  - item: IMC Unit 1 exam
+    amount_gbp: 350
+    note: Paid to CFA UK. Figure from the CFA UK site, Oct 2026. Verify before booking.
+  - item: IMC Unit 2 exam
+    amount_gbp: 375
+    note: Paid to CFA UK. Figure from the CFA UK site, Oct 2026. Verify before booking.
+  - item: Official Training Manual
+    amount_gbp: null
+    note: Sold by CFA UK. Price to be confirmed. Recommended but optional.
+  - item: Approved calculator
+    amount_gbp: null
+    note: Buy from any retailer. Check the CFA UK calculator policy for approved models.
+delivery: Exams are booked through CFA UK and taken at a Pearson VUE test centre.
+calculator_policy_url: https://www.cfauk.org
+disclaimer: >-
+  Only CFA UK can award the IMC. Passing our course does not give you a qualification;
+  passing the CFA UK exams does.

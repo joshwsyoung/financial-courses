@@ -1,0 +1,37 @@
+id: q-u1-eth-0013
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.6
+difficulty: 2
+tags: []
+stem: Which of the following is one of the Consumer Duty's cross-cutting rules?
+options:
+  - id: a
+    text: Avoid causing foreseeable harm to retail customers
+  - id: b
+    text: Guarantee that retail customers never lose money
+  - id: c
+    text: Offer the cheapest product on the market
+  - id: d
+    text: Contact every customer at least once a month
+correct: a
+explanation: "The three cross-cutting rules are: act in good faith, avoid causing foreseeable harm, and enable
+  and support customers to pursue their financial objectives."
+distractor_notes:
+  b: No rule can guarantee investments never lose money.
+  c: Price must be reasonable for the value provided, not necessarily the lowest.
+  d: There is no fixed contact frequency rule.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

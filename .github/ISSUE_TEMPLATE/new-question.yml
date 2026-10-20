@@ -1,0 +1,19 @@
+name: New question
+description: Propose a new practice question
+labels: [content, new-question]
+body:
+  - type: input
+    id: lo
+    attributes: { label: Learning outcome id(s) }
+    validations: { required: true }
+  - type: textarea
+    id: question
+    attributes: { label: Question, options, answer and explanation }
+    validations: { required: true }
+  - type: checkboxes
+    id: original
+    attributes:
+      label: Originality
+      options:
+        - label: This is my own original work and is not copied or closely paraphrased from the Official Training Manual, official mocks, real exam questions or any prep provider.
+          required: true

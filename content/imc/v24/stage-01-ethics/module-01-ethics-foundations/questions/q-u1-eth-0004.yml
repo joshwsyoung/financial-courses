@@ -1,0 +1,37 @@
+id: q-u1-eth-0004
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.3
+difficulty: 2
+tags: []
+stem: A firm identifies a conflict of interest. In general, which approach should it treat as the last resort?
+options:
+  - id: a
+    text: Avoiding the conflict
+  - id: b
+    text: Putting controls such as information barriers in place
+  - id: c
+    text: Disclosing the conflict to the client
+  - id: d
+    text: Changing the remuneration structure that causes it
+correct: c
+explanation: Disclosure is the last resort. Firms should first try to avoid conflicts or control them;
+  disclosure alone does not make a serious conflict acceptable.
+distractor_notes:
+  a: Avoidance is the most preferred approach, not the last resort.
+  b: Controls are preferred to relying on disclosure alone.
+  d: Changing remuneration is a way of avoiding or controlling the conflict, which comes before disclosure.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

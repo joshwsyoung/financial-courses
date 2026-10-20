@@ -1,0 +1,16 @@
+name: Takedown request
+description: You believe content here infringes your rights
+labels: [takedown]
+body:
+  - type: input
+    id: where
+    attributes: { label: File or page URL }
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes: { label: What do you believe is copied, and from where? }
+    validations: { required: true }
+  - type: input
+    id: contact
+    attributes: { label: How can we contact you? }
+    validations: { required: true }

@@ -1,0 +1,15 @@
+name: Wrong answer
+description: A question's marked answer or explanation is wrong
+labels: [content, wrong-answer]
+body:
+  - type: input
+    id: question
+    attributes: { label: Question id, description: "Shown in the report link, e.g. q-u1-eth-0004" }
+    validations: { required: true }
+  - type: textarea
+    id: problem
+    attributes: { label: What is wrong, and what should it be? }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source that supports the correction (link) }

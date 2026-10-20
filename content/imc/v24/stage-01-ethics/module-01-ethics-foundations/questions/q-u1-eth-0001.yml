@@ -1,0 +1,38 @@
+id: q-u1-eth-0001
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.1
+difficulty: 1
+tags: []
+stem: An adviser recommends a product that pays them a high commission. All required disclosures are made, but
+  a cheaper product would have suited the client better. How is this best described?
+options:
+  - id: a
+    text: Legal and ethical, because the disclosures were made
+  - id: b
+    text: Legal but unethical
+  - id: c
+    text: Illegal but ethical
+  - id: d
+    text: Illegal and unethical
+correct: b
+explanation: Nothing in the scenario breaks the law, but putting the adviser's commission ahead of the
+  client's interests falls short of ethical standards. Legal compliance is the minimum, not the whole test.
+distractor_notes:
+  a: Disclosure does not make a recommendation that harms the client ethical.
+  c: No law has been broken in the scenario.
+  d: No law has been broken; the problem is ethical, not legal.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

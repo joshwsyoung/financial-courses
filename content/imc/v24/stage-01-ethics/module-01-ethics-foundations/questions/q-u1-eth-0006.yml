@@ -1,0 +1,38 @@
+id: q-u1-eth-0006
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.3
+difficulty: 3
+tags: []
+stem: Two clients both want shares in a popular new issue, but the firm's allocation is limited. One client
+  pays the firm much higher fees. What is the most appropriate action?
+options:
+  - id: a
+    text: Give the full allocation to the higher-paying client
+  - id: b
+    text: Allocate fairly under a pre-set allocation policy, regardless of fees paid
+  - id: c
+    text: Keep the shares for the firm's own account to avoid a dispute
+  - id: d
+    text: Give the shares to whichever client asks first, without a policy
+correct: b
+explanation: This is a client-against-client conflict. It should be managed by a fair allocation policy set in
+  advance, not by favouring the more profitable client.
+distractor_notes:
+  a: Favouring the higher-paying client puts the firm's interests first.
+  c: Taking the shares for the firm puts the firm ahead of both clients.
+  d: An ad hoc approach with no policy is not a controlled, fair process.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

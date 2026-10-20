@@ -1,0 +1,37 @@
+id: q-u1-eth-0003
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.2
+difficulty: 1
+tags: []
+stem: Which statement best explains why misconduct at one firm can harm the whole financial services industry?
+options:
+  - id: a
+    text: Regulators fine every firm when one firm breaks the rules
+  - id: b
+    text: It reduces public trust, which the whole industry depends on
+  - id: c
+    text: Clients are legally required to move to a different firm
+  - id: d
+    text: It automatically lowers share prices across the market
+correct: b
+explanation: Trust is shared. When one firm behaves badly, the public trusts all firms a little less, so
+  people save and invest less and demand more regulation.
+distractor_notes:
+  a: Fines are aimed at the firms and people responsible, not the whole industry.
+  c: There is no such legal requirement.
+  d: Market prices do not fall automatically because of one firm's misconduct.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

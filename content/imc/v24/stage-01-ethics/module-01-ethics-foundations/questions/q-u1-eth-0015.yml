@@ -1,0 +1,37 @@
+id: q-u1-eth-0015
+type: mcq
+unit: unit1
+lo:
+  - u1.eth.2
+difficulty: 2
+tags: []
+stem: In investment management, whose interests should normally come first when they conflict with the firm's?
+options:
+  - id: a
+    text: The firm's shareholders
+  - id: b
+    text: The individual employee's
+  - id: c
+    text: The client's
+  - id: d
+    text: Whoever has the closest relationship with the employee
+correct: c
+explanation: In regulated financial services the general principle is that client interests come before the
+  interests of the firm and its staff.
+distractor_notes:
+  a: Shareholders matter, but not at the expense of clients.
+  b: Personal interests must not be put ahead of the client's.
+  d: Closeness of a relationship is not a basis for favouring anyone.
+tax_year: null
+syllabus_versions:
+  - "24"
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+    - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending
