@@ -10,12 +10,16 @@ export type SyncStatus = "off" | "signed-out" | "syncing" | "synced" | "error";
 
 interface SyncState {
   status: SyncStatus;
+  /** True once we know whether there is a session (avoids flashing the login screen). */
+  ready: boolean;
+  /** Set when a sign-in link failed, e.g. it expired or was already used. */
+  linkError?: string;
   email?: string;
   lastSynced?: string;
   error?: string;
 }
 
-let state: SyncState = { status: "off" };
+let state: SyncState = { status: "off", ready: false };
 const listeners = new Set<() => void>();
 const setState = (patch: Partial<SyncState>) => {
   state = { ...state, ...patch };
@@ -58,7 +62,14 @@ export function startSync() {
   if (started || !db) return;
   started = true;
   setState({ status: "signed-out" });
+  // Expired or reused links come back as #error=...&error_description=...
+  const hash = new URLSearchParams(window.location.hash.slice(1));
+  if (hash.get("error_description")) {
+    setState({ linkError: hash.get("error_description")!.replace(/\+/g, " ") });
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
   db.auth.onAuthStateChange((event, session) => {
+    if (event === "INITIAL_SESSION") setState({ ready: true });
     if (session && (event === "SIGNED_IN" || event === "INITIAL_SESSION")) {
       if (userId === session.user.id) return;
       userId = session.user.id;
@@ -88,8 +99,9 @@ export function useSync(): SyncState {
   );
 }
 
+/** Emails a sign-in link that brings the learner back to the page they were on. */
 export async function sendMagicLink(email: string) {
-  const redirect = `${window.location.origin}${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/account/`;
+  const redirect = `${window.location.origin}${window.location.pathname}`;
   const { error } = await supabase()!.auth.signInWithOtp({ email, options: { emailRedirectTo: redirect } });
   if (error) throw error;
 }

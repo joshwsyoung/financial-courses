@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 import { supabaseEnabled } from "@/lib/supabase";
-import { deleteCloudCopy, sendMagicLink, signOut, useSync } from "@/lib/sync";
+import { deleteCloudCopy, signOut, useSync } from "@/lib/sync";
+import { SignInForm } from "./SignInForm";
 import { buttonClass, Card } from "./ui";
 
 export function AccountPanel() {
   const sync = useSync();
-  const [email, setEmail] = useState("");
-  const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
 
   if (!supabaseEnabled) {
@@ -42,24 +41,8 @@ export function AccountPanel() {
 
   return (
     <Card className="space-y-4">
-      <p>Sign in to save your progress and pick up where you left off on any device. You don&rsquo;t need an account to use the course.</p>
-      {sent ? (
-        <p role="status" className="rounded-lg bg-good-soft p-3 text-good">Check your email for a sign-in link. You can close this tab.</p>
-      ) : (
-        <form className="flex flex-wrap items-end gap-3" onSubmit={async (e) => {
-          e.preventDefault();
-          setError("");
-          try { await sendMagicLink(email.trim()); setSent(true); } catch (err) { setError((err as Error).message); }
-        }}>
-          <label className="block flex-1 text-sm font-medium">
-            Email
-            <input type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 block w-full rounded-lg border border-border bg-bg px-3 py-2 font-normal" />
-          </label>
-          <button type="submit" className={buttonClass.primary}>Email me a sign-in link</button>
-        </form>
-      )}
-      {error && <p role="alert" className="text-sm text-bad">{error}</p>}
+      <p>Sign in to save your progress and pick up where you left off on any device.</p>
+      <SignInForm linkError={sync.linkError} />
       <p className="text-xs text-muted">We store your email (to sign you in) and your course progress. Nothing else. You can delete it at any time.</p>
     </Card>
   );

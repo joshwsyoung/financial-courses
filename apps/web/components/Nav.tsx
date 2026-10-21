@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { SITE_NAME } from "@/lib/site";
-import { supabaseEnabled } from "@/lib/supabase";
+import { loginRequired, supabaseEnabled } from "@/lib/supabase";
 import { useSync } from "@/lib/sync";
 
 const LINKS = [
@@ -20,7 +20,9 @@ export function Nav() {
   const path = usePathname();
   const [open, setOpen] = useState(false);
   const sync = useSync();
-  const links = supabaseEnabled ? [...LINKS, { href: "/account/", label: sync.email ? "Account" : "Sign in" }] : LINKS;
+  const signedOutGate = loginRequired && sync.ready && !sync.email;
+  const base = signedOutGate ? LINKS.filter((l) => ["/syllabus/", "/costs/"].includes(l.href)) : LINKS;
+  const links = supabaseEnabled ? [...base, { href: "/account/", label: sync.email ? "Account" : "Sign in" }] : base;
   const active = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
   return (
     <header className="border-b border-border bg-card">

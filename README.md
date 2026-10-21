@@ -69,6 +69,11 @@ pre-filled GitHub issue. Set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABAS
 Run `supabase/setup.sql` once in the Supabase SQL Editor first. All objects are prefixed `fc_`, so the
 project can be shared with other apps.
 
+With Supabase configured, learners must sign in before using course pages (the syllabus, costs and
+about pages stay public). Set `NEXT_PUBLIC_REQUIRE_LOGIN=false` to make sign-in optional instead.
+Copies without Supabase never ask anyone to sign in. Add your site's URL (e.g.
+`https://your-site.example/**`) to Supabase → Authentication → URL Configuration → Redirect URLs.
+
 ## Privacy
 
 No tracking. Progress stays in your browser unless you sign in; export and import it as JSON from Settings.

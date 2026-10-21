@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { AuthGate } from "@/components/AuthGate";
 import { FeedbackButton } from "@/components/Feedback";
 import { Nav } from "@/components/Nav";
 import { ThemeSync, themeInitScript } from "@/components/ThemeSync";
@@ -31,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className="border-b border-border bg-accent-soft px-4 py-1.5 text-center text-xs text-accent">
           This course matches {syllabus.short_name} v{syllabus.version}, valid {formatDate(syllabus.valid_from)} to {formatDate(syllabus.valid_to)}.
         </div>
-        <main id="main" className="mx-auto max-w-5xl px-4 py-8">{children}</main>
+        <main id="main" className="mx-auto max-w-5xl px-4 py-8"><AuthGate>{children}</AuthGate></main>
         <footer className="border-t border-border px-4 py-6 text-center text-xs text-muted">
           <p>
             Unofficial and unaffiliated with CFA UK, CFA Institute or Pearson VUE. &ldquo;IMC&rdquo; and &ldquo;CFA&rdquo; are used descriptively only.
