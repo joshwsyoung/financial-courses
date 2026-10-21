@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { actions, useProgress } from "@/lib/progress";
 import type { ClientQuestion, TaskDetail } from "@/lib/types";
 import { CalcDrill } from "./CalcDrill";
+import { FeedbackButton } from "./Feedback";
+import { MemoryAid } from "./MemoryAid";
 import { PracticeQuestion } from "./Question";
 import { buttonClass, ProgressBar, TaskTypeLabel } from "./ui";
 
@@ -61,7 +63,10 @@ export function TaskPlayer({ task, question, position, total, prevHref, nextHref
       <header className="space-y-1">
         <TaskTypeLabel type={task.type} />
         <h1 className="text-2xl font-bold">{task.title}</h1>
-        {statusNote}
+        <div className="flex flex-wrap items-center gap-3">
+          {statusNote}
+          {task.type !== "question" && <FeedbackButton label="Feedback on this task" context={{ taskId: task.id }} />}
+        </div>
       </header>
 
       <div className="rounded-xl border border-border bg-card p-5">
@@ -85,6 +90,8 @@ export function TaskPlayer({ task, question, position, total, prevHref, nextHref
             )}
           </div>
         )}
+
+        {task.type === "memory_aid" && task.memory && <MemoryAid taskId={task.id} lo={task.lo} spec={task.memory} onComplete={() => setFinished(true)} />}
 
         {task.type === "calc_drill" && task.drill && <CalcDrill taskId={task.id} lo={task.lo} spec={task.drill} onComplete={() => setFinished(true)} />}
 

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { grade, type Answer } from "@ofc/engine";
 import { actions, type AttemptContext } from "@/lib/progress";
-import { issueUrl } from "@/lib/site";
+import { FeedbackButton } from "./Feedback";
 import type { ClientQuestion } from "@/lib/types";
 import { Badge, buttonClass, StatusBadge } from "./ui";
 
@@ -78,17 +78,16 @@ export function QuestionMeta({ q }: { q: ClientQuestion }) {
   );
 }
 
-export function ReportLink({ q }: { q: ClientQuestion }) {
-  return (
-    <a
-      className="text-xs text-muted underline"
-      href={issueUrl("wrong-answer.yml", `Wrong answer: ${q.id}`, `Question id: ${q.id}\n\nWhat is wrong:\n`)}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Report an error
-    </a>
-  );
+export function answerText(q: ClientQuestion, a: Answer | undefined): string | undefined {
+  if (a === undefined || a === "") return undefined;
+  if (typeof a === "object") return JSON.stringify(a);
+  if (q.type === "mcq") return q.options?.find((o) => o.id === a)?.text ?? String(a);
+  return String(a);
+}
+
+/** Feedback on a specific question, with the learner's current answer attached. */
+export function ReportLink({ q, answer }: { q: ClientQuestion; answer?: Answer }) {
+  return <FeedbackButton label="Feedback on this question" defaultKind="wrong" context={{ questionId: q.id, answer: answerText(q, answer) }} />;
 }
 
 /** The question body (scenario, stem, inputs). Used by both practice and test modes. */
@@ -166,7 +165,7 @@ export function PracticeQuestion({ q, context, onDone }: { q: ClientQuestion; co
       <QuestionBody q={q} answer={answer} onChange={setAnswer} reveal={reveal} />
       <div className="flex items-center justify-between gap-3">
         {!reveal && <button type="submit" className={buttonClass.primary} disabled={!ready}>Check answer</button>}
-        <ReportLink q={q} />
+        <ReportLink q={q} answer={answer} />
       </div>
     </form>
   );

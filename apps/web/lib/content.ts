@@ -115,6 +115,7 @@ export function getTaskDetail(stageId: string, moduleId: string, taskId: string)
     back: t.back,
     video: t.video,
     drill: t.drill,
+    memory: t.memory,
   };
 }
 

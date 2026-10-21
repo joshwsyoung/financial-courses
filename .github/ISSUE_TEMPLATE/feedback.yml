@@ -1,0 +1,14 @@
+name: Feedback from the app
+description: Sent from the "Feedback" button in the course
+labels: [feedback]
+body:
+  - type: input
+    id: kind
+    attributes: { label: Kind of feedback }
+  - type: textarea
+    id: context
+    attributes: { label: Where (filled in automatically), render: text }
+  - type: textarea
+    id: details
+    attributes: { label: Details }
+    validations: { required: true }

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { FeedbackButton } from "@/components/Feedback";
 import { Nav } from "@/components/Nav";
 import { ThemeSync, themeInitScript } from "@/components/ThemeSync";
 import { formatDate, getCourse } from "@/lib/content";
@@ -36,7 +37,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             Unofficial and unaffiliated with CFA UK, CFA Institute or Pearson VUE. &ldquo;IMC&rdquo; and &ldquo;CFA&rdquo; are used descriptively only.
           </p>
           <p className="mt-1">
-            Code MIT · Content CC BY-SA 4.0 · <Link className="underline" href="/about/">About and licences</Link>
+            Code MIT · Content CC BY-SA 4.0 · <Link className="underline" href="/about/">About and licences</Link> ·{" "}
+            <FeedbackButton label="Send feedback" defaultKind="idea" className="text-xs underline" />
           </p>
         </footer>
       </body>

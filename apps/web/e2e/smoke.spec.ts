@@ -31,7 +31,7 @@ test("task player: read, then answer a question with feedback", async ({ page })
   await expect(page.getByRole("heading", { name: "Who relies on you" })).toBeVisible();
 
   await page.goto("/learn/ethics/ethics-foundations/");
-  await expect(page.getByText("3 of 14 tasks done")).toBeVisible();
+  await expect(page.getByText("3 of 15 tasks done")).toBeVisible();
 });
 
 test("module test runs, scores and shows a per-LO breakdown", async ({ page }) => {
@@ -75,4 +75,38 @@ test("theme setting switches to dark mode", async ({ page }) => {
   await page.goto("/settings/");
   await page.getByLabel("dark").check();
   await expect(page.locator("html")).toHaveClass(/dark/);
+});
+
+test("memory aid: learn the phrase, then tap the items back in order", async ({ page }) => {
+  await dismissWelcome(page);
+  await page.goto("/learn/ethics/ethics-foundations/eth-memory-conduct-rules/");
+  await expect(page.getByText("Overlook").first()).toBeVisible();
+  await page.getByRole("button", { name: /test me/ }).click();
+  await page.getByRole("button", { name: "Due skill, care and diligence" }).click();
+  await expect(page.getByText("Not that one yet")).toBeVisible();
+  for (const label of ["Integrity", "Due skill, care and diligence", "Open and cooperative with regulators", "Customers' interests, treated fairly", "Market conduct standards", "Outcomes for retail customers"]) {
+    await page.getByRole("button", { name: label }).click();
+  }
+  await expect(page.getByText(/Done, with 1 slip/)).toBeVisible();
+});
+
+test("feedback on a question carries the question and answer", async ({ page, context }) => {
+  await dismissWelcome(page);
+  await page.goto("/learn/ethics/ethics-foundations/eth-q-legal-unethical/");
+  await page.getByText("Illegal but ethical").click();
+  await page.getByRole("button", { name: "Feedback on this question" }).click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  await page.getByRole("dialog").getByLabel("Tell us more").fill("Option C wording is confusing");
+  let issueLink = "";
+  await context.route("https://github.com/**", (route) => {
+    issueLink ||= route.request().url();
+    return route.fulfill({ body: "ok" });
+  });
+  await page.getByRole("dialog").getByRole("button", { name: "Send feedback" }).click();
+  await expect.poll(() => issueLink).not.toBe("");
+  const url = new URL(issueLink);
+  expect(url.pathname).toContain("/issues/new");
+  expect(url.searchParams.get("context")).toContain("Question: q-u1-eth-0001");
+  expect(url.searchParams.get("context")).toContain("Learner's answer: Illegal but ethical");
+  await expect(page.getByRole("status")).toContainText("Thanks");
 });

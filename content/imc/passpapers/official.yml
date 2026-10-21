@@ -1,7 +1,7 @@
 # Links only. Official mocks are copyrighted and are never hosted here (spec 6.1).
 last_verified: 2026-10-20
 papers:
-  - { id: official-u1-mock-1, unit: unit1, title: "Unit 1 official mock 1", url: "https://www.cfauk.org", syllabus_version: "24", current: true, note: "Deep link TBC: find the mocks on the IMC page of the CFA UK site." }
-  - { id: official-u1-mock-2, unit: unit1, title: "Unit 1 official mock 2", url: "https://www.cfauk.org", syllabus_version: "24", current: true, note: "Deep link TBC. Save this one for 5 to 7 days before your exam." }
-  - { id: official-u2-mock-1, unit: unit2, title: "Unit 2 official mock 1", url: "https://www.cfauk.org", syllabus_version: "24", current: true, note: "Deep link TBC: find the mocks on the IMC page of the CFA UK site." }
-  - { id: official-u2-mock-2, unit: unit2, title: "Unit 2 official mock 2", url: "https://www.cfauk.org", syllabus_version: "24", current: true, note: "Deep link TBC. Save this one for 5 to 7 days before your exam." }
+  - { id: official-u1-mock-1, unit: unit1, title: "Unit 1 official mock 1", url: "https://www.cfauk.org/learn/qualifications/investment-management-certificate", syllabus_version: "24", current: true, note: "Open the Mock Exams section on the CFA UK IMC page." }
+  - { id: official-u1-mock-2, unit: unit1, title: "Unit 1 official mock 2", url: "https://www.cfauk.org/learn/qualifications/investment-management-certificate", syllabus_version: "24", current: true, note: "Mock Exams section on the CFA UK IMC page. Save this one for 5 to 7 days before your exam." }
+  - { id: official-u2-mock-1, unit: unit2, title: "Unit 2 official mock 1", url: "https://www.cfauk.org/learn/qualifications/investment-management-certificate", syllabus_version: "24", current: true, note: "Open the Mock Exams section on the CFA UK IMC page." }
+  - { id: official-u2-mock-2, unit: unit2, title: "Unit 2 official mock 2", url: "https://www.cfauk.org/learn/qualifications/investment-management-certificate", syllabus_version: "24", current: true, note: "Mock Exams section on the CFA UK IMC page. Save this one for 5 to 7 days before your exam." }

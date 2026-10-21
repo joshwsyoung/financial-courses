@@ -54,6 +54,8 @@ export interface ProgressState {
   tests: Record<string, TestAttempt[]>;
   mocks: MockRecord[];
   settings: Settings;
+  /** A local copy of feedback this learner has sent, for their own reference. */
+  feedback: { at: string; kind: string; page: string; message: string }[];
 }
 
 const KEY = "ofc:progress:v1";
@@ -68,6 +70,7 @@ export const EMPTY: ProgressState = {
   tests: {},
   mocks: [],
   settings: { theme: "system" },
+  feedback: [],
 };
 
 let state: ProgressState = EMPTY;
@@ -165,6 +168,9 @@ export const actions = {
   },
   updateSettings(patch: Partial<Settings>) {
     set((s) => ({ ...s, settings: { ...s.settings, ...patch } }));
+  },
+  logFeedback(f: { kind: string; page: string; message: string }) {
+    set((s) => ({ ...s, feedback: [...s.feedback, { ...f, at: new Date().toISOString() }].slice(-50) }));
   },
   importState(json: string) {
     const next = migrate(JSON.parse(json));

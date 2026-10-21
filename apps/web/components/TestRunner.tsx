@@ -186,7 +186,7 @@ export function TestRunner({ config, los }: { config: TestConfig; los: CourseInd
       <h2 className="text-lg font-semibold">Your answers</h2>
       {results.map(({ q }, i) => (
         <Card key={q.id} className="space-y-2">
-          <div className="flex items-center justify-between text-sm text-muted"><span>Question {i + 1}</span><ReportLink q={q} /></div>
+          <div className="flex items-center justify-between text-sm text-muted"><span>Question {i + 1}</span><ReportLink q={q} answer={answers[q.id]} /></div>
           <QuestionMeta q={q} />
           <QuestionBody q={q} answer={answers[q.id]} onChange={() => {}} reveal />
         </Card>

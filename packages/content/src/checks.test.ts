@@ -86,3 +86,18 @@ describe("countWords", () => {
     expect(countWords("# Title\n\nSome **bold** words. <svg><text>no</text></svg>")).toBe(4);
   });
 });
+
+describe("memory aids", () => {
+  it("fails when the device letters don't match the item initials", () => {
+    const e = errors(issuesAfter((imc) => {
+      const f = path.join(imc, "v24/stage-01-ethics/module-01-ethics-foundations/tasks.yml");
+      fs.writeFileSync(f, fs.readFileSync(f, "utf8").replace("letters: IDOCMO", "letters: IDOCMX"));
+    }));
+    expect(e).toContain("memory aid letters IDOCMX do not match item initials IDOCMO");
+  });
+
+  it("measures the longest Markdown list", async () => {
+    const { longestList } = await import("./checks");
+    expect(longestList("- a\n- b\n\ntext\n1. x\n2. y\n3. z")).toBe(3);
+  });
+});

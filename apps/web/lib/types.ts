@@ -3,7 +3,7 @@ import type { EngineQuestion } from "@ofc/engine";
 
 export type TaskType =
   | "read" | "eli5" | "diagram" | "video" | "audio" | "worked_example"
-  | "question" | "flashcard" | "calc_drill" | "teach_back";
+  | "question" | "flashcard" | "calc_drill" | "teach_back" | "memory_aid";
 
 export interface TaskSummary {
   id: string;
@@ -73,6 +73,13 @@ export interface DrillSpec {
   rounds: number;
 }
 
+export interface MemoryAidSpec {
+  intro?: string;
+  items: { label: string; detail?: string }[];
+  device: { kind: "acronym" | "phrase" | "story" | "chunks"; text: string; letters?: string };
+  ordered: boolean;
+}
+
 export interface TaskDetail extends TaskSummary {
   html?: string;
   question?: string;
@@ -80,4 +87,5 @@ export interface TaskDetail extends TaskSummary {
   back?: string;
   video?: { url: string; licence: string; embed: boolean; transcript?: string };
   drill?: DrillSpec;
+  memory?: MemoryAidSpec;
 }

@@ -87,7 +87,7 @@ export type Module = z.infer<typeof module>;
 
 export const taskType = z.enum([
   "read", "eli5", "diagram", "video", "audio", "worked_example",
-  "question", "flashcard", "calc_drill", "teach_back",
+  "question", "flashcard", "calc_drill", "teach_back", "memory_aid",
 ]);
 export type TaskType = z.infer<typeof taskType>;
 
@@ -104,6 +104,22 @@ export const calcDrill = z.object({
   rounds: z.number().int().positive().default(5),
 });
 
+/**
+ * A memory aid for lists of roughly 5+ items learners must recall (e.g. the COCON rules).
+ * `letters` is optional: when present, CI checks it matches the first letter of each item.
+ */
+export const memoryAid = z.object({
+  intro: z.string().optional(),
+  items: z.array(z.object({ label: z.string().min(1), detail: z.string().optional() })).min(3),
+  device: z.object({
+    kind: z.enum(["acronym", "phrase", "story", "chunks"]),
+    text: z.string().min(1),
+    letters: z.string().regex(/^[A-Z]+$/).optional(),
+  }),
+  ordered: z.boolean().default(true),
+});
+export type MemoryAid = z.infer<typeof memoryAid>;
+
 export const task = z.object({
   id: slug,
   type: taskType,
@@ -116,6 +132,7 @@ export const task = z.object({
   back: z.string().optional(),
   video: z.object({ url: z.string().url(), licence: z.string(), embed: z.boolean(), transcript: z.string().optional() }).optional(),
   drill: calcDrill.optional(),
+  memory: memoryAid.optional(),
 });
 export type Task = z.infer<typeof task>;
 

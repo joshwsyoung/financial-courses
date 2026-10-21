@@ -49,7 +49,7 @@ export function StatusBadge({ status, origin }: { status: string; origin?: strin
 export function TaskTypeLabel({ type }: { type: string }) {
   const labels: Record<string, string> = {
     read: "Read", eli5: "Explain like I'm five", diagram: "Diagram", video: "Video", audio: "Listen",
-    worked_example: "Worked example", question: "Question", flashcard: "Flashcard", calc_drill: "Calc drill", teach_back: "Teach back",
+    worked_example: "Worked example", question: "Question", flashcard: "Flashcard", calc_drill: "Calc drill", teach_back: "Teach back", memory_aid: "Memory aid",
   };
   return <span className="text-xs font-semibold uppercase tracking-wide text-muted">{labels[type] ?? type}</span>;
 }

@@ -128,12 +128,28 @@ export function checkCourse(course: Course, opts: CheckOptions = {}): Issue[] {
       if (t.type === "flashcard" && (!t.front || !t.back)) err(where, "flashcard needs front and back");
       if (t.type === "video" && !t.video) err(where, "video task needs a video block");
       if (t.type === "video" && t.video && !t.video.transcript) warn(where, "video has no transcript (WCAG 2.2 AA)");
+      if (t.type === "memory_aid") {
+        if (!t.memory) err(where, "memory_aid needs a memory block");
+        else if (t.memory.device.letters) {
+          const first = t.memory.items.map((i) => i.label.trim()[0]?.toUpperCase()).join("");
+          if (first !== t.memory.device.letters) err(where, `memory aid letters ${t.memory.device.letters} do not match item initials ${first}`);
+        }
+      }
       if (t.type === "calc_drill") {
         if (!t.drill) err(where, "calc_drill needs a drill block");
         else {
           const mid = Object.fromEntries(Object.entries(t.drill.inputs).map(([k, r]) => [k, (r.min + r.max) / 2]));
           try { evaluate(t.drill.formula, mid); } catch (e) { err(where, `drill formula: ${(e as Error).message}`); }
         }
+      }
+    }
+
+    // Lists of 6+ items are hard to memorise; nudge authors to add a memory aid for that LO.
+    const aidLos = new Set(mod.tasks.filter((t) => t.type === "memory_aid").flatMap((t) => t.lo));
+    for (const t of mod.tasks) {
+      if (!t.body) continue;
+      if (longestList(t.body) >= 6 && !t.lo.some((lo) => aidLos.has(lo))) {
+        warn(`${dir}/tasks/${t.file}`, "has a list of 6+ items with no memory_aid task for its LO; consider adding one");
       }
     }
 
@@ -196,6 +212,17 @@ export function checkCourse(course: Course, opts: CheckOptions = {}): Issue[] {
       err(at, `recomputed answer ${value.toFixed(4)} does not match stated answer ${expected} (tolerance ${calc.tolerance})`);
     }
   }
+}
+
+/** Length of the longest run of consecutive Markdown list items. */
+export function longestList(md: string): number {
+  let best = 0;
+  let run = 0;
+  for (const line of md.split("\n")) {
+    if (/^\s*([-*+]|\d+\.)\s+\S/.test(line)) best = Math.max(best, ++run);
+    else if (line.trim() !== "") run = 0;
+  }
+  return best;
 }
 
 function loadBanned(root: string) {
