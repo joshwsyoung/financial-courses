@@ -61,10 +61,17 @@ scripts             validate-content, check-links, format-yaml
 
 Content is plain Markdown and YAML in Git. No database is needed to read it.
 
+## Accounts, sync and feedback (optional)
+
+Without configuration the app is fully offline: progress lives in the browser and feedback opens a
+pre-filled GitHub issue. Set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` (see
+`.env.example`) to switch on email sign-in, progress sync and database feedback with screenshots.
+Run `supabase/setup.sql` once in the Supabase SQL Editor first. All objects are prefixed `fc_`, so the
+project can be shared with other apps.
+
 ## Privacy
 
-No tracking. Progress stays in your browser; export and import it as JSON from Settings.
-Optional sync (Supabase) is planned for the hosted instance only and will be off unless configured.
+No tracking. Progress stays in your browser unless you sign in; export and import it as JSON from Settings.
 
 ## Open items
 
