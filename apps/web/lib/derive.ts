@@ -85,14 +85,22 @@ export function topicMastery(course: CourseIndex, p: ProgressState, unitId?: str
   return course.syllabus.topics
     .filter((t) => !unitId || t.unit === unitId)
     .map((t) => {
-      const los = course.syllabus.los.filter((l) => l.topic === t.id).map((l) => l.id);
-      const weight = (t.weight_band[0] + t.weight_band[1]) / 2;
+      const los = course.outcomes.filter((l) => l.topic === t.id).map((l) => l.id);
+      // CFA UK publishes question ranges per content area; split each area's midpoint across its topics.
+      const area = course.syllabus.areas.find((a) => a.id === t.area)!;
+      const siblings = course.syllabus.topics.filter((x) => x.area === t.area).length;
+      const weight = (area.questions[0] + area.questions[1]) / 2 / siblings;
       const attempted = los.some((lo) => p.mastery[lo] !== undefined);
       return { topic: t.id, name: t.name, unit: t.unit, weight, score: averageMastery(p.mastery, los), attempted };
     });
 }
 
 export function weakest(course: CourseIndex, p: ProgressState, n = 3) {
-  const attemptedLos = course.syllabus.los.filter((l) => p.mastery[l.id] !== undefined).map((l) => l.id);
-  return weakestLos(p.mastery, attemptedLos, n).map((w) => ({ ...w, lo: course.syllabus.los.find((l) => l.id === w.lo)! }));
+  const attemptedLos = course.outcomes.filter((l) => p.mastery[l.id] !== undefined).map((l) => l.id);
+  return weakestLos(p.mastery, attemptedLos, n).map((w) => ({ ...w, lo: course.outcomes.find((l) => l.id === w.lo)! }));
+}
+
+/** Link to the syllabus explorer with these outcomes highlighted. */
+export function syllabusHref(los: string[]) {
+  return `/syllabus/?focus=${los.join(",")}#lo-${los[0] ?? ""}`;
 }

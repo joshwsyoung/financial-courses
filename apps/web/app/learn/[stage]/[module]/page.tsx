@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ModuleTaskList } from "@/components/Lists";
+import { OutcomeChips } from "@/components/OutcomeChips";
 import { StatusBadge } from "@/components/ui";
 import { getCourse, getCourseIndex } from "@/lib/content";
 
@@ -25,8 +26,11 @@ export default async function ModulePage({ params }: { params: Promise<{ stage: 
         <h1 className="mt-1 text-3xl font-bold">{module.title}</h1>
         <p className="text-muted">{module.summary}</p>
         <p className="mt-2 flex flex-wrap items-center gap-2 text-sm text-muted">
-          About {Math.round(minutes)} min · learning outcomes {module.los.join(", ")} <StatusBadge status={module.status} origin="ai_generated" />
+          About {Math.round(minutes)} min <StatusBadge status={module.status} origin="ai_generated" />
         </p>
+        <div className="mt-2">
+          <OutcomeChips label="Covers syllabus outcomes" outcomes={course.outcomes.filter((o) => module.los.includes(o.id))} />
+        </div>
       </div>
       <ModuleTaskList stageId={stage.id} module={module} />
     </div>

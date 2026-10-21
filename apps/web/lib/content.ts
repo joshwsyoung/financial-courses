@@ -2,7 +2,7 @@ import "server-only";
 import path from "node:path";
 import { loadCourse, type Course, type LoadedModule, type LoadedStage } from "@ofc/content";
 import { marked } from "marked";
-import type { ClientQuestion, CourseIndex, TaskDetail } from "./types";
+import type { ClientQuestion, CourseIndex, OutcomeRow, TaskDetail } from "./types";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "../../content/imc");
 
@@ -46,6 +46,32 @@ function toClientQuestion(q: LoadedModule["questions"][number]): ClientQuestion 
   };
 }
 
+function buildOutcomes(c: Course): OutcomeRow[] {
+  const topicByNumber = new Map(c.syllabus.topics.map((t) => [t.number, t]));
+  const covered = new Map<string, OutcomeRow["covered"]>();
+  const entry = (lo: string) => {
+    if (!covered.has(lo)) covered.set(lo, { tasks: [], questions: 0 });
+    return covered.get(lo)!;
+  };
+  for (const s of c.stages) for (const m of s.modules) {
+    for (const t of m.tasks) for (const lo of t.lo) entry(lo).tasks.push({ title: t.title, href: `/learn/${s.id}/${m.id}/${t.id}/` });
+    for (const q of m.questions) if (q.status !== "retired") for (const lo of q.lo) entry(lo).questions++;
+  }
+  return c.outcomes.outcomes.map((o) => {
+    const topic = topicByNumber.get(Number(o.id.split(".")[0]))!;
+    return {
+      id: o.id,
+      unit: topic.unit,
+      topic: topic.id,
+      section: o.section,
+      group: o.group,
+      verbs: o.verbs,
+      summary: o.summary,
+      covered: covered.get(o.id) ?? { tasks: [], questions: 0 },
+    };
+  });
+}
+
 export function getCourseIndex(): CourseIndex {
   const c = getCourse();
   const questions: Record<string, ClientQuestion> = {};
@@ -61,10 +87,13 @@ export function getCourseIndex(): CourseIndex {
       version: c.syllabus.version,
       valid_from: c.syllabus.valid_from,
       valid_to: c.syllabus.valid_to,
+      official_url: c.syllabus.official_url,
       units: c.syllabus.units,
+      areas: c.syllabus.areas,
       topics: c.syllabus.topics,
-      los: c.syllabus.los,
+      sections: c.outcomes.sections,
     },
+    outcomes: buildOutcomes(c),
     stages: c.stages.map((s) => ({
       id: s.id,
       title: s.title,

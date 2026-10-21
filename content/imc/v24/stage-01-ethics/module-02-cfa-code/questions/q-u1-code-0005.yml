@@ -1,0 +1,39 @@
+id: q-u1-code-0005
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: A portfolio manager decides to buy shares in a mid-cap company for all of her discretionary clients. She would
+  also like to buy some for her own account. What is the correct approach?
+options:
+- id: a
+  text: Buy for herself first, so that client orders do not push up her own purchase price
+- id: b
+  text: Place client orders first, and deal for herself only afterwards, in line with firm policy
+- id: c
+  text: Put all the orders in at the same moment, so that nobody is favoured
+- id: d
+  text: Never buy any share that her clients hold
+correct: b
+explanation: Under Standard VI(B), client and employer transactions take priority over personal ones. She should let
+  client orders go through first and follow her firm's personal dealing rules.
+distractor_notes:
+  a: Dealing ahead of clients to benefit from their orders is front-running, a clear breach.
+  c: Dealing at the same time can still give her a better price or allocation. Clients must come first.
+  d: Owning the same shares as clients is allowed. The issue is priority and disclosure, not a total ban.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

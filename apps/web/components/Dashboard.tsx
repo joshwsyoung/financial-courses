@@ -3,7 +3,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { dueItems, projectedFinish, readiness, today } from "@ofc/engine";
-import { nextStep, topicMastery, unitProgress, weakest } from "@/lib/derive";
+import { nextStep, syllabusHref, topicMastery, unitProgress, weakest } from "@/lib/derive";
 import { useProgress } from "@/lib/progress";
 import type { CourseIndex } from "@/lib/types";
 import { Badge, ButtonLink, Card, ProgressBar } from "./ui";
@@ -103,7 +103,7 @@ export function Dashboard({ course, pay }: { course: CourseIndex; pay: ReactNode
             {weak.length ? (
               <ol className="mt-1 space-y-1 text-sm">
                 {weak.map((w) => (
-                  <li key={w.lo.id}><span className="text-muted">{w.lo.id}</span> {w.lo.summary} <strong>({Math.round(w.score)}%)</strong></li>
+                  <li key={w.lo.id}><Link href={syllabusHref([w.lo.id])} className="font-mono text-accent underline">{w.lo.id}</Link> {w.lo.summary} <strong>({Math.round(w.score)}%)</strong></li>
                 ))}
               </ol>
             ) : (

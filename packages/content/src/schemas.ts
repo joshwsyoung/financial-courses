@@ -26,22 +26,21 @@ export const unit = z.object({
   recommended_hours: z.number().positive(),
 });
 
-export const topic = z.object({
+/** A content area groups topics and carries CFA UK's published question allocation. */
+export const contentArea = z.object({
   id: slug,
   unit: slug,
   name: z.string(),
-  /** Published exam weighting band, in number of questions or percent per `weight_basis`. */
-  weight_band: z.tuple([z.number(), z.number()]),
+  /** Range of exam questions CFA UK says to expect from this area. */
+  questions: z.tuple([z.number().int(), z.number().int()]),
 });
 
-export const learningOutcome = z.object({
-  id: loId,
+export const topic = z.object({
+  id: slug,
+  number: z.number().int().positive(),
   unit: slug,
-  topic: slug,
-  /** Our own paraphrase. Never paste official LO text. */
-  summary: z.string().min(1),
-  /** False until checked against the current published syllabus. */
-  verified: z.boolean(),
+  area: slug,
+  name: z.string(),
 });
 
 export const syllabus = z.object({
@@ -53,14 +52,42 @@ export const syllabus = z.object({
   valid_from: isoDate,
   valid_to: isoDate,
   current_dir: z.string(),
-  weight_basis: z.enum(["questions", "percent"]),
-  units: z.array(unit).min(1),
+  /** Where learners can read CFA UK's exact wording. */
+  official_url: z.string().url(),
+  units: z.array(unit.extend({ official_doc: z.string() })).min(1),
+  areas: z.array(contentArea).min(1),
   topics: z.array(topic).min(1),
-  los: z.array(learningOutcome).min(1),
   notes: z.array(z.string()).default([]),
   provenance,
 });
 export type Syllabus = z.infer<typeof syllabus>;
+
+export const commandWord = z.enum([
+  "identify", "define", "describe", "explain", "distinguish", "differentiate", "compare", "contrast",
+  "classify", "calculate", "interpret", "determine", "apply", "analyse", "evaluate", "critically evaluate", "select",
+]);
+export type CommandWord = z.infer<typeof commandWord>;
+
+/**
+ * One official learning outcome. `id`, `section`, `group` and `verbs` are facts taken from the
+ * published syllabus; `summary` is our own paraphrase. Official wording is never stored here.
+ */
+export const learningOutcome = z.object({
+  id: z.string().regex(/^\d+\.\d+\.\d+$/),
+  section: z.string().regex(/^\d+\.\d+$/),
+  group: z.string().optional(),
+  verbs: z.array(commandWord).min(1),
+  summary: z.string().min(1),
+});
+export type LearningOutcome = z.infer<typeof learningOutcome>;
+
+export const outcomesFile = z.object({
+  syllabus_version: z.string(),
+  sections: z.array(z.object({ id: z.string().regex(/^\d+\.\d+$/), title: z.string() })).min(1),
+  outcomes: z.array(learningOutcome).min(1),
+  provenance,
+});
+export type OutcomesFile = z.infer<typeof outcomesFile>;
 
 export const stage = z.object({
   id: slug,

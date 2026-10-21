@@ -1,0 +1,38 @@
+id: q-u1-tax-0005
+type: mcq
+unit: unit1
+lo:
+- 6.1.15
+difficulty: 2
+stem: Which statement about returns earned inside a stocks and shares ISA is correct?
+options:
+- id: a
+  text: Gains are free of capital gains tax, but dividends are taxed as normal
+- id: b
+  text: Income and gains are free of UK income tax and capital gains tax
+- id: c
+  text: Returns are tax-free only if held for five years
+- id: d
+  text: Returns are taxed when withdrawn, like a pension
+correct: b
+explanation: ISA investments grow free of UK income tax and capital gains tax, and withdrawals are not taxed.
+distractor_notes:
+  a: Dividends inside an ISA are also free of income tax.
+  c: There is no minimum holding period for the tax benefits.
+  d: Unlike pension withdrawals, ISA withdrawals are not taxed.
+tags: []
+tax_year: 2026-27
+syllabus_versions:
+- '24'
+source_refs:
+- gov.uk:income-tax-rates
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - https://www.gov.uk/income-tax-rates
+  licence: CC BY-SA 4.0 (gov.uk facts under Open Government Licence v3.0)
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

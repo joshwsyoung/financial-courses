@@ -1,0 +1,45 @@
+id: q-u1-tax-0002
+type: mcq
+unit: unit1
+lo:
+- 6.2.4
+difficulty: 3
+stem: Sam earns a salary of £60,000 in 2026-27, has no other income and lives in England. How much income tax does
+  Sam pay?
+options:
+- id: a
+  text: £11,432
+- id: b
+  text: £18,972
+- id: c
+  text: £9,486
+- id: d
+  text: £24,000
+correct: a
+calc:
+  formula: 37700 * 0.2 + (salary - 12570 - 37700) * 0.4
+  inputs:
+    salary: 60000
+  tolerance: 0.5
+explanation: Taxable income is £47,430. The first £37,700 is taxed at 20% (£7,540) and the remaining £9,730 at 40%
+  (£3,892), giving £11,432.
+distractor_notes:
+  b: Taxes all taxable income at 40%, forgetting that bands are slices.
+  c: Taxes all taxable income at 20%, ignoring the higher rate band.
+  d: Applies 40% to the whole salary, ignoring both the allowance and the basic rate band.
+tags: []
+tax_year: 2026-27
+syllabus_versions:
+- '24'
+source_refs:
+- gov.uk:income-tax-rates
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - https://www.gov.uk/income-tax-rates
+  licence: CC BY-SA 4.0 (gov.uk facts under Open Government Licence v3.0)
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

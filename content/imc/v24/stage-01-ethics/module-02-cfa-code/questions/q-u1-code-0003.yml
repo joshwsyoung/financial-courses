@@ -1,0 +1,40 @@
+id: q-u1-code-0003
+type: mcq
+unit: unit1
+lo:
+- 2.2.1
+- 2.2.3
+difficulty: 2
+tags: []
+stem: Lena, a CFA charterholder, moves to an overseas office where local law allows analysts to accept gifts of any
+  size from companies they cover. The CFA Standards are stricter. What should she do?
+options:
+- id: a
+  text: Follow local law, because the law always takes priority over professional standards
+- id: b
+  text: Follow the Standards, because they are stricter than local law
+- id: c
+  text: Follow whichever rule her new manager prefers
+- id: d
+  text: Follow UK law, because she qualified in the UK
+correct: b
+explanation: Where the law and the Standards differ, members and candidates must follow whichever is stricter. Here
+  that is the Standards, so Lena should not accept gifts that could affect her independence.
+distractor_notes:
+  a: The law is a minimum. When the Standards ask for more, members must meet the higher standard.
+  c: A manager's preference does not override either the law or the Standards.
+  d: The test is which rule is stricter, not where she qualified.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

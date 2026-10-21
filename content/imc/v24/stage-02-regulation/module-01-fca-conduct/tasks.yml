@@ -1,0 +1,90 @@
+provenance:
+  sources:
+  - original
+  - https://www.handbook.fca.org.uk/handbook/COCON/2/1.html
+  - https://www.fca.org.uk/firms/consumer-duty
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending
+tasks:
+- id: eth-fc-conflict
+  type: flashcard
+  title: 'Flashcard: conflict of interest'
+  minutes: 1
+  lo:
+  - 3.3.6
+  front: What is a conflict of interest?
+  back: A situation where your own interests, or another client's, could pull you away from acting in the best interests
+    of the person you owe a duty to.
+- id: eth-conflicts
+  type: read
+  title: Conflicts of interest
+  minutes: 2
+  lo:
+  - 3.3.6
+  file: conflicts.md
+- id: eth-q-conflict-manage
+  type: question
+  title: 'Check: managing a conflict'
+  minutes: 1
+  lo:
+  - 3.3.6
+  question: q-u1-eth-0004
+- id: eth-conduct-rules
+  type: read
+  title: The FCA Conduct Rules
+  minutes: 2
+  lo:
+  - 3.3.8
+  - 3.3.9
+  file: conduct-rules.md
+- id: eth-memory-conduct-rules
+  type: memory_aid
+  title: Remember the six Conduct Rules
+  minutes: 2
+  lo:
+  - 3.3.9
+  memory:
+    intro: Six rules is a lot to hold in your head. Hang each one on a word in this sentence.
+    device:
+      kind: phrase
+      text: I Don't Overlook Customers, Markets or Outcomes
+      letters: IDOCMO
+    ordered: true
+    items:
+    - label: Integrity
+      detail: 'Rule 1: act with integrity'
+    - label: Due skill, care and diligence
+      detail: 'Rule 2: act with due skill, care and diligence'
+    - label: Open and cooperative with regulators
+      detail: 'Rule 3: be open and cooperative with the FCA, the PRA and other regulators'
+    - label: Customers' interests, treated fairly
+      detail: 'Rule 4: pay due regard to the interests of customers and treat them fairly'
+    - label: Market conduct standards
+      detail: 'Rule 5: observe proper standards of market conduct'
+    - label: Outcomes for retail customers
+      detail: 'Rule 6: act to deliver good outcomes for retail customers'
+- id: eth-fc-rule-1
+  type: flashcard
+  title: 'Flashcard: the first Conduct Rule'
+  minutes: 1
+  lo:
+  - 3.3.9
+  front: What does individual Conduct Rule 1 require?
+  back: You must act with integrity.
+- id: eth-consumer-duty
+  type: read
+  title: The Consumer Duty
+  minutes: 2
+  lo:
+  - 5.1.2
+  - 3.3.3
+  file: consumer-duty.md
+- id: eth-q-duty-outcomes
+  type: question
+  title: 'Check: the four outcomes'
+  minutes: 1
+  lo:
+  - 5.1.2
+  question: q-u1-eth-0011

@@ -1,0 +1,38 @@
+id: q-u1-code-0002
+type: mcq
+unit: unit1
+lo:
+- 2.2.1
+difficulty: 1
+tags: []
+stem: Under which of the seven Standards would you find the duty not to trade on material non-public information?
+options:
+- id: a
+  text: Duties to clients
+- id: b
+  text: Integrity of capital markets
+- id: c
+  text: Conflicts of interest
+- id: d
+  text: Professionalism
+correct: b
+explanation: Standard II, Integrity of capital markets, covers material non-public information and market manipulation.
+  Both are about keeping markets fair for everyone, not just your own clients.
+distractor_notes:
+  a: Insider dealing harms the whole market, so it sits under market integrity, not client duties.
+  c: Using inside information can create a conflict, but the specific duty sits under Standard II.
+  d: Professionalism covers law, independence, misrepresentation and misconduct, not inside information specifically.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

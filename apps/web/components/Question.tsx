@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { syllabusHref } from "@/lib/derive";
 import { grade, type Answer } from "@ofc/engine";
 import { actions, type AttemptContext } from "@/lib/progress";
 import { FeedbackButton } from "./Feedback";
@@ -71,7 +73,12 @@ function PartFeedback({ q, value }: { q: ClientQuestion; value: PartAnswer }) {
 export function QuestionMeta({ q }: { q: ClientQuestion }) {
   return (
     <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
-      <span>LO {q.lo.join(", ")}</span>
+      <span>
+        Syllabus{" "}
+        {q.lo.map((lo, i) => (
+          <span key={lo}>{i ? ", " : ""}<Link href={syllabusHref([lo])} className="font-mono underline">{lo}</Link></span>
+        ))}
+      </span>
       {q.tax_year && <Badge tone="accent">Tax year {q.tax_year}</Badge>}
       <StatusBadge status={q.status} origin={q.origin} />
     </div>

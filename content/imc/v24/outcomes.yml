@@ -1,0 +1,3005 @@
+# IMC v24 learning outcomes. IDs, sections and command words come from CFA UK's published syllabus.
+# Summaries are our own words; the exact official wording is in CFA UK's syllabus documents.
+syllabus_version: '24'
+sections:
+- id: '1.1'
+  title: Introduction to Financial Markets
+- id: '1.2'
+  title: The Role of Securities Markets in Providing Liquidity and Price Transparency
+- id: '1.3'
+  title: Types of Financial Markets
+- id: '1.4'
+  title: The UK Listing Authority and Prospectus Requirements
+- id: '1.5'
+  title: Information Disclosure and Corporate Governance Requirements for UK Equity Markets
+- id: '1.6'
+  title: International Markets
+- id: '1.7'
+  title: 'The Principal-Agent Problem: Separation of Ownership and Control'
+- id: '2.1'
+  title: Ethical and Compliance-Driven Behaviour
+- id: '2.2'
+  title: Cfa Code of Ethics and Standards of Professional Conduct
+- id: '3.1'
+  title: UK Regulation
+- id: '3.2'
+  title: Assimilated EU Law and Other International Regulations Relating to UK Financial Services
+- id: '3.3'
+  title: 'The Financial Conduct Authority (FCA): Objectives and High-Level Standards'
+- id: '3.4'
+  title: Regulation of Investment Exchanges and Clearing Houses
+- id: '3.5'
+  title: FCA Business Standards
+- id: '3.6'
+  title: FCA Supervision and Redress
+- id: '3.7'
+  title: Financial Crime
+- id: '4.1'
+  title: Legal Concepts
+- id: '5.1'
+  title: Types and Characteristics of Investors
+- id: '5.2'
+  title: The Client’s Financial Objectives
+- id: '5.3'
+  title: The Client’s Current Circumstances
+- id: '5.4'
+  title: The Client’s Risk Profile
+- id: '5.5'
+  title: Investment Recommendations
+- id: '5.6'
+  title: 'Skills Required When Advising Clients: Case Studies'
+- id: '5.7'
+  title: 'Institutional Investors: the Objectives of Institutional Investors and the Factors That Impact Upon Their Investment
+    Decisions'
+- id: '6.1'
+  title: The UK Tax System and the Taxation of Investments
+- id: '6.2'
+  title: Investment Advice and Tax Planning
+- id: '7.1'
+  title: Sources of Data
+- id: '7.2'
+  title: Summary Data
+- id: '7.3'
+  title: Correlation and Bivariate Linear Regression
+- id: '7.4'
+  title: Index Numbers
+- id: '7.5'
+  title: Simple and Compound Interest
+- id: '7.6'
+  title: The Time Value of Money – Present and Future Value Calculations, Annuities, Perpetuities and Mortgages
+- id: '7.7'
+  title: The Internal Rate of Return and Net Present Value
+- id: '8.1'
+  title: Introduction to Micro-Economics
+- id: '8.2'
+  title: Analysing Supply and Demand
+- id: '8.3'
+  title: Analysing Costs and Profitability
+- id: '8.4'
+  title: Analysing the Competitive Environment
+- id: '9.1'
+  title: Introduction to Macro-Economics
+- id: '9.2'
+  title: Analysing the Outlook for GDP Growth
+- id: '9.3'
+  title: Analysing Economic Theory and Policy
+- id: '9.4'
+  title: Analysing Exchange Rates
+- id: '10.1'
+  title: Fundamental Precepts
+- id: '10.2'
+  title: The Balance Sheet
+- id: '10.3'
+  title: The Accounting Treatment of Financial Instruments
+- id: '10.4'
+  title: The Income Statement and Statement of Changes in Equity
+- id: '10.5'
+  title: The Cash Flow Statement
+- id: '10.6'
+  title: Group Accounts
+- id: '10.7'
+  title: Major Accounting Ratios
+- id: '11.1'
+  title: Equity Capital – Structures
+- id: '11.2'
+  title: Equity – Issuance and Capital Return
+- id: '11.3'
+  title: Equity – Valuation
+- id: '11.4'
+  title: Equity – Alternative Valuation Metrics
+- id: '12.1'
+  title: Cash and Cash Equivalents
+- id: '12.2'
+  title: Fixed-Income Securities – Characteristics
+- id: '12.3'
+  title: Fixed-Income Securities – Risk and Return
+- id: '12.4'
+  title: Fixed-Income Securities – Yields and the Yield Curve
+- id: '13.1'
+  title: Derivatives
+- id: '13.2'
+  title: Selling Short, Stock Lending and Contract for Differences (swaps)
+- id: '13.3'
+  title: Convertibles and Warrants
+- id: '14.1'
+  title: Alternative Investments, Private Markets and Portfolio Diversification
+- id: '14.2'
+  title: Commodities and Cryptocurrencies
+- id: '14.3'
+  title: Property and Other Real Assets
+- id: '14.4'
+  title: Private (Unlisted) Assets
+- id: '14.5'
+  title: Hedge Funds
+- id: '15.1'
+  title: Risk and Return and the Importance of Diversification
+- id: '15.2'
+  title: Correlation Between Asset Classes
+- id: '15.3'
+  title: Models of Return and Risk
+- id: '15.4'
+  title: The Efficient Markets Hypothesis
+- id: '15.5'
+  title: Pricing, Liquidity and Fair Value
+- id: '15.6'
+  title: Approaches to Fund Management
+- id: '15.7'
+  title: Investment Management Principles – Fixed Income
+- id: '15.8'
+  title: Environmental, Social and Governance Investing
+- id: '16.1'
+  title: Investment Products
+- id: '17.1'
+  title: Total Return and Its Components
+- id: '17.2'
+  title: Money-Weighted and Time-Weighted Returns
+- id: '17.3'
+  title: Choosing A Benchmark, Comparisons with Investment Objectives and Indices
+- id: '17.4'
+  title: Performance Measurement Including Risk-Adjusted Returns
+outcomes:
+- id: 1.1.1
+  section: '1.1'
+  verbs:
+  - explain
+  summary: How the finance sector channels capital into productive uses across the world economy
+- id: 1.1.2
+  section: '1.1'
+  verbs:
+  - explain
+  summary: What the major financial institutions do and the effects they have
+- id: 1.1.3
+  section: '1.1'
+  verbs:
+  - explain
+  summary: 'Government''s part in the economy: industrial and economic policy, regulation, tax and welfare provision'
+- id: 1.2.1
+  section: '1.2'
+  verbs:
+  - differentiate
+  summary: How financial securities differ from real assets
+- id: 1.2.2
+  section: '1.2'
+  verbs:
+  - identify
+  summary: Main characteristics of ordinary shares, bonds, derivatives, pooled fund units and foreign exchange deals
+- id: 1.2.3
+  section: '1.2'
+  verbs:
+  - identify
+  summary: The role securities markets play in providing liquidity and transparent pricing
+- id: 1.2.4
+  section: '1.2'
+  verbs:
+  - identify
+  summary: Why transparent prices and liquidity are seen as vital for allocating capital efficiently through securities trading
+- id: 1.2.5
+  section: '1.2'
+  verbs:
+  - identify
+  summary: Which securities and market conditions tend to have high or low liquidity, depth and price transparency
+- id: 1.2.6
+  section: '1.2'
+  verbs:
+  - define
+  summary: What liquidity risk means and why it matters
+- id: 1.2.7
+  section: '1.2'
+  verbs:
+  - identify
+  - explain
+  - calculate
+  summary: Working out dealing costs, and why they vary, for UK and overseas equities, fixed income, property and pooled funds
+- id: 1.3.1
+  section: '1.3'
+  verbs:
+  - identify
+  summary: UK equity trading systems and facilities, plus how exchange-traded UK securities are cleared and settled
+- id: 1.3.2
+  section: '1.3'
+  verbs:
+  - identify
+  summary: Which kinds of securities are dealt through each principal UK trading system and facility
+- id: 1.3.3
+  section: '1.3'
+  verbs:
+  - explain
+  summary: How UK gilt and corporate bond markets are organised and work, for new issues and secondary trading
+- id: 1.3.4
+  section: '1.3'
+  verbs:
+  - explain
+  summary: Why companies pursue a dual listing and the consequences it brings
+- id: 1.3.5
+  section: '1.3'
+  verbs:
+  - compare
+  - contrast
+  summary: How trading on exchanges compares with over-the-counter (OTC) dealing
+- id: 1.3.6
+  section: '1.3'
+  verbs:
+  - distinguish
+  summary: 'How alternative venues differ: multilateral trading facilities, systematic internalisers, organised trading facilities
+    and dark pools'
+- id: 1.3.7
+  section: '1.3'
+  verbs:
+  - explain
+  summary: How cryptoassets are regulated in the UK
+- id: 1.3.8
+  section: '1.3'
+  verbs:
+  - distinguish
+  summary: How quote-driven markets differ from order-driven markets
+- id: 1.3.9
+  section: '1.3'
+  verbs:
+  - explain
+  summary: Who the different players in UK share markets are and what each does
+- id: 1.3.10
+  section: '1.3'
+  verbs:
+  - explain
+  summary: 'Algorithmic trading and high-frequency trading: what they are, their pros and risks, and how they are regulated'
+- id: 1.4.1
+  section: '1.4'
+  verbs:
+  - explain
+  summary: The Financial Conduct Authority (FCA) acting as the body responsible for UK listings
+- id: 1.4.2
+  section: '1.4'
+  verbs:
+  - identify
+  summary: Listing requirements contained in the amended Financial Services and Markets Act (FSMA) 2000
+- id: 1.4.3
+  section: '1.4'
+  verbs:
+  - explain
+  summary: Key requirements a company must meet to join the Official List, AIM or AQSE
+- id: 1.4.4
+  section: '1.4'
+  verbs:
+  - explain
+  summary: Why issuers need to publish listing particulars or a prospectus
+- id: 1.4.5
+  section: '1.4'
+  verbs:
+  - identify
+  summary: Principal cases where listing particulars need not be produced
+- id: 1.5.1
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Disclosure and transparency rules on reporting large shareholdings and the interests held by directors
+- id: 1.5.2
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Why corporate governance is regulated and how the Financial Reporting Council encourages good practice
+- id: 1.5.3
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Overview of what UK corporate governance standards cover and require
+- id: 1.5.4
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Aims and reach of the Shareholders Rights Directive (SRD II), and how it affects pension schemes
+- id: 1.5.5
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Why a diverse board matters for sound corporate governance
+- id: 1.5.6
+  section: '1.5'
+  verbs:
+  - explain
+  summary: London Stock Exchange rules requiring listed companies to report on their governance compliance
+- id: 1.5.7
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Ongoing duties on companies listed on the London Stock Exchange to release and circulate information
+- id: 1.5.8
+  section: '1.5'
+  verbs:
+  - explain
+  summary: Overview of UK company law rules for convening AGMs and other shareholder general meetings
+- id: 1.5.9
+  section: '1.5'
+  verbs:
+  - distinguish
+  summary: How AGMs differ from other kinds of company meeting
+- id: 1.5.10
+  section: '1.5'
+  verbs:
+  - distinguish
+  summary: Different kinds of resolution that shareholders can vote on at general meetings
+- id: 1.5.11
+  section: '1.5'
+  verbs:
+  - distinguish
+  summary: The different ways votes can be cast at company meetings
+- id: 1.5.12
+  section: '1.5'
+  verbs:
+  - explain
+  summary: What a proxy does and what powers a proxy holds
+- id: 1.6.1
+  section: '1.6'
+  verbs:
+  - explain
+  summary: Structure, features, regulation and trading conditions of international markets, both developed and emerging
+- id: 1.6.2
+  section: '1.6'
+  verbs:
+  - explain
+  summary: How Eurobonds are issued and then traded, and how those markets are organised
+- id: 1.6.3
+  section: '1.6'
+  verbs:
+  - explain
+  summary: Clearing and settlement abroad, international central securities depositories, differing settlement cycles, and
+    the difficulties of handling assets globally
+- id: 1.7.1
+  section: '1.7'
+  verbs:
+  - explain
+  summary: How capital markets split beneficial ownership of capital from control over it
+- id: 1.7.2
+  section: '1.7'
+  verbs:
+  - distinguish
+  summary: Beneficial owners (principals) versus the different agents involved in allocating capital
+- id: 1.7.3
+  section: '1.7'
+  verbs:
+  - explain
+  summary: How clashing interests between principals and agents create the principal-agent (agency) problem
+- id: 1.7.4
+  section: '1.7'
+  verbs:
+  - identify
+  summary: Agency costs stemming from the agency problem, such as expropriation, self-dealing, perquisites and a raised cost
+    of capital
+- id: 1.7.5
+  section: '1.7'
+  verbs:
+  - identify
+  summary: Arguments for why easing principal-agent conflicts helps both society generally and investment professionals
+- id: 2.1.1
+  section: '2.1'
+  verbs:
+  - describe
+  summary: Why the investment industry needs ethical behaviour
+- id: 2.1.2
+  section: '2.1'
+  verbs:
+  - identify
+  summary: Signs in behaviour that point to good or poor ethical conduct
+- id: 2.1.3
+  section: '2.1'
+  verbs:
+  - identify
+  summary: Ethical duties owed to employers, colleagues, existing clients and prospective clients
+- id: 2.1.4
+  section: '2.1'
+  verbs:
+  - critically evaluate
+  summary: Possible consequences of unethical conduct for consumers, firms, individual advisers and the industry
+- id: 2.1.5
+  section: '2.1'
+  verbs:
+  - critically evaluate
+  summary: Possible consequences of doing no more than rule-based compliance, for consumers, individual advisers and the industry
+- id: 2.2.1
+  section: '2.2'
+  verbs:
+  - identify
+  summary: What makes up the CFA Code of Ethics and Standards of Professional Conduct
+- id: 2.2.2
+  section: '2.2'
+  verbs:
+  - explain
+  summary: Core values and professional principles behind the CFA Code of Ethics and Standards of Professional Conduct
+- id: 2.2.3
+  section: '2.2'
+  verbs:
+  - apply
+  summary: Resolving a variety of ethical dilemmas with the CFA Code of Ethics and Standards of Professional Conduct
+- id: 3.1.1
+  section: '3.1'
+  verbs:
+  - describe
+  - distinguish
+  summary: Differing responsibilities held by the Financial Conduct Authority, Prudential Regulation Authority, Bank of England,
+    Financial Policy Committee and HM Treasury
+- id: 3.1.2
+  section: '3.1'
+  verbs:
+  - explain
+  summary: How the FCA's and PRA's responsibilities are split for a dual-regulated investment firm
+- id: 3.1.3
+  section: '3.1'
+  verbs:
+  - explain
+  summary: What the Financial Services and Markets Act 2000 (FSMA), as amended, covers
+- id: 3.1.4
+  section: '3.1'
+  verbs:
+  - explain
+  summary: Which activities and investments fall within the Regulated Activities Order 2001, as amended
+- id: 3.1.5
+  section: '3.1'
+  verbs:
+  - explain
+  summary: What the Payment Systems Regulator, Competition and Markets Authority and Information Commissioner's Office each
+    do
+- id: 3.1.6
+  section: '3.1'
+  verbs:
+  - explain
+  summary: What the Takeover Panel does, who sits on it and where its funding comes from
+- id: 3.1.7
+  section: '3.1'
+  verbs:
+  - explain
+  summary: The legal and regulatory standing of the City Code on Takeovers and Mergers
+- id: 3.1.8
+  section: '3.1'
+  verbs:
+  - explain
+  summary: The City Code's key rules, including the timetable for a takeover bid
+- id: 3.1.9
+  section: '3.1'
+  verbs:
+  - explain
+  summary: Aims and coverage of the principal rules that govern workplace (occupational) pension schemes
+- id: 3.1.10
+  section: '3.1'
+  verbs:
+  - explain
+  summary: Why the FCA recognises certain industry codes and what those codes cover
+- id: 3.2.1
+  section: '3.2'
+  group: UK and EU financial services relationship
+  verbs:
+  - explain
+  summary: How UK financial regulation links to the EU framework, plus the legal standing of EU regulations and directives
+    in the UK
+- id: 3.2.2
+  section: '3.2'
+  group: Retained EU Law
+  verbs:
+  - explain
+  summary: Impact of FSMA 2023 plus the Retained EU Law (Revocation and Reform) Act 2023, with the FCA's and PRA's roles
+- id: 3.2.3
+  section: '3.2'
+  group: UK regulation of markets in financial instruments (UK MiFID Framework)
+  verbs:
+  - explain
+  summary: Aims and coverage of the UK version of the Markets in Financial Instruments Directive (MiFID)
+- id: 3.2.4
+  section: '3.2'
+  group: UK regime for Undertakings for Collective Investment in Transferable Securities (UCITS)
+  verbs:
+  - explain
+  summary: Aims and coverage of the UK regime for UCITS (Undertakings for Collective Investment in Transferable Securities)
+    funds
+- id: 3.2.5
+  section: '3.2'
+  group: Alternative Investment Fund Managers Directive (AIFMD UK)
+  verbs:
+  - explain
+  summary: Aims and coverage of the UK Alternative Investment Fund Managers Directive (AIFMD UK)
+- id: 3.2.6
+  section: '3.2'
+  group: UK European Market Infrastructure Regulation (UK EMIR)
+  verbs:
+  - explain
+  summary: Aims and coverage of UK EMIR, the UK's European Market Infrastructure Regulation
+- id: 3.2.7
+  section: '3.2'
+  group: UK Benchmarks Regulation (UK BMR)
+  verbs:
+  - explain
+  summary: Aims and coverage of the UK Benchmarks Regulation (UK BMR)
+- id: 3.2.8
+  section: '3.2'
+  group: US Foreign Account Tax Compliance Act and OECD Common Reporting Standard
+  verbs:
+  - explain
+  summary: Purpose and reach of FATCA (Foreign Account Tax Compliance Act) and the CRS (Common Reporting Standard)
+- id: 3.3.1
+  section: '3.3'
+  verbs:
+  - explain
+  summary: What the FCA does and the objectives set for it by statute
+- id: 3.3.2
+  section: '3.3'
+  verbs:
+  - identify
+  - distinguish
+  summary: The different blocks that make up the FCA Handbook and how they differ
+- id: 3.3.3
+  section: '3.3'
+  verbs:
+  - identify
+  summary: The FCA's Principles for Businesses, what they are for and to whom they apply (PRIN 2, PRIN 2A, PRIN 1.1.1 & 1.1.2)
+- id: 3.3.4
+  section: '3.3'
+  verbs:
+  - explain
+  summary: What can happen when a firm breaks the FCA's Principles for Businesses (PRIN 1.1.7–1.1.9, DEPP 6.2.14 & 6.2.15)
+- id: 3.3.5
+  section: '3.3'
+  verbs:
+  - explain
+  summary: Aims and coverage of the FCA's Senior Management Arrangements, Systems and Controls rules (SYSC)
+- id: 3.3.6
+  section: '3.3'
+  verbs:
+  - explain
+  summary: Purpose of rules for spotting, recording, disclosing and managing conflicts of interest fairly for clients (PRIN
+    2.1.1, Principle 8 & SYSC 10)
+- id: 3.3.7
+  section: '3.3'
+  verbs:
+  - explain
+  summary: Outline of how firms get authorised, including the threshold conditions, plus working with the PRA when needed
+- id: 3.3.8
+  section: '3.3'
+  verbs:
+  - explain
+  summary: Personal accountability rules for individuals in the Senior Managers and Certification regimes and the FCA Conduct
+    rules (SUP 10C)
+- id: 3.3.9
+  section: '3.3'
+  verbs:
+  - explain
+  summary: 'The FCA''s Conduct rules: what they require and to whom they apply (COCON)'
+- id: 3.3.10
+  section: '3.3'
+  verbs:
+  - explain
+  summary: What the training and competence requirements involve (TC 1–3)
+- id: 3.3.11
+  section: '3.3'
+  verbs:
+  - explain
+  summary: Professional standards required of investment managers and of advisers giving retail investment advice (TC 1–3,
+    including appendices)
+- id: 3.4.1
+  section: '3.4'
+  verbs:
+  - explain
+  summary: The function an investment exchange performs in the markets
+- id: 3.4.2
+  section: '3.4'
+  verbs:
+  - explain
+  summary: Why investment exchanges need FCA recognition, and the Bank of England's oversight of UK clearing houses
+- id: 3.4.3
+  section: '3.4'
+  verbs:
+  - explain
+  summary: Why UK MiFID sets transparency rules for operators of regulated markets, multilateral and organised trading facilities
+    and systematic internalisers
+- id: 3.4.4
+  section: '3.4'
+  verbs:
+  - identify
+  - distinguish
+  summary: What the main UK securities trading bodies do, such as London Stock Exchange Group, ICE Futures Europe and ICE
+    Clear Europe
+- id: 3.4.5
+  section: '3.4'
+  verbs:
+  - identify
+  summary: Key features of how exchange-traded and over-the-counter (OTC) derivatives are traded, cleared and settled
+- id: 3.4.6
+  section: '3.4'
+  verbs:
+  - explain
+  summary: How trade transparency and the reporting of transactions work in the major derivatives markets
+- id: 3.5.1
+  section: '3.5'
+  group: Accepting customers for business (client categorisation)
+  verbs:
+  - explain
+  summary: Why firms sort their clients into different categories
+- id: 3.5.2
+  section: '3.5'
+  group: Accepting customers for business (client categorisation)
+  verbs:
+  - distinguish
+  summary: Differences between retail clients, professional clients and eligible counterparties (COBS 3.4–3.6)
+- id: 3.5.3
+  section: '3.5'
+  group: Accepting customers for business (client categorisation)
+  verbs:
+  - apply
+  summary: Using the rules on elective professional clients (COBS 3.5.3)
+- id: 3.5.4
+  section: '3.5'
+  group: Accepting customers for business (client categorisation)
+  verbs:
+  - apply
+  summary: Using the rules on opting a client up to elective eligible counterparty status (COBS 3.6.4–3.6.6)
+- id: 3.5.5
+  section: '3.5'
+  group: Accepting customers for business (client categorisation)
+  verbs:
+  - apply
+  summary: Using the rules that let clients receive greater regulatory protection (COBS 3.7)
+- id: 3.5.6
+  section: '3.5'
+  group: Accepting customers for business (client categorisation)
+  verbs:
+  - apply
+  summary: Using the rules on agreements with clients (COBS 8A.1)
+- id: 3.5.7
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Aims and coverage of the rules on financial promotions, and when exemptions apply (COBS 4.1)
+- id: 3.5.8
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: The requirement that communications be fair, clear and not misleading (COBS 4.2)
+- id: 3.5.9
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Rules for communicating with retail clients (COBS 4.5A)
+- id: 3.5.10
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Rules on showing past performance, simulated past performance and future performance figures (COBS 4.5A)
+- id: 3.5.11
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Rules governing direct offer financial promotions (COBS 4.7)
+- id: 3.5.12
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Rules on cold calling and other non-written financial promotions (COBS 4.8)
+- id: 3.5.13
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Systems and controls firms need for signing off and issuing financial promotions (COBS 4.10)
+- id: 3.5.14
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Records firms must keep about their financial promotions (COBS 4.11)
+- id: 3.5.15
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Rules on marketing communications made at a distance (COBS 5.1 & 5.2)
+- id: 3.5.16
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Information firms must give clients about themselves and about compensation arrangements (COBS 6.1ZA)
+- id: 3.5.17
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: What the rules say about inducements firms may give or receive (COBS 2.3A & 2.3B)
+- id: 3.5.18
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: Rules on how advisers charge for advice and how they are paid (COBS 6.1A & 6.4)
+- id: 3.5.19
+  section: '3.5'
+  group: Financial promotions and other communications with customers, including information about the firm
+  verbs:
+  - explain
+  summary: What the FCA's rules against greenwashing require of firms
+- id: 3.5.20
+  section: '3.5'
+  group: Identifying client needs (suitability and appropriateness)
+  verbs:
+  - explain
+  summary: How firms judge whether a recommendation or investment decision suits the client (COBS 9A.2 & 9A.3)
+- id: 3.5.21
+  section: '3.5'
+  group: Identifying client needs (suitability and appropriateness)
+  verbs:
+  - explain
+  summary: How firms check whether a product or service is appropriate for a client (COBS 10A.2)
+- id: 3.5.22
+  section: '3.5'
+  group: Identifying client needs (suitability and appropriateness)
+  verbs:
+  - explain
+  summary: Rules on giving a client a warning after an appropriateness check (COBS 10A.3)
+- id: 3.5.23
+  section: '3.5'
+  group: Identifying client needs (suitability and appropriateness)
+  verbs:
+  - identify
+  summary: Situations where no appropriateness check is needed (COBS 10A.4 & 10A.6)
+- id: 3.5.24
+  section: '3.5'
+  group: Identifying client needs (suitability and appropriateness)
+  verbs:
+  - identify
+  summary: Recognising when a matter goes beyond your own expertise or authority and needs a specialist referral
+- id: 3.5.25
+  section: '3.5'
+  group: Identifying client needs (suitability and appropriateness)
+  verbs:
+  - distinguish
+  summary: How independent advice differs from restricted advice (COBS 6.2B)
+- id: 3.5.26
+  section: '3.5'
+  group: Dealing and managing
+  verbs:
+  - explain
+  summary: 'Best execution rules: getting clients the best possible result on their orders (COBS 11.2A)'
+- id: 3.5.27
+  section: '3.5'
+  group: Dealing and managing
+  verbs:
+  - explain
+  summary: Rules on how firms handle client orders (COBS 11.3)
+- id: 3.5.28
+  section: '3.5'
+  group: Dealing and managing
+  verbs:
+  - explain
+  summary: Rules on staff dealing for their own personal accounts (COBS 11.7A)
+- id: 3.5.29
+  section: '3.5'
+  group: Dealing and managing
+  verbs:
+  - explain
+  summary: Rules on investment research a firm produces and distributes to its clients (COBS 12.2)
+- id: 3.5.30
+  section: '3.5'
+  group: Dealing and managing
+  verbs:
+  - explain
+  summary: Rules on publishing and distributing research that is not independent (COBS 12.2)
+- id: 3.5.31
+  section: '3.5'
+  group: Dealing and managing
+  verbs:
+  - explain
+  summary: Disclosures required when producing and distributing research recommendations (COBS 12.4)
+- id: 3.5.32
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: What the product governance rules require of firms (PROD 3)
+- id: 3.5.33
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: Firms' duties when drawing up product information (COBS 13.1 & COLL 4.7)
+- id: 3.5.34
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: How the FCA uses temporary product intervention powers (PROD 2)
+- id: 3.5.35
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: Which consumer products fall within the Consumer Composite Investments (CCI) Regime
+- id: 3.5.36
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: Why the FCA introduced its Sustainability Disclosure Requirements (SDR) and its investment labels regime
+- id: 3.5.37
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: Format and content requirements for the product summary of a consumer composite investment (CCI)
+- id: 3.5.38
+  section: '3.5'
+  group: Product governance and disclosure requirements
+  verbs:
+  - explain
+  summary: Clients' rights to cancel and the rules that govern them (COBS 15)
+- id: 3.5.39
+  section: '3.5'
+  group: Record-keeping and reporting information
+  verbs:
+  - apply
+  summary: Using the rules on keeping records of clients' orders and transactions (COBS 11.5A)
+- id: 3.5.40
+  section: '3.5'
+  group: Record-keeping and reporting information
+  verbs:
+  - apply
+  summary: Using the rules on one-off (occasional) reports to clients (COBS 16A.3)
+- id: 3.5.41
+  section: '3.5'
+  group: Record-keeping and reporting information
+  verbs:
+  - apply
+  summary: Using the rules on regular (periodic) reports to clients (COBS 16A.4)
+- id: 3.5.42
+  section: '3.5'
+  group: Record-keeping and reporting information
+  verbs:
+  - explain
+  summary: Rules on telling unitholders how an authorised fund is progressing (COLL 4.5)
+- id: 3.5.43
+  section: '3.5'
+  group: Record-keeping and reporting information
+  verbs:
+  - explain
+  summary: Yearly value assessment that authorised fund managers have to publish (COLL 6.6.20R)
+- id: 3.5.44
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: What is meant by fiduciary duty in investment management
+- id: 3.5.45
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Why the custody rules for client assets in MiFID business exist and when they apply (CASS 6.1)
+- id: 3.5.46
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on protecting client assets and putting suitable organisational arrangements in place (CASS 6.2)
+- id: 3.5.47
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on placing client assets with a third party (CASS 6.3)
+- id: 3.5.48
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Why there are rules on firms using clients' assets (CASS 6.4)
+- id: 3.5.49
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on keeping records and accounts of client assets and reconciling them (CASS 6.6)
+- id: 3.5.50
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: When the client money rules apply and what they are for (CASS 7.11)
+- id: 3.5.51
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on protecting client money and putting suitable organisational arrangements in place (CASS 7.12)
+- id: 3.5.52
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on placing client money with a third party (CASS 7.14)
+- id: 3.5.53
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on keeping client money separate from the firm's own money (CASS 7.13)
+- id: 3.5.54
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: Rules on keeping records and accounts of client money and reconciling them (CASS 7.15)
+- id: 3.5.55
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: What the rules on mandate accounts require of firms (CASS 8)
+- id: 3.5.56
+  section: '3.5'
+  group: Client assets and client money rules
+  verbs:
+  - explain
+  summary: How title transfer collateral arrangements are treated under the rules
+- id: 3.6.1
+  section: '3.6'
+  verbs:
+  - explain
+  summary: How the FCA supervises firms and its powers to enforce and discipline
+- id: 3.6.2
+  section: '3.6'
+  verbs:
+  - explain
+  summary: FCA rules on how firms deal with complaints (DISP 1.3)
+- id: 3.6.3
+  section: '3.6'
+  verbs:
+  - explain
+  summary: Roles of the Pensions Ombudsman and the Financial Ombudsman Service (DISP Introduction & DISP 2)
+- id: 3.6.4
+  section: '3.6'
+  verbs:
+  - apply
+  summary: Using the rules on how the Financial Ombudsman Service decides complaints (DISP 3.6)
+- id: 3.6.5
+  section: '3.6'
+  verbs:
+  - distinguish
+  summary: How the Ombudsman's compulsory jurisdiction differs from its voluntary jurisdiction (DISP Introduction)
+- id: 3.6.6
+  section: '3.6'
+  verbs:
+  - explain
+  summary: Steps and deadlines for resolving complaints (DISP 1.4, 1.5 & 1.6)
+- id: 3.6.7
+  section: '3.6'
+  verbs:
+  - apply
+  summary: Using the rules on keeping records of complaints and reporting on them (DISP 1.9 & 1.10)
+- id: 3.6.8
+  section: '3.6'
+  verbs:
+  - explain
+  summary: Why the Financial Services Compensation Scheme (FSCS) exists (COMP 1.1.7 & 1.1.10A)
+- id: 3.6.9
+  section: '3.6'
+  verbs:
+  - identify
+  summary: Situations in which the FSCS pays compensation (COMP 1.3.3, 3.2.1, 4.2.1 & 4.2.2)
+- id: 3.6.10
+  section: '3.6'
+  verbs:
+  - identify
+  summary: Maximum amounts of compensation the FSCS can pay (COMP 10.2.1, 10.2.2 & 10.2.3)
+- id: 3.7.1
+  section: '3.7'
+  verbs:
+  - explain
+  summary: Where anti-money laundering and counter-terrorism rules and laws come from (FCA rules, SYSC 6.3, Money Laundering
+    Regulations, Proceeds of Crime Act 2002)
+- id: 3.7.2
+  section: '3.7'
+  verbs:
+  - explain
+  summary: The three stages a money laundering scheme goes through
+- id: 3.7.3
+  section: '3.7'
+  verbs:
+  - explain
+  summary: What the Joint Money Laundering Steering Group (JMLSG) does
+- id: 3.7.4
+  section: '3.7'
+  verbs:
+  - explain
+  summary: Key features of the JMLSG's guidance for firms
+- id: 3.7.5
+  section: '3.7'
+  verbs:
+  - explain
+  summary: The five categories of offence in UK money laundering law
+- id: 3.7.6
+  section: '3.7'
+  verbs:
+  - explain
+  summary: What counts as inside information under the Criminal Justice Act (CJA) 1993
+- id: 3.7.7
+  section: '3.7'
+  verbs:
+  - explain
+  summary: The insider dealing offence under the Criminal Justice Act 1993
+- id: 3.7.8
+  section: '3.7'
+  verbs:
+  - identify
+  summary: Penalties on conviction for insider dealing
+- id: 3.7.9
+  section: '3.7'
+  verbs:
+  - explain
+  summary: The FCA's power to bring prosecutions for market abuse (EG 12.3)
+- id: 3.7.10
+  section: '3.7'
+  verbs:
+  - describe
+  summary: Types of behaviour that count as market abuse (MAR 1.3–1.9 and the Market Abuse Regulation)
+- id: 3.7.11
+  section: '3.7'
+  verbs:
+  - explain
+  summary: How the FCA can enforce against market abuse (DEPP 6.5C)
+- id: 3.7.12
+  section: '3.7'
+  verbs:
+  - explain
+  summary: Main points in the Bribery Act 2010, Criminal Finances Act 2017 and Economic Crime and Corporate Transparency Act
+    2023
+- id: 4.1.1
+  section: '4.1'
+  verbs:
+  - explain
+  summary: What legal persons are and how powers of attorney work
+- id: 4.1.2
+  section: '4.1'
+  verbs:
+  - explain
+  summary: Basic principles of contract law and of agency relationships
+- id: 4.1.3
+  section: '4.1'
+  verbs:
+  - explain
+  summary: The different legal forms of property ownership
+- id: 4.1.4
+  section: '4.1'
+  verbs:
+  - explain
+  summary: What insolvency and bankruptcy mean and how they work
+- id: 4.1.5
+  section: '4.1'
+  verbs:
+  - explain
+  summary: How wills work and what happens when someone dies without one (intestacy)
+- id: 4.1.6
+  section: '4.1'
+  verbs:
+  - describe
+  summary: Main kinds of trust and what each is used for
+- id: 4.1.7
+  section: '4.1'
+  verbs:
+  - explain
+  summary: 'Aims and coverage of the Trustee Act 2000: parties'' rights and duties, what a trust deed is, and trustees'' investment
+    powers'
+- id: 4.1.8
+  section: '4.1'
+  verbs:
+  - explain
+  summary: What a Statement of Investment Principles is meant to achieve
+- id: 5.1.1
+  section: '5.1'
+  verbs:
+  - describe
+  - compare
+  summary: The various kinds of investor and how they differ from one another
+- id: 5.1.2
+  section: '5.1'
+  verbs:
+  - explain
+  summary: Duties a firm owes to the retail clients it serves (FCA Consumer Duty rules included)
+- id: 5.2.1
+  section: '5.2'
+  verbs:
+  - explain
+  summary: What retail clients mainly need and how those needs are put in order of priority
+- id: 5.2.2
+  section: '5.2'
+  verbs:
+  - explain
+  summary: Why it matters to establish a client's goals and put figures on them
+- id: 5.2.3
+  section: '5.2'
+  verbs:
+  - explain
+  summary: Why a client's objectives need ranking so the overall plan stays affordable
+- id: 5.3.1
+  section: '5.3'
+  verbs:
+  - explain
+  summary: Why the fact-find matters for building a picture of a client's current finances and needs
+- id: 5.3.2
+  section: '5.3'
+  verbs:
+  - identify
+  summary: The influences that determine an individual client's circumstances
+- id: 5.4.1
+  section: '5.4'
+  verbs:
+  - analyse
+  summary: Main kinds of investment risk and how they affect investors
+- id: 5.4.2
+  section: '5.4'
+  verbs:
+  - explain
+  summary: How diversification helps to reduce investment risk
+- id: 5.4.3
+  section: '5.4'
+  verbs:
+  - analyse
+  summary: Influences on the risk profile of a client
+- id: 5.4.4
+  section: '5.4'
+  verbs:
+  - explain
+  summary: Main ways of assessing the risk profile of a client
+- id: 5.5.1
+  section: '5.5'
+  verbs:
+  - explain
+  summary: Why the asset allocation decision must come ahead of choosing investments or products
+- id: 5.5.2
+  section: '5.5'
+  verbs:
+  - explain
+  summary: 'Fund selection criteria: charges, past performance, provider financial strength, and how stable, independent and
+    reputable trustees, custodians and auditors are'
+- id: 5.5.3
+  section: '5.5'
+  verbs:
+  - identify
+  summary: Benchmarks and other ways of measuring performance when advising clients
+- id: 5.5.4
+  section: '5.5'
+  verbs:
+  - explain
+  summary: Why regular reviews matter as part of financial planning
+- id: 5.6.1
+  section: '5.6'
+  verbs:
+  - describe
+  summary: Why advisers must communicate clearly and tailor explanations to how much each client knows and understands
+- id: 5.6.2
+  section: '5.6'
+  verbs:
+  - identify
+  - apply
+  summary: Putting suitable investment solutions into practice, choosing ones that match retail clients' varying needs
+- id: 5.7.1
+  section: '5.7'
+  verbs:
+  - explain
+  summary: Features and aims of UK pension funds (both defined benefit and defined contribution), plus general insurance and
+    life assurance funds
+- id: 5.7.2
+  section: '5.7'
+  verbs:
+  - explain
+  summary: Effects of auto-enrolment into workplace pensions and of pension freedoms for defined contribution (DC) schemes
+- id: 5.7.3
+  section: '5.7'
+  verbs:
+  - identify
+  - contrast
+  summary: How DB and DC pension schemes differ in the risks they pose to sponsors and beneficiaries
+- id: 5.7.4
+  section: '5.7'
+  verbs:
+  - distinguish
+  summary: Typical asset mixes of DB pension funds versus DC ones, and of general and life insurance funds
+- id: 5.7.5
+  section: '5.7'
+  verbs:
+  - explain
+  summary: What the main types of fund aim to achieve in terms of returns
+- id: 5.7.6
+  section: '5.7'
+  verbs:
+  - classify
+  summary: How funds can be grouped by whether they need income or capital growth
+- id: 5.7.7
+  section: '5.7'
+  verbs:
+  - explain
+  summary: How time horizon, liquidity needs and the structure of liabilities each shape how a fund allocates its assets
+- id: 5.7.8
+  section: '5.7'
+  verbs:
+  - explain
+  summary: How UK funds of different types are taxed, and how tax law can influence asset allocation and the choice of stocks
+- id: 5.7.9
+  section: '5.7'
+  verbs:
+  - identify
+  summary: Further legal rules that apply to retail clients and to pension and insurance funds
+- id: 5.7.10
+  section: '5.7'
+  verbs:
+  - identify
+  summary: Constraints restricting what returns insurance and pension funds can aim for
+- id: 6.1.1
+  section: '6.1'
+  verbs:
+  - describe
+  summary: How UK income tax applies to earned income, savings income and investment income
+- id: 6.1.2
+  section: '6.1'
+  verbs:
+  - describe
+  summary: How income tax allowances and reliefs work, and the order in which different income is taxed
+- id: 6.1.3
+  section: '6.1'
+  verbs:
+  - explain
+  summary: How income received by trusts and their beneficiaries is taxed
+- id: 6.1.4
+  section: '6.1'
+  verbs:
+  - describe
+  summary: How National Insurance contributions (NICs) are structured and charged in the UK
+- id: 6.1.5
+  section: '6.1'
+  verbs:
+  - describe
+  summary: Key principles of how UK capital gains tax (CGT) works
+- id: 6.1.6
+  section: '6.1'
+  verbs:
+  - describe
+  summary: Key principles of how UK inheritance tax (IHT) works
+- id: 6.1.7
+  section: '6.1'
+  verbs:
+  - explain
+  summary: Limits to how much gifts during life and transfers on death can cut an IHT bill
+- id: 6.1.8
+  section: '6.1'
+  verbs:
+  - explain
+  summary: How residence status affects whether someone pays IHT, CGT and income tax
+- id: 6.1.9
+  section: '6.1'
+  verbs:
+  - describe
+  summary: 'How UK tax compliance works: self-assessment, PAYE (pay as you earn), returns, paying tax, and evasion versus
+    avoidance'
+- id: 6.1.10
+  section: '6.1'
+  verbs:
+  - describe
+  summary: How stamp duty land tax (SDLT) applies when property is bought, sold or leased
+- id: 6.1.11
+  section: '6.1'
+  verbs:
+  - describe
+  summary: Key principles of how stamp duty reserve tax (SDRT) works
+- id: 6.1.12
+  section: '6.1'
+  verbs:
+  - explain
+  summary: The way companies are taxed under the UK system
+- id: 6.1.13
+  section: '6.1'
+  verbs:
+  - describe
+  summary: Outline of the main principles behind value added tax (VAT)
+- id: 6.1.14
+  section: '6.1'
+  verbs:
+  - analyse
+  summary: 'How direct investments are taxed: cash and near-cash, fixed-interest securities, shares and property'
+- id: 6.1.15
+  section: '6.1'
+  verbs:
+  - analyse
+  summary: 'Features and tax treatment of indirect investments: pensions, ISA types, offshore and onshore life policies, business
+    property relief, REITs, VCTs and EISs'
+- id: 6.2.1
+  section: '6.2'
+  verbs:
+  - evaluate
+  summary: Tax issues that influence what a client needs and their circumstances
+- id: 6.2.2
+  section: '6.2'
+  verbs:
+  - analyse
+  summary: Main principles of planning a client's affairs for income tax purposes
+- id: 6.2.3
+  section: '6.2'
+  verbs:
+  - analyse
+  summary: How CGT can be reduced using the annual exemption, realised losses, disposal timing and selling then rebuying similar
+    assets
+- id: 6.2.4
+  section: '6.2'
+  verbs:
+  - calculate
+  summary: Working out everyday IHT, CGT and income tax figures, including the effect of lifetime and on-death transfers
+- id: 6.2.5
+  section: '6.2'
+  verbs:
+  - select
+  summary: Basic tax planning recommendations suited to investment and pension advice
+- id: 7.1.1
+  section: '7.1'
+  verbs:
+  - identify
+  - distinguish
+  summary: The various origins and kinds of data, and how to tell them apart
+- id: 7.1.2
+  section: '7.1'
+  verbs:
+  - distinguish
+  summary: Populations versus samples, and parameters versus statistics
+- id: 7.1.3
+  section: '7.1'
+  verbs:
+  - explain
+  summary: The main ways of selecting a sample from a population
+- id: 7.1.4
+  section: '7.1'
+  verbs:
+  - distinguish
+  summary: How continuous data differs from discrete data
+- id: 7.1.5
+  section: '7.1'
+  verbs:
+  - define
+  summary: What categorical data is and how to convert it into ordinal (ranked) data
+- id: 7.1.6
+  section: '7.1'
+  verbs:
+  - interpret
+  summary: Reading frequency and relative frequency distributions
+- id: 7.1.7
+  section: '7.1'
+  verbs:
+  - explain
+  summary: How line graphs, pie charts, bar charts, histograms and scatter plots help present data
+- id: 7.2.1
+  section: '7.2'
+  verbs:
+  - define
+  - explain
+  - calculate
+  summary: Working out arithmetic and geometric means, medians and modes from raw or grouped data, plus geometric mean returns
+- id: 7.2.2
+  section: '7.2'
+  verbs:
+  - explain
+  summary: How mode, median and mean compare when data is symmetrical or skewed
+- id: 7.2.3
+  section: '7.2'
+  verbs:
+  - define
+  - explain
+  - calculate
+  summary: 'Working out spread measures for raw and grouped data: population and sample standard deviation, variance, range,
+    quartiles, percentiles, interquartile range'
+- id: 7.2.4
+  section: '7.2'
+  verbs:
+  - explain
+  summary: What probability distributions are and the key properties a normal distribution has
+- id: 7.2.5
+  section: '7.2'
+  verbs:
+  - explain
+  - apply
+  summary: Using null and alternative hypotheses, and statistical significance in accepting or rejecting them, for investment
+    decisions
+- id: 7.3.1
+  section: '7.3'
+  verbs:
+  - define
+  summary: What correlation means and the different ways of measuring it
+- id: 7.3.2
+  section: '7.3'
+  verbs:
+  - explain
+  summary: Least-squares lines of best fit, what R, R-squared and adjusted R-squared show, plus unexplained-variation measures
+    like mean squared error
+- id: 7.3.3
+  section: '7.3'
+  verbs:
+  - calculate
+  - interpret
+  summary: Working out and reading a regression forecast of the dependent variable from intercept and slope, allowing for
+    adjusted R-squared and statistical significance
+- id: 7.3.4
+  section: '7.3'
+  verbs:
+  - explain
+  summary: Limits of linear regression for forecasting, such as correlation not proving causation, and the dangers of data-mining
+- id: 7.3.5
+  section: '7.3'
+  verbs:
+  - describe
+  summary: How extreme market events affect the various correlation measures
+- id: 7.4.1
+  section: '7.4'
+  verbs:
+  - explain
+  summary: Why financial market indices matter and what they are used for
+- id: 7.4.2
+  section: '7.4'
+  verbs:
+  - explain
+  - calculate
+  summary: Working out price relatives for an index or share, and current-year index levels from base-year figures
+- id: 7.4.3
+  section: '7.4'
+  verbs:
+  - calculate
+  summary: Working out index levels after an index series has been re-based
+- id: 7.4.4
+  section: '7.4'
+  verbs:
+  - calculate
+  summary: Working out price-weighted, equally weighted, market value-weighted and geometrically weighted indices
+- id: 7.4.5
+  section: '7.4'
+  verbs:
+  - identify
+  - explain
+  summary: How using free float adjusted rather than full market capitalisation changes index calculation
+- id: 7.4.6
+  section: '7.4'
+  verbs:
+  - describe
+  summary: How leading worldwide equity and bond indices are made up and built, and the pros and cons of each approach
+- id: 7.5.1
+  section: '7.5'
+  verbs:
+  - calculate
+  summary: Working out interest earned over several periods on a simple and on a compound basis
+- id: 7.5.2
+  section: '7.5'
+  verbs:
+  - calculate
+  summary: Working out an annual compound rate from a simple rate and how often interest compounds
+- id: 7.5.3
+  section: '7.5'
+  verbs:
+  - calculate
+  summary: Working out the simple annual interest rate from a given compound annual rate and how often it compounds
+- id: 7.5.4
+  section: '7.5'
+  verbs:
+  - calculate
+  summary: Working out effective annual rates from nominal rates with continuous compounding
+- id: 7.6.1
+  section: '7.6'
+  verbs:
+  - calculate
+  - interpret
+  summary: Working out and making sense of future values for lump sums and annuities
+- id: 7.6.2
+  section: '7.6'
+  verbs:
+  - calculate
+  - interpret
+  summary: Working out and making sense of present values for lump sums, perpetuities and annuities
+- id: 7.6.3
+  section: '7.6'
+  verbs:
+  - calculate
+  summary: Working out the fixed regular payment for a repayment mortgage from the amount borrowed, interest rate and term
+- id: 7.7.1
+  section: '7.7'
+  verbs:
+  - calculate
+  - interpret
+  summary: Working out and interpreting NPV (net present value) and IRR (internal rate of return) for an investment's cash
+    flows
+- id: 7.7.2
+  section: '7.7'
+  verbs:
+  - explain
+  summary: How NPV and IRR support investment decisions, and where they fall short
+- id: 8.1.1
+  section: '8.1'
+  verbs:
+  - explain
+  summary: How micro-economics can help people working in investment
+- id: 8.1.2
+  section: '8.1'
+  verbs:
+  - describe
+  summary: Pros and cons of micro-economics for analysing how financial markets behave
+- id: 8.1.3
+  section: '8.1'
+  verbs:
+  - describe
+  summary: Key practical uses of micro-economic theory
+- id: 8.2.1
+  section: '8.2'
+  verbs:
+  - describe
+  summary: Scarcity as an economic idea, and the production possibility frontier as a picture of the choices it forces
+- id: 8.2.2
+  section: '8.2'
+  verbs:
+  - explain
+  summary: How supply and demand laws work and how markets settle at equilibrium
+- id: 8.2.3
+  section: '8.2'
+  verbs:
+  - distinguish
+  summary: Moving along versus shifting supply and demand curves, and what makes the curves shift
+- id: 8.2.4
+  section: '8.2'
+  verbs:
+  - describe
+  - calculate
+  - interpret
+  summary: Working out and interpreting own price elasticity of demand, what drives it and how it affects total revenue
+- id: 8.2.5
+  section: '8.2'
+  verbs:
+  - explain
+  - calculate
+  - interpret
+  summary: Working out and interpreting cross elasticity of demand for substitutes and complements
+- id: 8.2.6
+  section: '8.2'
+  verbs:
+  - explain
+  - calculate
+  - interpret
+  summary: Working out and interpreting income elasticity and what it shows
+- id: 8.3.1
+  section: '8.3'
+  verbs:
+  - distinguish
+  summary: Accounting (explicit) costs versus economic (opportunity) costs
+- id: 8.3.2
+  section: '8.3'
+  verbs:
+  - explain
+  summary: What normal and supernormal profit mean
+- id: 8.3.3
+  section: '8.3'
+  verbs:
+  - define
+  summary: Meaning of fixed, variable, marginal, total and average costs
+- id: 8.3.4
+  section: '8.3'
+  verbs:
+  - explain
+  summary: 'Why short-run cost curves look as they do: marginal, average variable, average fixed and average total'
+- id: 8.3.5
+  section: '8.3'
+  verbs:
+  - explain
+  summary: How the law of diminishing marginal returns shapes short-run cost curves
+- id: 8.3.6
+  section: '8.3'
+  verbs:
+  - explain
+  summary: How total, average and marginal revenue are linked for a typical demand schedule
+- id: 8.3.7
+  section: '8.3'
+  verbs:
+  - explain
+  summary: How comparing marginal cost with marginal revenue sets a firm's profit-maximising output
+- id: 8.3.8
+  section: '8.3'
+  verbs:
+  - explain
+  summary: How a firm finds its profit-maximising output and when it should stop producing in the short run
+- id: 8.3.9
+  section: '8.3'
+  verbs:
+  - define
+  summary: What short run and long run mean when looking at how costs behave
+- id: 8.3.10
+  section: '8.3'
+  verbs:
+  - explain
+  summary: Minimum efficient scale, scale economies and diseconomies, and how they shape the long-run average cost curve
+- id: 8.3.11
+  section: '8.3'
+  verbs:
+  - explain
+  summary: How long-run marginal and average costs relate, setting output levels and linking to productive efficiency
+- id: 8.4.1
+  section: '8.4'
+  verbs:
+  - identify
+  summary: Features of a perfectly competitive market where firms are price-takers
+- id: 8.4.2
+  section: '8.4'
+  verbs:
+  - explain
+  summary: What long-run equilibrium requires for a price-taking firm
+- id: 8.4.3
+  section: '8.4'
+  verbs:
+  - explain
+  summary: Why market forces limit price-taking firms to normal profit over the long run
+- id: 8.4.4
+  section: '8.4'
+  verbs:
+  - explain
+  summary: How a price-taker's short-run supply links to its marginal cost
+- id: 8.4.5
+  section: '8.4'
+  verbs:
+  - describe
+  summary: How the long-run industry supply curve looks under perfect competition
+- id: 8.4.6
+  section: '8.4'
+  verbs:
+  - explain
+  summary: Whether a loss-making price-taker should keep operating or shut down
+- id: 8.4.7
+  section: '8.4'
+  verbs:
+  - explain
+  - calculate
+  - interpret
+  summary: Working out and interpreting supply elasticity and how it depends on how flexible the factors of production are
+- id: 8.4.8
+  section: '8.4'
+  verbs:
+  - identify
+  summary: Features that define a pure monopoly
+- id: 8.4.9
+  section: '8.4'
+  verbs:
+  - distinguish
+  summary: 'Monopoly versus perfect competition: equilibrium price, output and productive efficiency compared'
+- id: 8.4.10
+  section: '8.4'
+  verbs:
+  - explain
+  summary: What price discrimination is and when firms can sustain it
+- id: 8.4.11
+  section: '8.4'
+  verbs:
+  - describe
+  summary: Key features of oligopoly and of monopolistic competition
+- id: 8.4.12
+  section: '8.4'
+  verbs:
+  - describe
+  summary: How the business cycle can make some industries do better than others
+- id: 8.4.13
+  section: '8.4'
+  verbs:
+  - identify
+  summary: Porter's five forces that shape competition within an industry
+- id: 8.4.14
+  section: '8.4'
+  verbs:
+  - describe
+  summary: Stages of the product life cycle (introduction, growth, maturity, decline) and what marks each one
+- id: 8.4.15
+  section: '8.4'
+  verbs:
+  - describe
+  summary: SWOT (strengths, weaknesses, opportunities, threats) analysis and how it helps evaluate companies
+- id: 8.4.16
+  section: '8.4'
+  verbs:
+  - describe
+  summary: The marketing mix's four Ps (product, price, promotion, place) for judging competitive advantage and the threats
+    a firm faces
+- id: 9.1.1
+  section: '9.1'
+  verbs:
+  - describe
+  summary: Key practical uses of macro-economic theory
+- id: 9.1.2
+  section: '9.1'
+  verbs:
+  - identify
+  summary: Economic features common to past financial crises
+- id: 9.2.1
+  section: '9.2'
+  verbs:
+  - identify
+  summary: Major long-run social and economic trends in the UK and worldwide
+- id: 9.2.2
+  section: '9.2'
+  verbs:
+  - identify
+  summary: Important economic indicators and how they have been moving
+- id: 9.2.3
+  section: '9.2'
+  verbs:
+  - describe
+  summary: How the leading world economies connect and why each matters
+- id: 9.2.4
+  section: '9.2'
+  verbs:
+  - describe
+  summary: Financial and economic cycles, how predictable they are and how they vary by region
+- id: 9.2.5
+  section: '9.2'
+  verbs:
+  - distinguish
+  summary: How GDP (gross domestic product), GNP (gross national product) and national income differ
+- id: 9.2.6
+  section: '9.2'
+  verbs:
+  - identify
+  summary: How real GDP differs from nominal GDP
+- id: 9.2.7
+  section: '9.2'
+  verbs:
+  - identify
+  summary: Parts of the circular income flow, separating injections from withdrawals (leakages)
+- id: 9.2.8
+  section: '9.2'
+  verbs:
+  - identify
+  summary: How the Paradox of Thrift links total saving with consumption and investment
+- id: 9.3.1
+  section: '9.3'
+  verbs:
+  - identify
+  summary: Core beliefs of the Keynesian, Classical, Monetarist and Austrian schools and how they differ
+- id: 9.3.2
+  section: '9.3'
+  verbs:
+  - identify
+  summary: Fiscal policy, how it affects aggregate demand, and its drawbacks
+- id: 9.3.3
+  section: '9.3'
+  verbs:
+  - identify
+  summary: Money supply measures, fractional reserve banking, and how to define and work out the money multiplier
+- id: 9.3.4
+  section: '9.3'
+  verbs:
+  - identify
+  summary: Why people hold money and how money supply and demand set interest rates
+- id: 9.3.5
+  section: '9.3'
+  verbs:
+  - define
+  summary: What monetary policy is and how it affects the economy as a whole
+- id: 9.3.6
+  section: '9.3'
+  verbs:
+  - define
+  summary: Unemployment, its different types and how the UK measures it
+- id: 9.3.7
+  section: '9.3'
+  verbs:
+  - define
+  summary: Inflation and deflation, how the UK measures them and what causes them
+- id: 9.3.8
+  section: '9.3'
+  verbs:
+  - explain
+  summary: The Phillips curve and what it says about how unemployment and inflation are linked
+- id: 9.3.9
+  section: '9.3'
+  verbs:
+  - explain
+  summary: How the UK's inflation targeting system works
+- id: 9.3.10
+  section: '9.3'
+  verbs:
+  - distinguish
+  summary: How the mandates and methods of the main central banks differ
+- id: 9.3.11
+  section: '9.3'
+  verbs:
+  - explain
+  summary: Unconventional tools central banks use to steer the economy
+- id: 9.3.12
+  section: '9.3'
+  verbs:
+  - explain
+  summary: Effects of rules on banks' capital and liquidity, and the shift to macro-prudential regulation of the economy
+- id: 9.3.13
+  section: '9.3'
+  verbs:
+  - identify
+  summary: How debt drives the ups and downs of the business cycle
+- id: 9.4.1
+  section: '9.4'
+  verbs:
+  - explain
+  summary: How changes in a currency's supply and demand move its value on foreign exchange markets
+- id: 9.4.2
+  section: '9.4'
+  verbs:
+  - distinguish
+  summary: Fixed, floating and managed ('dirty float') exchange rate regimes compared
+- id: 9.4.3
+  section: '9.4'
+  verbs:
+  - identify
+  summary: Main parts of a country's balance of payments
+- id: 9.4.4
+  section: '9.4'
+  verbs:
+  - explain
+  summary: How currency supply and demand reflect the underlying transactions recorded in a country's balance of payments
+- id: 9.4.5
+  section: '9.4'
+  verbs:
+  - explain
+  summary: Economic pros and cons of fixing an exchange rate
+- id: 9.4.6
+  section: '9.4'
+  verbs:
+  - explain
+  summary: What lasting global trade and capital imbalances mean for economies
+- id: 9.4.7
+  section: '9.4'
+  verbs:
+  - explain
+  summary: Purchasing power parity (PPP) and how well it forecasts exchange rates
+- id: 9.4.8
+  section: '9.4'
+  verbs:
+  - explain
+  summary: How well fiscal and monetary policy work under fixed versus floating exchange rates
+- id: 9.4.9
+  section: '9.4'
+  verbs:
+  - explain
+  summary: Optimal currency areas (OCAs) and the pros and cons of sharing a single currency within one
+- id: 9.4.10
+  section: '9.4'
+  verbs:
+  - describe
+  summary: How spot and forward currency markets work and what they are
+- id: 9.4.11
+  section: '9.4'
+  verbs:
+  - explain
+  summary: What exchange rate risk is and ways to manage it
+- id: 9.4.12
+  section: '9.4'
+  verbs:
+  - apply
+  summary: Using PPP and inflation differences between two countries to predict where spot exchange rates will be
+- id: 9.4.13
+  section: '9.4'
+  verbs:
+  - distinguish
+  summary: Working out forward exchange rates the right way, and covered versus uncovered interest rate parity
+- id: 9.4.14
+  section: '9.4'
+  verbs:
+  - explain
+  summary: What foreign exchange tariffs are and what they mean
+- id: 10.1.1
+  section: '10.1'
+  verbs:
+  - explain
+  summary: The legal duty on companies to produce annual financial statements
+- id: 10.1.2
+  section: '10.1'
+  verbs:
+  - define
+  summary: What counts as a small company for accounts purposes, and why that status changes reporting obligations
+- id: 10.1.3
+  section: '10.1'
+  verbs:
+  - explain
+  summary: A company as a legal person distinct from its owners, and why accounts are drawn up
+- id: 10.1.4
+  section: '10.1'
+  verbs:
+  - explain
+  summary: When accounts must follow International Financial Reporting Standards (IFRS) instead of UK Generally Accepted Accounting
+    Principles (UK GAAP)
+- id: 10.1.5
+  section: '10.1'
+  verbs:
+  - explain
+  summary: What auditors do, and the broad reasons an audit report might be qualified
+- id: 10.2.1
+  section: '10.2'
+  verbs:
+  - explain
+  summary: What a balance sheet, also called the statement of financial position, is for
+- id: 10.2.2
+  section: '10.2'
+  verbs:
+  - identify
+  - explain
+  summary: Main headings on a balance sheet and what each one contains
+- id: 10.2.3
+  section: '10.2'
+  verbs:
+  - distinguish
+  summary: The difference between treating a cost as an asset (capitalising) and charging it straight to profit (expensing)
+- id: 10.2.4
+  section: '10.2'
+  verbs:
+  - explain
+  summary: How non-current (long-term) assets are valued in the accounts
+- id: 10.2.5
+  section: '10.2'
+  verbs:
+  - calculate
+  summary: Working out depreciation charges by the straight-line method and by the reducing balance method
+- id: 10.2.6
+  section: '10.2'
+  verbs:
+  - calculate
+  summary: Working out the gain or loss when a long-term (non-current) asset is sold or otherwise disposed of
+- id: 10.2.7
+  section: '10.2'
+  verbs:
+  - explain
+  summary: Principles governing how inventories (stock) are valued in the accounts
+- id: 10.2.8
+  section: '10.2'
+  verbs:
+  - explain
+  summary: How first-in-first-out (FIFO) and last-in-first-out (LIFO) methods change the reported value of inventory and profit
+- id: 10.2.9
+  section: '10.2'
+  verbs:
+  - identify
+  summary: Typical short-term (current) and long-term (non-current) liabilities shown in a company's accounts
+- id: 10.2.10
+  section: '10.2'
+  verbs:
+  - explain
+  summary: What a provision is and how it is recorded in the accounts
+- id: 10.2.11
+  section: '10.2'
+  verbs:
+  - explain
+  summary: What a contingent liability is and how the accounts deal with it
+- id: 10.2.12
+  section: '10.2'
+  verbs:
+  - describe
+  summary: How pension costs are accounted for in company financial statements
+- id: 10.2.13
+  section: '10.2'
+  verbs:
+  - explain
+  summary: Meaning of events occurring after the balance sheet date, known as post-balance sheet events
+- id: 10.2.14
+  section: '10.2'
+  verbs:
+  - distinguish
+  summary: 'How share capital is described: authorised, issued, called-up and paid-up amounts'
+- id: 10.2.15
+  section: '10.2'
+  verbs:
+  - explain
+  summary: Balance sheet impact of rights issues, bonus (scrip) issues, stock splits and share buybacks
+- id: 10.2.16
+  section: '10.2'
+  verbs:
+  - identify
+  - explain
+  summary: Main kinds of reserves shown on a balance sheet and what they represent
+- id: 10.3.1
+  section: '10.3'
+  verbs:
+  - identify
+  summary: Ways financial instruments are classified and how each category is accounted for
+- id: 10.4.1
+  section: '10.4'
+  verbs:
+  - identify
+  - explain
+  summary: Grouping a company's expenses either by their nature or by their function
+- id: 10.4.2
+  section: '10.4'
+  verbs:
+  - explain
+  summary: The principle deciding when revenue is recognised in the accounts
+- id: 10.4.3
+  section: '10.4'
+  verbs:
+  - identify
+  summary: Operating and net profit, the expenses deducted to reach each, and implications of alternative (non-statutory)
+    profit figures
+- id: 10.4.4
+  section: '10.4'
+  verbs:
+  - explain
+  summary: Purpose and contents of the statement of changes in equity
+- id: 10.5.1
+  section: '10.5'
+  verbs:
+  - explain
+  summary: Why companies publish a statement of cash flows
+- id: 10.5.2
+  section: '10.5'
+  verbs:
+  - identify
+  summary: How a company's cash flows are sorted into categories of activity
+- id: 10.5.3
+  section: '10.5'
+  verbs:
+  - calculate
+  summary: Working out operating cash flow from operating profit and balance sheet changes, or the reverse
+- id: 10.6.1
+  section: '10.6'
+  verbs:
+  - define
+  - distinguish
+  summary: Meaning of, and differences between, corporate investments, associates and subsidiaries
+- id: 10.6.2
+  section: '10.6'
+  verbs:
+  - explain
+  summary: Why groups of companies prepare consolidated (group) accounts
+- id: 10.6.3
+  section: '10.6'
+  verbs:
+  - define
+  summary: What a minority (non-controlling) interest is and how it appears in the accounts
+- id: 10.6.4
+  section: '10.6'
+  verbs:
+  - explain
+  summary: How goodwill is created when one company acquires another
+- id: 10.6.5
+  section: '10.6'
+  verbs:
+  - explain
+  summary: Accounting for goodwill and other intangibles in group accounts, covering useful lives, amortisation and mandatory
+    impairment reviews
+- id: 10.7.1
+  section: '10.7'
+  verbs:
+  - distinguish
+  summary: How gearing, liquidity and profitability ratios differ from one another
+- id: 10.7.2
+  section: '10.7'
+  verbs:
+  - define
+  - calculate
+  summary: Working out return on equity (ROE) and return on capital employed (ROCE), and what each measures
+- id: 10.7.3
+  section: '10.7'
+  verbs:
+  - explain
+  summary: Splitting return on capital employed into its asset turnover and profit margin components
+- id: 10.7.4
+  section: '10.7'
+  verbs:
+  - define
+  - calculate
+  - interpret
+  summary: Working out and interpreting operational and financial gearing plus current and quick (acid test) liquidity ratios
+- id: 10.7.5
+  section: '10.7'
+  verbs:
+  - explain
+  summary: How rights issues, bonus (scrip) issues, stock splits and share buybacks alter key accounting ratios
+- id: 11.1.1
+  section: '11.1'
+  verbs:
+  - identify
+  summary: Features and investor risks of each class of equity, ranked by priority of legal claim
+- id: 11.1.2
+  section: '11.1'
+  verbs:
+  - identify
+  summary: Why ordinary shares are issued in primary markets and traded in secondary markets, and what that means for investors
+- id: 11.1.3
+  section: '11.1'
+  verbs:
+  - identify
+  summary: Why companies issue preference shares and what this means for investors
+- id: 11.1.4
+  section: '11.1'
+  verbs:
+  - identify
+  summary: Key features of Depositary Receipts, both Global (GDRs) and American (ADRs)
+- id: 11.2.1
+  section: '11.2'
+  verbs:
+  - distinguish
+  summary: How primary share issues differ from secondary share issues
+- id: 11.2.2
+  section: '11.2'
+  verbs:
+  - define
+  summary: Main features of a company's issue of new shares
+- id: 11.2.3
+  section: '11.2'
+  verbs:
+  - define
+  - explain
+  summary: What rights issues, bonus (scrip) issues and stock splits are, and why companies use them
+- id: 11.2.4
+  section: '11.2'
+  verbs:
+  - calculate
+  summary: Working out a right's nil-paid value and the theoretical ex-rights price from cum-rights price, issue ratio and
+    subscription price
+- id: 11.2.5
+  section: '11.2'
+  verbs:
+  - evaluate
+  summary: An investor's choices when offered a rights issue, and how each affects their wealth
+- id: 11.2.6
+  section: '11.2'
+  verbs:
+  - calculate
+  summary: Working out a theoretical ex-scrip price from a cum-scrip price and the scrip ratio
+- id: 11.2.7
+  section: '11.2'
+  verbs:
+  - identify
+  - explain
+  summary: Reasons companies repurchase their own shares
+- id: 11.3.1
+  section: '11.3'
+  verbs:
+  - calculate
+  summary: Working out a share's holding period return from capital gain plus dividend income
+- id: 11.3.2
+  section: '11.3'
+  verbs:
+  - identify
+  summary: Why companies choose a particular dividend policy
+- id: 11.3.3
+  section: '11.3'
+  verbs:
+  - explain
+  summary: Practical limits on a company's ability to pay dividends
+- id: 11.3.4
+  section: '11.3'
+  verbs:
+  - explain
+  summary: Why dividend cover and dividend yield matter when analysing shares
+- id: 11.3.5
+  section: '11.3'
+  verbs:
+  - calculate
+  summary: Working out a share's dividend cover and dividend yield
+- id: 11.3.6
+  section: '11.3'
+  verbs:
+  - calculate
+  summary: Working out expected dividend growth from past dividends, or from the earnings retention ratio and return on equity
+- id: 11.3.7
+  section: '11.3'
+  verbs:
+  - identify
+  summary: 'The dividend discount (Gordon growth) model: its inputs, assumptions and weaknesses'
+- id: 11.3.8
+  section: '11.3'
+  verbs:
+  - calculate
+  summary: Working out a share's present value with the dividend discount model
+- id: 11.4.1
+  section: '11.4'
+  verbs:
+  - distinguish
+  summary: Merits of relative versus absolute valuation models, plus how historic and prospective value measures differ
+- id: 11.4.2
+  section: '11.4'
+  verbs:
+  - explain
+  summary: What earnings per share (EPS) and diluted EPS mean
+- id: 11.4.3
+  section: '11.4'
+  verbs:
+  - calculate
+  summary: Working out a company's basic earnings per share
+- id: 11.4.4
+  section: '11.4'
+  verbs:
+  - explain
+  summary: Potential weaknesses of relying on price multiples to value companies
+- id: 11.4.5
+  section: '11.4'
+  verbs:
+  - calculate
+  summary: Working out price/earnings (historic and forward), price/book, price/sales, price/cash flow ratios, plus enterprise
+    value relative to EBITDA
+- id: 11.4.6
+  section: '11.4'
+  verbs:
+  - explain
+  summary: Basics of valuing companies using free cash flow to the firm or to equity (FCFF, FCFE), plus residual income
+- id: 11.4.7
+  section: '11.4'
+  verbs:
+  - define
+  summary: What financial gearing is and how it changes the return shareholders require and hence share valuations
+- id: 12.1.1
+  section: '12.1'
+  verbs:
+  - explain
+  summary: 'Features and risks of cash deposits plus money market instruments: commercial paper, Treasury Bills, floating
+    rate notes and certificates of deposit'
+- id: 12.1.2
+  section: '12.1'
+  verbs:
+  - calculate
+  summary: Working out a UK Treasury Bill's discount and its quoted yield
+- id: 12.2.1
+  section: '12.2'
+  verbs:
+  - explain
+  summary: 'Structure and features of the main UK fixed-income instruments: government, index-linked and corporate bonds,
+    plus Eurobonds'
+- id: 12.2.2
+  section: '12.2'
+  verbs:
+  - calculate
+  summary: Working out a bond's price from its coupon, time to maturity and yield
+- id: 12.2.3
+  section: '12.2'
+  verbs:
+  - explain
+  summary: How a bond's clean (quoted) price differs from its dirty price
+- id: 12.2.4
+  section: '12.2'
+  verbs:
+  - identify
+  summary: Why convertible, callable and puttable bonds are issued and held, and the risks for issuer and investor
+- id: 12.3.1
+  section: '12.3'
+  verbs:
+  - identify
+  summary: The return components that make up a bond's present value calculation
+- id: 12.3.2
+  section: '12.3'
+  verbs:
+  - identify
+  summary: Key risks for bondholders, including credit risk, and ways of managing them
+- id: 12.3.3
+  section: '12.3'
+  verbs:
+  - identify
+  summary: How a bond's yield and its price move in relation to each other
+- id: 12.3.4
+  section: '12.3'
+  verbs:
+  - identify
+  summary: Price risk and reinvestment risk as the two parts of interest rate risk
+- id: 12.3.5
+  section: '12.3'
+  verbs:
+  - analyse
+  summary: Factors determining how sharply a bond's price reacts to movements in the yield investors require
+- id: 12.3.6
+  section: '12.3'
+  verbs:
+  - define
+  - calculate
+  summary: Working out a bond's Macaulay duration and what it measures
+- id: 12.3.7
+  section: '12.3'
+  verbs:
+  - define
+  - calculate
+  summary: Working out a bond's modified duration and what it represents
+- id: 12.3.8
+  section: '12.3'
+  verbs:
+  - calculate
+  summary: Working out the change in a bond's price for a given yield change, using its duration
+- id: 12.3.9
+  section: '12.3'
+  verbs:
+  - explain
+  summary: Why estimating bond price changes from duration alone leaves a convexity error
+- id: 12.3.10
+  section: '12.3'
+  verbs:
+  - identify
+  summary: What the main credit rating agencies do, and their shortcomings
+- id: 12.3.11
+  section: '12.3'
+  verbs:
+  - interpret
+  summary: Reading the main rating categories used by the leading credit rating agencies
+- id: 12.3.12
+  section: '12.3'
+  verbs:
+  - explain
+  summary: 'The idea of debt seniority: how different debts rank against each other'
+- id: 12.3.13
+  section: '12.3'
+  verbs:
+  - identify
+  summary: Company characteristics and financial ratios rating agencies examine when assigning a corporate credit rating
+- id: 12.4.1
+  section: '12.4'
+  verbs:
+  - define
+  - calculate
+  summary: Working out a bond's flat yield, gross and net redemption yields (GRY, NRY) and the grossed-up NRY
+- id: 12.4.2
+  section: '12.4'
+  verbs:
+  - explain
+  summary: Which situations suit flat yield, GRY, NRY and grossed-up NRY measures
+- id: 12.4.3
+  section: '12.4'
+  verbs:
+  - explain
+  summary: Yield curves in bond markets and the theories offered to explain their shape
+- id: 12.4.4
+  section: '12.4'
+  verbs:
+  - define
+  - calculate
+  summary: Working out spot and forward interest rates, and what each means
+- id: 12.4.5
+  section: '12.4'
+  verbs:
+  - explain
+  summary: How spot rates and forward rates connect to a bond's gross redemption yield (GRY)
+- id: 13.1.1
+  section: '13.1'
+  verbs:
+  - distinguish
+  summary: How forward contracts, futures contracts and options differ from one another
+- id: 13.1.2
+  section: '13.1'
+  verbs:
+  - explain
+  summary: How exchange-traded, centrally cleared and bilateral over-the-counter (OTC) derivatives work, trade and settle,
+    plus margin rules for uncleared OTC deals
+- id: 13.1.3
+  section: '13.1'
+  verbs:
+  - identify
+  summary: Why an investor might choose a futures contract instead of buying or selling the underlying asset itself
+- id: 13.1.4
+  section: '13.1'
+  verbs:
+  - define
+  summary: 'Meaning of ''basis'': the gap between a futures price and the underlying price'
+- id: 13.1.5
+  section: '13.1'
+  verbs:
+  - explain
+  summary: What contango and backwardation markets are and why each arises
+- id: 13.1.6
+  section: '13.1'
+  verbs:
+  - describe
+  summary: Key features of ICE Futures Europe's FTSE 100, long gilt and short-term interest rate futures
+- id: 13.1.7
+  section: '13.1'
+  verbs:
+  - explain
+  summary: How investment managers might use short-term interest rate, long gilt and FTSE 100 futures
+- id: 13.1.8
+  section: '13.1'
+  verbs:
+  - define
+  summary: What index arbitrage is and how it works in principle
+- id: 13.1.9
+  section: '13.1'
+  verbs:
+  - distinguish
+  summary: How American-style options differ from European-style options
+- id: 13.1.10
+  section: '13.1'
+  verbs:
+  - differentiate
+  summary: How an option premium splits into intrinsic value and time value
+- id: 13.1.11
+  section: '13.1'
+  verbs:
+  - determine
+  summary: When an option sits in, at or out of the money relative to its strike
+- id: 13.1.12
+  section: '13.1'
+  verbs:
+  - calculate
+  summary: Working out an option's time value from its premium, strike and market price, within the Black-Scholes pricing
+    framework
+- id: 13.1.13
+  section: '13.1'
+  verbs:
+  - identify
+  - explain
+  summary: What drives the size of an option premium
+- id: 13.1.14
+  section: '13.1'
+  verbs:
+  - determine
+  summary: Best and worst outcomes, and reasons for using, long and short calls, puts, straddles, strangles, covered calls
+    and protective puts
+- id: 13.1.15
+  section: '13.1'
+  verbs:
+  - explain
+  summary: How futures and options can be used to hedge a portfolio of shares
+- id: 13.1.16
+  section: '13.1'
+  verbs:
+  - calculate
+  summary: Working out how many futures or option contracts are needed to hedge holdings with a given beta
+- id: 13.1.17
+  section: '13.1'
+  verbs:
+  - identify
+  summary: Purpose, workings and consequences of credit default swaps (CDS)
+- id: 13.2.1
+  section: '13.2'
+  verbs:
+  - explain
+  summary: Why stock lending matters to markets and how lenders and borrowers gain from it
+- id: 13.2.2
+  section: '13.2'
+  verbs:
+  - explain
+  summary: How short selling works and what investors use it for
+- id: 13.2.3
+  section: '13.2'
+  verbs:
+  - explain
+  summary: What contracts for difference are and how they work
+- id: 13.2.4
+  section: '13.2'
+  verbs:
+  - explain
+  summary: What interest rate, currency, equity and inflation swaps are and why parties enter into them
+- id: 13.3.1
+  section: '13.3'
+  verbs:
+  - explain
+  summary: What convertible bonds are, and what convertible preference shares are
+- id: 13.3.2
+  section: '13.3'
+  verbs:
+  - calculate
+  summary: Working out the conversion price, the conversion value and the conversion premium of a convertible
+- id: 13.3.3
+  section: '13.3'
+  verbs:
+  - explain
+  summary: 'Building blocks of convertible bond valuation: straight bond value, the embedded call option, dilution and the
+    conversion ratio'
+- id: 13.3.4
+  section: '13.3'
+  verbs:
+  - distinguish
+  summary: How a warrant differs from a call option
+- id: 13.3.5
+  section: '13.3'
+  verbs:
+  - explain
+  summary: Main characteristics of covered warrants and how they work
+- id: 14.1.1
+  section: '14.1'
+  verbs:
+  - describe
+  summary: What alternative investments are, their risks and their growing use for diversifying portfolios
+- id: 14.2.1
+  section: '14.2'
+  verbs:
+  - describe
+  summary: Key characteristics and workings of commodity markets
+- id: 14.2.2
+  section: '14.2'
+  verbs:
+  - identify
+  summary: Main routes for investors to gain exposure to commodities
+- id: 14.2.3
+  section: '14.2'
+  verbs:
+  - explain
+  summary: Features of key commodity and emissions derivatives covering energy, metals, softs and biofuels, and carbon
+- id: 14.2.4
+  section: '14.2'
+  verbs:
+  - explain
+  summary: Features of gold and other precious metals as investments, and their risks
+- id: 14.2.5
+  section: '14.2'
+  verbs:
+  - identify
+  summary: Leading indices that track commodity derivatives
+- id: 14.2.6
+  section: '14.2'
+  verbs:
+  - explain
+  summary: Why holding commodities may protect against inflation and sudden 'event' risk
+- id: 14.2.7
+  section: '14.2'
+  verbs:
+  - explain
+  summary: What cryptocurrencies do and their main features
+- id: 14.3.1
+  section: '14.3'
+  verbs:
+  - explain
+  summary: Why investors hold property, and how its investment features compare with other main asset classes
+- id: 14.3.2
+  section: '14.3'
+  verbs:
+  - distinguish
+  summary: How commercial property markets differ from residential ones
+- id: 14.3.3
+  section: '14.3'
+  verbs:
+  - describe
+  summary: Why indices are used to track property returns and the difficulties involved
+- id: 14.3.4
+  section: '14.3'
+  verbs:
+  - identify
+  summary: Who invests in commercial property and in other real assets, and what the main commercial property sectors are
+    like
+- id: 14.3.5
+  section: '14.3'
+  verbs:
+  - explain
+  summary: 'How direct commercial property works: ownership, leases, transactions, costs, valuation and performance measurement'
+- id: 14.3.6
+  section: '14.3'
+  verbs:
+  - describe
+  summary: Key methods used to value investment property
+- id: 14.3.7
+  section: '14.3'
+  verbs:
+  - identify
+  summary: How environmental, social and governance (ESG) factors and sustainability affect property values and investment
+- id: 14.3.8
+  section: '14.3'
+  verbs:
+  - explain
+  summary: Ways to invest in property indirectly
+- id: 14.3.9
+  section: '14.3'
+  verbs:
+  - describe
+  summary: Main real asset classes apart from property, why investors hold them and how they compare with other asset classes
+- id: 14.4.1
+  section: '14.4'
+  verbs:
+  - describe
+  summary: Different ways of investing in unlisted assets
+- id: 14.4.2
+  section: '14.4'
+  verbs:
+  - identify
+  summary: Possible advantages and drawbacks of investing in unlisted assets
+- id: 14.5.1
+  section: '14.5'
+  verbs:
+  - explain
+  summary: Features and aims of hedge funds and funds of hedge funds
+- id: 14.5.2
+  section: '14.5'
+  verbs:
+  - describe
+  summary: Different investment strategies used by hedge funds
+- id: 14.5.3
+  section: '14.5'
+  verbs:
+  - identify
+  summary: Possible advantages and drawbacks of hedge funds
+- id: 14.5.4
+  section: '14.5'
+  verbs:
+  - describe
+  summary: How fees are charged by hedge funds and by managers of unlisted assets
+- id: 15.1.1
+  section: '15.1'
+  verbs:
+  - explain
+  summary: Why higher return usually means higher risk, and when one strategy dominates another
+- id: 15.1.2
+  section: '15.1'
+  verbs:
+  - explain
+  summary: Why measuring risk matters when analysing investments, and why forecast and historical risk can differ widely
+- id: 15.1.3
+  section: '15.1'
+  verbs:
+  - identify
+  summary: Risk measures most often used by investment analysts and fund managers
+- id: 15.1.4
+  section: '15.1'
+  verbs:
+  - explain
+  summary: Strengths and weaknesses of standard deviation for measuring risk
+- id: 15.1.5
+  section: '15.1'
+  verbs:
+  - explain
+  summary: What follows from assuming investment returns follow a normal distribution
+- id: 15.1.6
+  section: '15.1'
+  verbs:
+  - explain
+  summary: How value at risk (VaR) is defined, plus its strengths and weaknesses in managing risk
+- id: 15.1.7
+  section: '15.1'
+  verbs:
+  - explain
+  summary: What drawdown means, and its strengths and weaknesses for measuring risk
+- id: 15.1.8
+  section: '15.1'
+  verbs:
+  - explain
+  summary: What tracking error is, and its strengths and weaknesses for measuring risk
+- id: 15.1.9
+  section: '15.1'
+  verbs:
+  - explain
+  summary: How price volatility that shifts through time affects risk measures
+- id: 15.1.10
+  section: '15.1'
+  verbs:
+  - explain
+  summary: What relative weights and active share mean, and the strengths and weaknesses of each as risk measures
+- id: 15.1.11
+  section: '15.1'
+  verbs:
+  - explain
+  summary: How diversification helps build efficient portfolios, and why it can fail when markets are under severe stress
+- id: 15.1.12
+  section: '15.1'
+  verbs:
+  - explain
+  summary: Why correlation matters for building efficient portfolios, what correlation coefficients mean and their limitations
+    and practical difficulties
+- id: 15.1.13
+  section: '15.1'
+  verbs:
+  - calculate
+  summary: Working out the correlation coefficient of two investments from their covariance and standard deviations
+- id: 15.1.14
+  section: '15.1'
+  verbs:
+  - analyse
+  - explain
+  summary: 'Further investment risks: currency, inflation, interest rate, liquidity, counterparty and fraud risk'
+- id: 15.2.1
+  section: '15.2'
+  verbs:
+  - identify
+  summary: How equities, bonds, property, cash and alternatives move relative to each other, and why it matters for asset
+    allocation
+- id: 15.2.2
+  section: '15.2'
+  verbs:
+  - explain
+  summary: Why correlation analysis can break down in extreme markets
+- id: 15.3.1
+  section: '15.3'
+  verbs:
+  - identify
+  summary: Assumptions behind the one-factor capital asset pricing model (CAPM), plus other widely used factors
+- id: 15.3.2
+  section: '15.3'
+  verbs:
+  - calculate
+  summary: Working out a security's expected return with the CAPM by interpreting its beta
+- id: 15.3.3
+  section: '15.3'
+  verbs:
+  - explain
+  summary: How historical data can be used to estimate betas for risk and return models
+- id: 15.3.4
+  section: '15.3'
+  verbs:
+  - calculate
+  summary: Working out a portfolio's beta from its holdings' betas and weights
+- id: 15.3.5
+  section: '15.3'
+  verbs:
+  - define
+  summary: Splitting total risk into the systematic part driven by factors and the unsystematic part specific to each investment
+- id: 15.3.6
+  section: '15.3'
+  verbs:
+  - calculate
+  summary: Working out total risk by combining systematic and unsystematic risk
+- id: 15.3.7
+  section: '15.3'
+  verbs:
+  - calculate
+  summary: Working out an investment's beta from its systematic risk and the market's risk
+- id: 15.3.8
+  section: '15.3'
+  verbs:
+  - calculate
+  summary: Working out an investment's beta from its covariance with the market and the market's variance
+- id: 15.3.9
+  section: '15.3'
+  verbs:
+  - explain
+  summary: Weaknesses and limits of the CAPM in practice
+- id: 15.3.10
+  section: '15.3'
+  verbs:
+  - explain
+  summary: How several shared factors can partly explain an investment's risk and return (arbitrage pricing theory)
+- id: 15.3.11
+  section: '15.3'
+  verbs:
+  - explain
+  summary: What smart beta and factor investing mean
+- id: 15.4.1
+  section: '15.4'
+  verbs:
+  - identify
+  - explain
+  summary: Core ideas behind the efficient markets hypothesis (EMH), plus where it falls short
+- id: 15.4.2
+  section: '15.4'
+  verbs:
+  - evaluate
+  summary: What research into market anomalies says about the EMH
+- id: 15.4.3
+  section: '15.4'
+  verbs:
+  - explain
+  summary: Core ideas of behavioural finance as a school of thought
+- id: 15.4.4
+  section: '15.4'
+  verbs:
+  - evaluate
+  summary: What research into market anomalies says about behavioural finance
+- id: 15.4.5
+  section: '15.4'
+  verbs:
+  - explain
+  summary: What market 'bubbles' and so-called 'financial amnesia' mean
+- id: 15.5.1
+  section: '15.5'
+  verbs:
+  - explain
+  summary: How price, liquidity and fair valuation connect for equities, bonds, derivatives and alternatives
+- id: 15.5.2
+  section: '15.5'
+  verbs:
+  - explain
+  summary: How liquidity limits how much money an investment strategy can run
+- id: 15.6.1
+  section: '15.6'
+  verbs:
+  - distinguish
+  summary: How public markets and private markets differ for fund managers
+- id: 15.6.2
+  section: '15.6'
+  verbs:
+  - distinguish
+  summary: How top-down fund management differs from a bottom-up approach
+- id: 15.6.3
+  section: '15.6'
+  verbs:
+  - explain
+  summary: Ways to combine active and passive management when building a portfolio
+- id: 15.6.4
+  section: '15.6'
+  verbs:
+  - distinguish
+  summary: How strategic asset allocation differs from tactical asset allocation
+- id: 15.6.5
+  section: '15.6'
+  verbs:
+  - distinguish
+  summary: How active management differs from passive management, and what each costs and offers investors
+- id: 15.6.6
+  section: '15.6'
+  verbs:
+  - explain
+  summary: Main investment styles used across the asset management industry
+- id: 15.7.1
+  section: '15.7'
+  verbs:
+  - explain
+  summary: 'Bond portfolio techniques: cash matching or dedication, immunisation, managing credit risk, and yield curve riding'
+- id: 15.7.2
+  section: '15.7'
+  verbs:
+  - calculate
+  summary: Working out the duration of a portfolio of bonds
+- id: 15.7.3
+  section: '15.7'
+  verbs:
+  - calculate
+  summary: Working out the theoretical profit from yield curve riding
+- id: 15.7.4
+  section: '15.7'
+  verbs:
+  - explain
+  summary: Rewards and dangers of bond strategies like the barbell
+- id: 15.7.5
+  section: '15.7'
+  verbs:
+  - explain
+  summary: Features of liability-driven investment (LDI) and the risks it carries
+- id: 15.7.6
+  section: '15.7'
+  verbs:
+  - explain
+  summary: Steps involved in running a liability-driven investment (LDI) strategy
+- id: 15.7.7
+  section: '15.7'
+  verbs:
+  - evaluate
+  summary: Techniques and simple risk measures used in liability-driven investment (LDI)
+- id: 15.8.1
+  section: '15.8'
+  verbs:
+  - explain
+  summary: What investing with environmental, social and governance (ESG) criteria means, and how socially responsible investment
+    (SRI) stands apart
+- id: 15.8.2
+  section: '15.8'
+  verbs:
+  - describe
+  summary: How ESG investing and its regulation have developed over time, and what drove that growth
+- id: 15.8.3
+  section: '15.8'
+  verbs:
+  - identify
+  summary: Reasons investors may or may not take ESG issues into account when investing
+- id: 15.8.4
+  section: '15.8'
+  verbs:
+  - describe
+  summary: Research on whether investing with ESG factors improves portfolio returns
+- id: 15.8.5
+  section: '15.8'
+  verbs:
+  - explain
+  summary: Main ways of building ESG factors into investment decisions
+- id: 15.8.6
+  section: '15.8'
+  verbs:
+  - describe
+  summary: Main difficulties of building ESG factors into investment decisions
+- id: 15.8.7
+  section: '15.8'
+  verbs:
+  - explain
+  summary: What impact investing means and how it compares with traditional and ESG investing
+- id: 15.8.8
+  section: '15.8'
+  verbs:
+  - explain
+  summary: How private markets affect ESG investing
+- id: 16.1.1
+  section: '16.1'
+  verbs:
+  - compare
+  - contrast
+  summary: How direct and indirect investment compare across different types of asset
+- id: 16.1.2
+  section: '16.1'
+  verbs:
+  - distinguish
+  summary: How open-ended investment companies (OEICs), unit trusts and investment trusts compare in features, benefits and
+    risks
+- id: 16.1.3
+  section: '16.1'
+  verbs:
+  - identify
+  summary: Main features, pros and cons of exchange-traded commodities (ETCs) and exchange-traded funds (ETFs)
+- id: 16.1.4
+  section: '16.1'
+  verbs:
+  - explain
+  summary: Features and aims of wrap accounts, structured products and funds for private clients
+- id: 16.1.5
+  section: '16.1'
+  verbs:
+  - identify
+  summary: Features of investments based on life assurance
+- id: 16.1.6
+  section: '16.1'
+  verbs:
+  - identify
+  summary: Features, pros and cons of defined benefit (DB) and defined contribution (DC) pensions for employers and members
+- id: 16.1.7
+  section: '16.1'
+  verbs:
+  - describe
+  summary: Features of execution-only platforms, where investors deal without advice
+- id: 16.1.8
+  section: '16.1'
+  verbs:
+  - identify
+  summary: How a portfolio's liquidity affects which investment products are suitable
+- id: 17.1.1
+  section: '17.1'
+  verbs:
+  - identify
+  - calculate
+  summary: Working out the parts that make up total return on a bond or equity portfolio
+- id: 17.1.2
+  section: '17.1'
+  verbs:
+  - calculate
+  summary: Working out the return from reinvesting income over a given time horizon
+- id: 17.1.3
+  section: '17.1'
+  verbs:
+  - explain
+  summary: How returns are broken down and attributed in equities (sector, stock, interaction) and fixed income (shift, twist,
+    spread)
+- id: 17.2.1
+  section: '17.2'
+  verbs:
+  - calculate
+  - interpret
+  summary: Working out money-weighted and time-weighted returns, what they show, and when each suits best
+- id: 17.3.1
+  section: '17.3'
+  verbs:
+  - identify
+  summary: Qualities that make a benchmark suitable
+- id: 17.3.2
+  section: '17.3'
+  verbs:
+  - identify
+  summary: Main kinds of benchmark used by investment managers and how a benchmark portfolio is built
+- id: 17.3.3
+  section: '17.3'
+  verbs:
+  - explain
+  summary: Splitting total return into risk-free, benchmark, market timing, diversifiable risk, and market and selection attribution
+    components
+- id: 17.4.1
+  section: '17.4'
+  verbs:
+  - explain
+  summary: Why analysing risk matters when evaluating performance
+- id: 17.4.2
+  section: '17.4'
+  verbs:
+  - calculate
+  - interpret
+  summary: Working out and interpreting Jensen's alpha, information ratio, and the Sharpe and Treynor measures
+provenance:
+  sources:
+  - https://www.cfauk.org/learn/qualifications/investment-management-certificate
+  licence: IDs, section titles and command words are facts from the CFA UK IMC v24 syllabus. Summaries are original (CC BY-SA
+    4.0).
+  last_verified: '2026-10-21'
+  author: ai-draft
+  reviewer: pending

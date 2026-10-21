@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { SITE_NAME } from "@/lib/site";
+import { supabaseEnabled } from "@/lib/supabase";
+import { useSync } from "@/lib/sync";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -17,6 +19,8 @@ const LINKS = [
 export function Nav() {
   const path = usePathname();
   const [open, setOpen] = useState(false);
+  const sync = useSync();
+  const links = supabaseEnabled ? [...LINKS, { href: "/account/", label: sync.email ? "Account" : "Sign in" }] : LINKS;
   const active = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
   return (
     <header className="border-b border-border bg-card">
@@ -26,7 +30,7 @@ export function Nav() {
           Menu
         </button>
         <ul id="nav-links" className={`${open ? "flex" : "hidden"} absolute left-0 right-0 top-14 z-10 flex-col gap-1 border-b border-border bg-card px-4 pb-3 md:static md:flex md:flex-row md:border-0 md:p-0`}>
-          {LINKS.map((l) => (
+          {links.map((l) => (
             <li key={l.href}>
               <Link
                 href={l.href}

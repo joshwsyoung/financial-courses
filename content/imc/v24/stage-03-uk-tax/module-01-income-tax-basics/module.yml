@@ -1,0 +1,18 @@
+id: income-tax-basics
+title: Income tax basics
+order: 1
+summary: The personal allowance, the rate bands and ISAs, with calculations for 2026-27.
+los:
+- 6.1.1
+- 6.1.2
+- 6.1.15
+- 6.2.4
+status: draft
+provenance:
+  sources:
+  - https://www.gov.uk/income-tax-rates
+  - https://www.gov.uk/individual-savings-accounts
+  licence: CC BY-SA 4.0 (gov.uk facts under Open Government Licence v3.0)
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

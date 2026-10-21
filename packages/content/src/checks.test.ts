@@ -18,10 +18,13 @@ function issuesAfter(mutate: (imc: string) => void) {
   return [...issues, ...(course ? checkCourse(course, { now: new Date("2026-10-21") }) : [])];
 }
 
-const ethicsQ = (imc: string, id: string) =>
-  path.join(imc, "v24/stage-01-ethics/module-01-ethics-foundations/questions", `${id}.yml`);
+const REG = "v24/stage-02-regulation/module-01-fca-conduct";
+const ethicsQ = (imc: string, id: string) => {
+  const inRegulation = ["0004", "0005", "0006", "0010", "0011", "0012", "0013", "0014", "0016"].some((n) => id.endsWith(n));
+  return path.join(imc, inRegulation ? REG : "v24/stage-01-ethics/module-01-ethics-foundations", "questions", `${id}.yml`);
+};
 const taxQ = (imc: string, id: string) =>
-  path.join(imc, "v24/stage-02-uk-tax/module-01-income-tax-basics/questions", `${id}.yml`);
+  path.join(imc, "v24/stage-03-uk-tax/module-01-income-tax-basics/questions", `${id}.yml`);
 
 function edit(file: string, fn: (doc: Record<string, unknown>) => void) {
   const doc = YAML.parse(fs.readFileSync(file, "utf8"));
@@ -90,7 +93,7 @@ describe("countWords", () => {
 describe("memory aids", () => {
   it("fails when the device letters don't match the item initials", () => {
     const e = errors(issuesAfter((imc) => {
-      const f = path.join(imc, "v24/stage-01-ethics/module-01-ethics-foundations/tasks.yml");
+      const f = path.join(imc, REG, "tasks.yml");
       fs.writeFileSync(f, fs.readFileSync(f, "utf8").replace("letters: IDOCMO", "letters: IDOCMX"));
     }));
     expect(e).toContain("memory aid letters IDOCMX do not match item initials IDOCMO");

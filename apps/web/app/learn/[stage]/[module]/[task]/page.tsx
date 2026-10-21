@@ -21,10 +21,13 @@ export default async function TaskPage({ params }: { params: Promise<Params> }) 
   const i = module.tasks.findIndex((t) => t.id === taskId);
   const prev = module.tasks[i - 1];
   const next = module.tasks[i + 1];
-  const question = task.question ? getCourseIndex().questions[task.question] : undefined;
+  const index = getCourseIndex();
+  const question = task.question ? index.questions[task.question] : undefined;
+  const outcomes = index.outcomes.filter((o) => task.lo.includes(o.id)).map(({ id, summary, verbs }) => ({ id, summary, verbs }));
   return (
     <TaskPlayer
       task={task}
+      outcomes={outcomes}
       question={question}
       position={i + 1}
       total={module.tasks.length}

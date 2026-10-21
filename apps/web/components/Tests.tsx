@@ -7,7 +7,7 @@ export function ModuleTest({ course, stageId, moduleId }: { course: CourseIndex;
   const module = course.stages.find((s) => s.id === stageId)!.modules.find((m) => m.id === moduleId)!;
   return (
     <TestRunner
-      los={course.syllabus.los}
+      los={course.outcomes}
       config={{
         key: `module:${module.id}`,
         title: `${module.title}: module test`,
@@ -27,7 +27,7 @@ export function StageTest({ course, stageId }: { course: CourseIndex; stageId: s
   const stage = course.stages.find((s) => s.id === stageId)!;
   return (
     <TestRunner
-      los={course.syllabus.los}
+      los={course.outcomes}
       config={{
         key: `stage:${stage.id}`,
         title: `${stage.title}: stage test`,
@@ -52,7 +52,7 @@ export function PracticeMock({ course, unitId }: { course: CourseIndex; unitId: 
   const minutes = Math.max(5, Math.round((unit.duration_min / unit.questions) * count));
   return (
     <TestRunner
-      los={course.syllabus.los}
+      los={course.outcomes}
       config={{
         key: `mock:practice-${unitId}`,
         title: `${unit.name}: practice mock`,

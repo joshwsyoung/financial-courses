@@ -15,7 +15,8 @@
     "validate": "tsx scripts/validate-content.ts",
     "test": "vitest run",
     "typecheck": "pnpm -r typecheck",
-    "e2e": "pnpm --filter web e2e"
+    "e2e": "pnpm --filter web e2e",
+    "coverage": "tsx scripts/coverage.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

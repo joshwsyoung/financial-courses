@@ -1,0 +1,19 @@
+id: regulation
+title: The regulation of financial markets and institutions
+unit: unit1
+topic: regulation
+order: 2
+summary: 'How the FCA and PRA regulate firms and people: principles, conduct rules, business standards, redress
+  and financial crime.'
+test:
+  count: 7
+  pass_mark: 0.7
+provenance:
+  sources:
+  - original
+  - https://www.handbook.fca.org.uk/handbook/COCON/2/1.html
+  - https://www.fca.org.uk/firms/consumer-duty
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

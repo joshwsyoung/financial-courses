@@ -31,19 +31,19 @@ test("task player: read, then answer a question with feedback", async ({ page })
   await expect(page.getByRole("heading", { name: "Who relies on you" })).toBeVisible();
 
   await page.goto("/learn/ethics/ethics-foundations/");
-  await expect(page.getByText("3 of 15 tasks done")).toBeVisible();
+  await expect(page.getByText("3 of 7 tasks done")).toBeVisible();
 });
 
 test("module test runs, scores and shows a per-LO breakdown", async ({ page }) => {
   await dismissWelcome(page);
   await page.goto("/learn/ethics/ethics-foundations/test/");
   await page.getByRole("button", { name: "Start" }).click();
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 5; i++) {
     const radios = page.getByRole("radio");
     if (await radios.count()) await radios.first().check();
     else await page.getByLabel("Your answer").fill("fairly");
     if (i === 2) await page.getByLabel("Flag for review").check();
-    await page.getByRole("button", { name: i < 7 ? "Next" : "Submit" }).click();
+    await page.getByRole("button", { name: i < 4 ? "Next" : "Submit" }).click();
   }
   await expect(page.getByRole("heading", { name: /module test: results/ })).toBeVisible();
   await expect(page.getByRole("heading", { name: "By learning outcome" })).toBeVisible();
@@ -79,7 +79,7 @@ test("theme setting switches to dark mode", async ({ page }) => {
 
 test("memory aid: learn the phrase, then tap the items back in order", async ({ page }) => {
   await dismissWelcome(page);
-  await page.goto("/learn/ethics/ethics-foundations/eth-memory-conduct-rules/");
+  await page.goto("/learn/regulation/fca-conduct/eth-memory-conduct-rules/");
   await expect(page.getByText("Overlook").first()).toBeVisible();
   await page.getByRole("button", { name: /test me/ }).click();
   await page.getByRole("button", { name: "Due skill, care and diligence" }).click();
@@ -96,6 +96,7 @@ test("feedback on a question carries the question and answer", async ({ page, co
   await page.getByText("Illegal but ethical").click();
   await page.getByRole("button", { name: "Feedback on this question" }).click();
   await expect(page.getByRole("dialog")).toBeVisible();
+  await expect(page.getByRole("dialog").getByAltText("Screenshot that will be attached")).toBeVisible();
   await page.getByRole("dialog").getByLabel("Tell us more").fill("Option C wording is confusing");
   let issueLink = "";
   await context.route("https://github.com/**", (route) => {
@@ -109,4 +110,22 @@ test("feedback on a question carries the question and answer", async ({ page, co
   expect(url.searchParams.get("context")).toContain("Question: q-u1-eth-0001");
   expect(url.searchParams.get("context")).toContain("Learner's answer: Illegal but ethical");
   await expect(page.getByRole("status")).toContainText("Thanks");
+});
+
+test("syllabus explorer highlights the outcomes a lesson links to", async ({ page }) => {
+  await dismissWelcome(page);
+  await page.goto("/learn/regulation/fca-conduct/eth-conduct-rules/");
+  await page.getByRole("link", { name: "3.3.9" }).click();
+  await expect(page).toHaveURL(/\/syllabus\/\?focus=3\.3\.9/);
+  await expect(page.getByRole("status").filter({ hasText: "Highlighted" })).toBeVisible();
+  const row = page.locator("#lo-3\\.3\\.9");
+  await expect(row).toHaveClass(/border-accent/);
+  await expect(row.getByRole("link", { name: "The FCA Conduct Rules" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Read CFA UK.s exact wording/ })).toBeVisible();
+});
+
+test("account page explains accounts are off when Supabase isn't configured", async ({ page }) => {
+  await dismissWelcome(page);
+  await page.goto("/account/");
+  await expect(page.getByText("Accounts aren’t switched on")).toBeVisible();
 });

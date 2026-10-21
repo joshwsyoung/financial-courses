@@ -2,35 +2,35 @@ id: q-u1-eth-0007
 type: mcq
 unit: unit1
 lo:
-  - u1.eth.4
+- 2.2.3
 difficulty: 1
 tags: []
 stem: In the five-step ethical decision framework, what is the first step?
 options:
-  - id: a
-    text: Decide and act quickly
-  - id: b
-    text: Identify the relevant facts
-  - id: c
-    text: Ask the client what they would prefer
-  - id: d
-    text: Check whether a competitor has done the same thing
+- id: a
+  text: Decide and act quickly
+- id: b
+  text: Identify the relevant facts
+- id: c
+  text: Ask the client what they would prefer
+- id: d
+  text: Check whether a competitor has done the same thing
 correct: b
-explanation: You cannot judge a situation properly until you are clear on the facts. Stakeholders, options and
-  tests come after that.
+explanation: You cannot judge a situation properly until you are clear on the facts. Stakeholders, options and tests
+  come after that.
 distractor_notes:
   a: Deciding comes last, after the options have been tested.
   c: The client's view may matter, but it is not the starting point of the framework.
   d: What competitors do is not an ethical test.
 tax_year: null
 syllabus_versions:
-  - "24"
+- '24'
 origin: ai_generated
 reviewed_by: []
 status: review
 provenance:
   sources:
-    - original
+  - original
   licence: CC BY-SA 4.0
   last_verified: 2026-10-20
   author: ai-draft

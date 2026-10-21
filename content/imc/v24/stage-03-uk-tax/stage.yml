@@ -1,0 +1,16 @@
+id: uk-tax
+title: UK taxation
+unit: unit1
+topic: uk-tax
+order: 3
+summary: Income tax, savings and investment wrappers, and the allowances that shape client advice.
+test:
+  count: 5
+  pass_mark: 0.7
+provenance:
+  sources:
+  - https://www.gov.uk/income-tax-rates
+  licence: CC BY-SA 4.0 (gov.uk facts under Open Government Licence v3.0)
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

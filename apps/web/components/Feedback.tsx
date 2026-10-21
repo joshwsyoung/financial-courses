@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { FEEDBACK_KINDS, feedbackChannel, githubIssueUrl, saveToDatabase, type FeedbackContext, type FeedbackKind } from "@/lib/feedback";
+import { captureViewport, FEEDBACK_KINDS, feedbackChannel, githubIssueUrl, saveToDatabase, type FeedbackContext, type FeedbackKind } from "@/lib/feedback";
 import { actions } from "@/lib/progress";
 import { buttonClass } from "./ui";
 
@@ -25,6 +25,19 @@ export function FeedbackButton({ context, label = "Feedback", defaultKind = "unc
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState("");
   const [mounted, setMounted] = useState(false);
+  const [shot, setShot] = useState<Blob | null>(null);
+  const [shotUrl, setShotUrl] = useState<string | null>(null);
+  const [includeShot, setIncludeShot] = useState(true);
+  const [capturing, setCapturing] = useState(false);
+
+  const applyImage = (blob: Blob | null) => {
+    setShot(blob);
+    setShotUrl((old) => {
+      if (old) URL.revokeObjectURL(old);
+      return blob ? URL.createObjectURL(blob) : null;
+    });
+    setIncludeShot(!!blob);
+  };
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
@@ -34,9 +47,13 @@ export function FeedbackButton({ context, label = "Feedback", defaultKind = "unc
     return () => d?.removeEventListener("close", onClose);
   }, [state]);
 
-  const open = () => {
+  const open = async () => {
     setKind(defaultKind);
     setState("idle");
+    // Capture before the dialog opens, so the screenshot shows the page, not the form.
+    setCapturing(true);
+    applyImage(await captureViewport());
+    setCapturing(false);
     dialog.current?.showModal();
   };
 
@@ -44,6 +61,7 @@ export function FeedbackButton({ context, label = "Feedback", defaultKind = "unc
     const payload = { ...context, page: path, kind, message: message.trim() };
     if (!payload.message) return;
     actions.logFeedback(payload);
+    const image = includeShot ? shot ?? undefined : undefined;
     if (feedbackChannel === "github") {
       window.open(githubIssueUrl(payload), "_blank", "noopener,noreferrer");
       setState("sent");
@@ -51,7 +69,7 @@ export function FeedbackButton({ context, label = "Feedback", defaultKind = "unc
     }
     setState("sending");
     try {
-      await saveToDatabase(payload);
+      await saveToDatabase(payload, image);
       setState("sent");
     } catch (e) {
       setError((e as Error).message);
@@ -61,12 +79,13 @@ export function FeedbackButton({ context, label = "Feedback", defaultKind = "unc
 
   return (
     <>
-      <button type="button" onClick={open} className={className || "text-xs text-muted underline"}>
-        {label}
+      <button type="button" onClick={() => void open()} disabled={capturing} className={className || "text-xs text-muted underline"}>
+        {capturing ? "Opening…" : label}
       </button>
       {mounted && createPortal(
       <dialog
         ref={dialog}
+        data-no-screenshot
         aria-labelledby={titleId}
         className="m-auto w-[min(32rem,calc(100vw-2rem))] rounded-xl border border-border bg-card p-0 text-fg backdrop:bg-black/50"
         onClick={(e) => { if (e.target === dialog.current) dialog.current?.close(); }}
@@ -108,6 +127,30 @@ export function FeedbackButton({ context, label = "Feedback", defaultKind = "unc
                   placeholder="What's wrong, or what would make this better?"
                 />
               </label>
+              <div className="space-y-2">
+                <span className="block text-sm font-medium">Screenshot</span>
+                {shotUrl ? (
+                  <div className="flex items-start gap-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={shotUrl} alt="Screenshot that will be attached" className="h-24 w-auto rounded border border-border object-cover object-top" />
+                    <div className="space-y-1 text-sm">
+                      <label className="flex items-center gap-2">
+                        <input type="checkbox" checked={includeShot} onChange={(e) => setIncludeShot(e.target.checked)} /> Include this screenshot
+                      </label>
+                      {feedbackChannel === "github" && includeShot && (
+                        <a href={shotUrl} download="feedback-screenshot.jpg" className="block underline">Download it to attach on GitHub</a>
+                      )}
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-sm text-muted">We couldn&rsquo;t capture this page automatically.</p>
+                )}
+                <label className="block text-sm">
+                  <span className="text-muted">Or attach your own image: </span>
+                  <input type="file" accept="image/png,image/jpeg,image/webp" className="text-sm"
+                    onChange={(e) => { const f = e.target.files?.[0]; if (f && f.size <= 2_000_000) applyImage(f); else if (f) { setError("Images must be under 2 MB"); setState("error"); } }} />
+                </label>
+              </div>
               <p className="text-xs text-muted">
                 We attach the page{context?.questionId ? ", question" : context?.taskId ? " and task" : ""}{context?.answer ? " and your answer" : ""} automatically. No personal details.
                 {feedbackChannel === "github" && " Sending opens a GitHub page to submit it."}

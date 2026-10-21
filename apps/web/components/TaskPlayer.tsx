@@ -4,15 +4,17 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { actions, useProgress } from "@/lib/progress";
-import type { ClientQuestion, TaskDetail } from "@/lib/types";
+import type { ClientQuestion, OutcomeRow, TaskDetail } from "@/lib/types";
 import { CalcDrill } from "./CalcDrill";
 import { FeedbackButton } from "./Feedback";
 import { MemoryAid } from "./MemoryAid";
+import { OutcomeChips } from "./OutcomeChips";
 import { PracticeQuestion } from "./Question";
 import { buttonClass, ProgressBar, TaskTypeLabel } from "./ui";
 
 interface Props {
   task: TaskDetail;
+  outcomes: Pick<OutcomeRow, "id" | "summary" | "verbs">[];
   question?: ClientQuestion;
   position: number;
   total: number;
@@ -26,7 +28,7 @@ interface Props {
 
 const READ_TYPES = ["read", "eli5", "diagram", "worked_example"];
 
-export function TaskPlayer({ task, question, position, total, prevHref, nextHref, nextLabel, moduleHref, moduleTitle, statusNote }: Props) {
+export function TaskPlayer({ task, outcomes, question, position, total, prevHref, nextHref, nextLabel, moduleHref, moduleTitle, statusNote }: Props) {
   const router = useRouter();
   const p = useProgress();
   const alreadyDone = p.tasks[task.id]?.status === "done";
@@ -63,6 +65,7 @@ export function TaskPlayer({ task, question, position, total, prevHref, nextHref
       <header className="space-y-1">
         <TaskTypeLabel type={task.type} />
         <h1 className="text-2xl font-bold">{task.title}</h1>
+        <OutcomeChips outcomes={outcomes} />
         <div className="flex flex-wrap items-center gap-3">
           {statusNote}
           {task.type !== "question" && <FeedbackButton label="Feedback on this task" context={{ taskId: task.id }} />}

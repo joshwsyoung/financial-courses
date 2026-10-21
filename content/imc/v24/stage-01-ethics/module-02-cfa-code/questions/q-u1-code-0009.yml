@@ -1,0 +1,39 @@
+id: q-u1-code-0009
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: A financial journalist asks a portfolio manager whether a well-known entrepreneur is one of her clients, and how
+  much the account is worth. What should she do?
+options:
+- id: a
+  text: Confirm the relationship, but not the value, because that is harmless
+- id: b
+  text: Decline to discuss any client, unless the client has agreed or the law requires it
+- id: c
+  text: Share the details, because the entrepreneur is a public figure
+- id: d
+  text: Give the details off the record, so that they cannot be traced back
+correct: b
+explanation: Standard III(E) requires client information to be kept confidential. The exceptions are when the client
+  agrees, when the law requires disclosure, or when it concerns illegal activity. None applies here.
+distractor_notes:
+  a: Even confirming that someone is a client is confidential information.
+  c: Being well known does not remove a client's right to confidentiality.
+  d: Speaking off the record is still a disclosure.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

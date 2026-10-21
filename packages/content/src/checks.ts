@@ -47,9 +47,12 @@ export function checkCourse(course: Course, opts: CheckOptions = {}): Issue[] {
   const err = (file: string, message: string) => issues.push({ level: "error", file, message });
   const warn = (file: string, message: string) => issues.push({ level: "warning", file, message });
 
-  const { syllabus } = course;
-  const loIds = new Set(syllabus.los.map((l) => l.id));
+  const { syllabus, outcomes } = course;
+  const loIds = new Set(outcomes.outcomes.map((l) => l.id));
   const topicIds = new Set(syllabus.topics.map((t) => t.id));
+  const areaIds = new Set(syllabus.areas.map((a) => a.id));
+  const sectionIds = new Set(outcomes.sections.map((s) => s.id));
+  const topicNumbers = new Set(syllabus.topics.map((t) => t.number));
   const unitIds = new Set(syllabus.units.map((u) => u.id));
   const taxYears = new Set(course.taxTables.map((t) => t.tax_year));
   const banned = loadBanned(course.root);
@@ -63,13 +66,25 @@ export function checkCourse(course: Course, opts: CheckOptions = {}): Issue[] {
     for (const b of banned) if (new RegExp(b.pattern, "i").test(text)) err(file, `banned phrase /${b.pattern}/: ${b.reason}`);
   };
 
-  // Syllabus
-  for (const lo of syllabus.los) {
-    if (!unitIds.has(lo.unit)) err("syllabus.yml", `LO ${lo.id} references unknown unit ${lo.unit}`);
-    if (!topicIds.has(lo.topic)) err("syllabus.yml", `LO ${lo.id} references unknown topic ${lo.topic}`);
+  // Syllabus structure
+  for (const a of syllabus.areas) if (!unitIds.has(a.unit)) err("syllabus.yml", `area ${a.id} references unknown unit ${a.unit}`);
+  for (const t of syllabus.topics) {
+    if (!unitIds.has(t.unit)) err("syllabus.yml", `topic ${t.id} references unknown unit ${t.unit}`);
+    if (!areaIds.has(t.area)) err("syllabus.yml", `topic ${t.id} references unknown area ${t.area}`);
   }
-  const unverified = syllabus.los.filter((l) => !l.verified).length;
-  if (unverified) warn("syllabus.yml", `${unverified} LO(s) not yet verified against the published syllabus`);
+  const outFile = `${syllabus.current_dir}/outcomes.yml`;
+  if (outcomes.syllabus_version !== syllabus.version) err(outFile, `is for version ${outcomes.syllabus_version}, syllabus is ${syllabus.version}`);
+  const seenLo = new Set<string>();
+  for (const lo of outcomes.outcomes) {
+    if (seenLo.has(lo.id)) err(outFile, `duplicate outcome ${lo.id}`);
+    seenLo.add(lo.id);
+    if (!lo.id.startsWith(`${lo.section}.`)) err(outFile, `outcome ${lo.id} is not in section ${lo.section}`);
+    if (!sectionIds.has(lo.section)) err(outFile, `outcome ${lo.id} references unknown section ${lo.section}`);
+    if (!topicNumbers.has(Number(lo.id.split(".")[0]))) err(outFile, `outcome ${lo.id} has no matching topic`);
+    if (/^(explain|identify|describe|calculate|define|distinguish|apply|analyse|evaluate)\b/i.test(lo.summary)) {
+      warn(outFile, `summary for ${lo.id} starts with a command word; describe the topic instead`);
+    }
+  }
   checkDate("syllabus.yml", "last_verified", syllabus.provenance.last_verified);
   checkDate("exam-info.yml", "last_verified", course.examInfo.last_verified);
   for (const t of course.taxTables) checkDate(`tax-tables/${t.tax_year}.yml`, "last_verified", t.provenance.last_verified);

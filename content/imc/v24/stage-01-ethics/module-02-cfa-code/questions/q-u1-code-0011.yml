@@ -1,0 +1,39 @@
+id: q-u1-code-0011
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: An independent financial adviser in Manchester receives a fee from a local solicitor for every client he refers
+  for will-writing. What does Standard VI(C) require?
+options:
+- id: a
+  text: Nothing, because the solicitor rather than the client pays the fee
+- id: b
+  text: Disclosure of the arrangement to his employer and to affected clients before they agree to the service
+- id: c
+  text: Disclosure only if a client asks about it
+- id: d
+  text: That he stops all referrals to the solicitor
+correct: b
+explanation: Standard VI(C) requires any payment for referrals to be disclosed to the employer, clients and prospective
+  clients, before they take up the service. They can then judge whether the referral is objective.
+distractor_notes:
+  a: Who pays makes no difference. The fee could still bias the recommendation.
+  c: Disclosure must be made up front, not only on request.
+  d: Referral arrangements are allowed if they are properly disclosed.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

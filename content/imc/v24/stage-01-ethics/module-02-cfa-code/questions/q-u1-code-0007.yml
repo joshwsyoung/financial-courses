@@ -1,0 +1,40 @@
+id: q-u1-code-0007
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: Margaret, aged 74, relies on her portfolio for steady income and says she could not cope with a large fall in
+  value. Her adviser wants to move half of it into an emerging markets smaller-companies fund that returned 40% last
+  year. Which Standard is most at risk?
+options:
+- id: a
+  text: Suitability
+- id: b
+  text: Performance presentation
+- id: c
+  text: Market manipulation
+- id: d
+  text: Record retention
+correct: a
+explanation: Standard III(C) requires investments to match the client's objectives, constraints and attitude to risk.
+  A volatile growth fund does not fit an income-seeking client with low tolerance for losses, whatever its past returns.
+distractor_notes:
+  b: Performance presentation concerns how results are reported, not whether an investment fits the client.
+  c: Nothing here involves distorting market prices or volumes.
+  d: Keeping records matters, but the core problem is that the investment does not suit Margaret.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

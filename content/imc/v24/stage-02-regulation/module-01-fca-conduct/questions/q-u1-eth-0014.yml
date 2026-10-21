@@ -1,0 +1,38 @@
+id: q-u1-eth-0014
+type: mcq
+unit: unit1
+lo:
+- 5.1.2
+difficulty: 3
+tags: []
+stem: A firm makes it easy to buy an investment product online but requires a posted letter and a phone call to
+  close it. Which Consumer Duty outcome is most at risk?
+options:
+- id: a
+  text: Price and value
+- id: b
+  text: Consumer support
+- id: c
+  text: Products and services
+- id: d
+  text: Consumer understanding
+correct: b
+explanation: Consumer support expects leaving or switching to be no harder than buying. Making exit much harder
+  than entry is a classic support failure.
+distractor_notes:
+  a: Price and value concerns whether the price is reasonable compared with the benefits.
+  c: Products and services concerns design for a target market.
+  d: Consumer understanding concerns how clearly the firm communicates.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

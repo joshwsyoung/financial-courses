@@ -1,0 +1,40 @@
+id: q-u1-code-0004
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: An analyst combines a retailer's published accounts, footfall data she buys from a public data vendor and her
+  own visits to its shops. She concludes that sales are falling and issues a sell rating before the next results.
+  Has she breached the Standards?
+options:
+- id: a
+  text: Yes, because her conclusion was not yet known to the market
+- id: b
+  text: No, because she built her view from public information and non-material observations
+- id: c
+  text: Yes, because she must wait until the company publishes its results
+- id: d
+  text: No, but only because she did not trade on the view herself
+correct: b
+explanation: This is the mosaic approach. Combining public information with non-material observations to reach a view
+  is good analysis, not insider dealing, even if the conclusion turns out to be price-sensitive.
+distractor_notes:
+  a: A conclusion reached through your own analysis of legitimate sources is not material non-public information.
+  c: Analysts may publish views at any time, as long as they do not use inside information.
+  d: Using inside information would be a breach whether or not she traded herself. Here no inside information was used.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

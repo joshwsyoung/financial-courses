@@ -142,6 +142,19 @@ export function useProgress(): ProgressState {
   return useSyncExternalStore(subscribe, getSnapshot, () => EMPTY);
 }
 
+/** Raw store access for the sync layer (not for components; use useProgress there). */
+export const store = {
+  get: getSnapshot,
+  subscribe(cb: () => void) {
+    load();
+    listeners.add(cb);
+    return () => listeners.delete(cb);
+  },
+  replace(next: ProgressState) {
+    set(() => next);
+  },
+};
+
 export const actions = {
   dismissWelcome() {
     set((s) => ({ ...s, seenWelcome: true }));

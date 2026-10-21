@@ -1,0 +1,29 @@
+id: q-u1-code-0015
+type: gapfill
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 1
+tags: []
+stem: 'Fill the gap. Standard VI(B) says your personal trades must wait until client and employer trades have
+  gone through. Its name is ______ of transactions.'
+answer:
+  kind: text
+  accepted:
+  - priority
+explanation: Standard VI(B) is called Priority of transactions. Client and employer trades come first, so that you
+  never benefit at their expense, for example by front-running their orders.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

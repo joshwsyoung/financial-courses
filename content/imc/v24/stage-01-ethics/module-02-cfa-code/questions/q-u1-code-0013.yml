@@ -1,0 +1,38 @@
+id: q-u1-code-0013
+type: mcq
+unit: unit1
+lo:
+- 2.1.2
+difficulty: 1
+tags: []
+stem: Which of these is a negative behavioural indicator in an investment team?
+options:
+- id: a
+  text: A junior analyst asks compliance whether a gift is acceptable
+- id: b
+  text: A manager says a practice is fine because 'everyone in the market does it'
+- id: c
+  text: A portfolio manager reports her own pricing error to her line manager
+- id: d
+  text: An adviser writes down why a product suits each client
+correct: b
+explanation: Justifying a practice because others do it is a classic warning sign. It replaces ethical judgement
+  with convenience and peer pressure.
+distractor_notes:
+  a: Checking with compliance when unsure is a positive indicator.
+  c: Owning up to mistakes quickly is a positive indicator.
+  d: Recording the reasons for advice supports suitability and is a positive indicator.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

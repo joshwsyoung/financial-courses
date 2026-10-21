@@ -24,13 +24,12 @@ export interface FeedbackPayload extends FeedbackContext {
   message: string;
 }
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const COMMIT = process.env.NEXT_PUBLIC_COMMIT || "";
 const SYLLABUS = process.env.NEXT_PUBLIC_SYLLABUS_VERSION || "";
 
 /** "database" when Supabase is configured for this build, otherwise feedback goes via a GitHub issue. */
-export const feedbackChannel: "database" | "github" = SUPABASE_URL && SUPABASE_KEY ? "database" : "github";
+export const feedbackChannel: "database" | "github" =
+  process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ? "database" : "github";
 
 export function contextLines(p: FeedbackPayload): string[] {
   return [
@@ -56,26 +55,49 @@ export function githubIssueUrl(p: FeedbackPayload): string {
   return `${REPO_URL}/issues/new?${params.toString()}`;
 }
 
-/** Saves to Supabase (insert-only table, see supabase/migrations). Throws on failure. */
-export async function saveToDatabase(p: FeedbackPayload): Promise<void> {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/feedback`, {
-    method: "POST",
-    headers: {
-      apikey: SUPABASE_KEY!,
-      Authorization: `Bearer ${SUPABASE_KEY}`,
-      "Content-Type": "application/json",
-      Prefer: "return=minimal",
-    },
-    body: JSON.stringify({
-      kind: p.kind,
-      message: p.message,
-      page: p.page,
-      task_id: p.taskId ?? null,
-      question_id: p.questionId ?? null,
-      answer: p.answer ?? null,
-      syllabus_version: SYLLABUS || null,
-      app_commit: COMMIT || null,
-    }),
+/** Saves to Supabase: optional screenshot into a private bucket, then an insert-only row. */
+export async function saveToDatabase(p: FeedbackPayload, screenshot?: Blob): Promise<void> {
+  const { supabase } = await import("./supabase");
+  const db = supabase();
+  if (!db) throw new Error("Feedback database is not configured");
+  let screenshotPath: string | null = null;
+  if (screenshot) {
+    const ext = screenshot.type === "image/png" ? "png" : screenshot.type === "image/webp" ? "webp" : "jpg";
+    screenshotPath = `feedback/${crypto.randomUUID()}.${ext}`;
+    const { error } = await db.storage.from("fc-feedback-screenshots").upload(screenshotPath, screenshot, { contentType: screenshot.type });
+    if (error) throw new Error(`Could not upload the screenshot (${error.message})`);
+  }
+  const { error } = await db.from("fc_feedback").insert({
+    kind: p.kind,
+    message: p.message,
+    page: p.page,
+    task_id: p.taskId ?? null,
+    question_id: p.questionId ?? null,
+    answer: p.answer ?? null,
+    syllabus_version: SYLLABUS || null,
+    app_commit: COMMIT || null,
+    screenshot_path: screenshotPath,
   });
-  if (!res.ok) throw new Error(`Could not save feedback (${res.status})`);
+  if (error) throw new Error(`Could not save feedback (${error.message})`);
+}
+
+/** Captures what the learner can currently see, as a JPEG no wider than 1280px. */
+export async function captureViewport(): Promise<Blob | null> {
+  try {
+    const { toBlob } = await import("html-to-image");
+    const root = document.documentElement;
+    const scale = Math.min(1, 1280 / window.innerWidth);
+    return await toBlob(root, {
+      type: "image/jpeg",
+      quality: 0.8,
+      pixelRatio: scale,
+      width: window.innerWidth,
+      height: window.innerHeight,
+      backgroundColor: getComputedStyle(document.body).backgroundColor,
+      style: { transform: `translate(${-window.scrollX}px, ${-window.scrollY}px)`, transformOrigin: "top left" },
+      filter: (node) => !(node instanceof HTMLElement && node.dataset.noScreenshot !== undefined),
+    });
+  } catch {
+    return null;
+  }
 }

@@ -33,6 +33,7 @@ export interface LoadedStage extends S.Stage {
 export interface Course {
   root: string;
   syllabus: S.Syllabus;
+  outcomes: S.OutcomesFile;
   stages: LoadedStage[];
   examInfo: S.ExamInfo;
   taxTables: S.TaxTable[];
@@ -93,6 +94,8 @@ export function loadCourse(syllabusRoot: string): LoadResult {
   if (!syllabus || !examInfo || !officialPapers) return { course: null, issues };
 
   const versionDir = path.join(root, syllabus.current_dir);
+  const outcomes = readYaml(path.join(versionDir, "outcomes.yml"), S.outcomesFile, root, issues);
+  if (!outcomes) return { course: null, issues };
   const stages: LoadedStage[] = [];
   for (const stageDir of subdirs(versionDir)) {
     const stage = readYaml(path.join(stageDir, "stage.yml"), S.stage, root, issues);
@@ -134,7 +137,7 @@ export function loadCourse(syllabusRoot: string): LoadResult {
     stages.push({ ...stage, dir: rel(root, stageDir), modules });
   }
   stages.sort((a, b) => a.order - b.order);
-  return { course: { root, syllabus, stages, examInfo, taxTables, officialPapers }, issues };
+  return { course: { root, syllabus, outcomes, stages, examInfo, taxTables, officialPapers }, issues };
 }
 
 /** gray-matter parses bare YAML dates into Date objects; schemas expect strings. */

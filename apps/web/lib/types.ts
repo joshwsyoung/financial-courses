@@ -46,6 +46,18 @@ export interface ClientQuestion extends EngineQuestion {
   parts?: ClientQuestion[];
 }
 
+export interface OutcomeRow {
+  id: string;
+  unit: string;
+  /** Topic slug (from the outcome's leading number). */
+  topic: string;
+  section: string;
+  group?: string;
+  verbs: string[];
+  summary: string;
+  covered: { tasks: { title: string; href: string }[]; questions: number };
+}
+
 export interface CourseIndex {
   syllabus: {
     id: string;
@@ -55,10 +67,14 @@ export interface CourseIndex {
     version: string;
     valid_from: string;
     valid_to: string;
-    units: { id: string; name: string; questions: number; duration_min: number; recommended_hours: number; pass_mark_range: [number, number] }[];
-    topics: { id: string; unit: string; name: string; weight_band: [number, number] }[];
-    los: { id: string; unit: string; topic: string; summary: string; verified: boolean }[];
+    official_url: string;
+    units: { id: string; name: string; questions: number; duration_min: number; recommended_hours: number; pass_mark_range: [number, number]; official_doc: string }[];
+    areas: { id: string; unit: string; name: string; questions: [number, number] }[];
+    topics: { id: string; number: number; unit: string; area: string; name: string }[];
+    sections: { id: string; title: string }[];
   };
+  /** Every official learning outcome, with our summary and where the course covers it. */
+  outcomes: OutcomeRow[];
   stages: StageSummary[];
   questions: Record<string, ClientQuestion>;
   officialPapers: { id: string; unit: string; title: string; url: string; current: boolean; note?: string }[];

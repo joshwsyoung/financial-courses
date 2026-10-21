@@ -1,0 +1,97 @@
+id: q-u1-code-0014
+type: itemset
+unit: unit1
+lo:
+- 2.2.3
+- 2.2.1
+difficulty: 3
+tags: []
+scenario: Amira is a portfolio manager and a CFA charterholder at Severn Lane Wealth, a fictional Bristol wealth
+  manager. She also supervises two junior analysts. The following three situations come up in one week.
+stem: Read the scenario, then answer each linked part.
+explanation: Each part tests a different Standard, which is typical of exam dilemmas. Identify the duty first, then
+  pick the response that protects clients and markets.
+parts:
+- id: a
+  type: mcq
+  lo:
+  - 2.2.3
+  difficulty: 3
+  stem: On Monday, Amira's investment committee agrees to buy a large stake in a small, thinly traded company for all
+    discretionary clients on Wednesday. On Tuesday, she wants to buy the same shares for her own SIPP. What best describes
+    this?
+  options:
+  - id: a
+    text: Acceptable, because the SIPP is a long-term pension and not a trading account
+  - id: b
+    text: A breach of the priority of transactions, because she would be dealing ahead of her clients
+  - id: c
+    text: Acceptable, if she discloses the trade to compliance afterwards
+  - id: d
+    text: A breach of record retention
+  correct: b
+  explanation: Buying ahead of known client orders in a thinly traded share lets her benefit from the price rise those
+    orders are likely to cause. Standard VI(B) requires client transactions to come first.
+  distractor_notes:
+    a: The type of account does not matter. She would still be trading ahead of clients.
+    c: Telling compliance after the event does not cure front-running.
+    d: Record keeping is not the issue. The timing of her personal trade is.
+- id: b
+  type: mcq
+  lo:
+  - 2.2.3
+  difficulty: 2
+  stem: On Thursday, a company she is researching offers to pay for her flights and hotel so she can visit its plant
+    in Aberdeen. What is the best response?
+  options:
+  - id: a
+    text: Accept, because the visit is genuine research
+  - id: b
+    text: Have Severn Lane pay for her travel and hotel, and accept only modest hospitality on site
+  - id: c
+    text: Decline the visit, because analysts must never meet company management
+  - id: d
+    text: Accept, and give the company a slightly lower rating to balance it out
+  correct: b
+  explanation: Standard I(B) protects independence and objectivity. The best practice is for her firm to pay its own
+    travel costs, so that the company cannot influence her view. Modest hospitality, like a working lunch, is fine.
+  distractor_notes:
+    a: A genuine purpose does not remove the risk that paid travel will sway her judgement, or appear to.
+    c: Meeting management is normal research. The issue is who pays.
+    d: Adjusting the rating to offset a gift means the gift is still affecting her analysis.
+- id: c
+  type: mcq
+  lo:
+  - 2.2.3
+  - 2.2.1
+  difficulty: 3
+  stem: On Friday, Amira notices that one of her analysts has copied three pages from a broker's research into a client
+    note, with no credit given. Which Standards are most clearly involved?
+  options:
+  - id: a
+    text: Misrepresentation for the analyst, and Responsibilities of supervisors for Amira
+  - id: b
+    text: Market manipulation for the analyst, and Fair dealing for Amira
+  - id: c
+    text: Confidentiality for the analyst, and Loyalty to employer for Amira
+  correct: a
+  explanation: Presenting someone else's work as your own is plagiarism, a form of misrepresentation under Standard I(C).
+    As a supervisor, Amira must take reasonable steps to correct this and prevent repeats, under Standard IV(C).
+  distractor_notes:
+    b: Copying research does not distort market prices, and fair dealing is about treating clients equitably.
+    c: The broker's note was shared with the firm, so the problem is not a confidentiality leak. Supervision, not loyalty,
+      is Amira's duty here.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

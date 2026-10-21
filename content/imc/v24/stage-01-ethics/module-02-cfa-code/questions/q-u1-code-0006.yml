@@ -1,0 +1,39 @@
+id: q-u1-code-0006
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: An analyst at a London fund manager downgrades a widely held stock from buy to sell. His manager suggests he
+  phones the firm's five largest clients before the research note goes out to everyone else. What should he do?
+options:
+- id: a
+  text: Phone the five largest clients first, because they pay the highest fees
+- id: b
+  text: Release the downgrade to all relevant clients at the same time
+- id: c
+  text: Delay the downgrade until the largest clients have sold their holdings
+- id: d
+  text: Send it only to clients who already hold the stock
+correct: b
+explanation: Standard III(B) requires fair dealing. A change in a recommendation should reach all relevant clients
+  at the same time, so that no group can act on it before others.
+distractor_notes:
+  a: Paying higher fees can buy a different level of service, but not early access to the same recommendation.
+  c: Delaying the note to let favoured clients sell first disadvantages everyone else.
+  d: Clients who do not hold the stock may still need the change, for example if they were planning to buy.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

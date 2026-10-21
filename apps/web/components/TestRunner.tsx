@@ -25,7 +25,7 @@ export interface TestConfig {
 
 type Phase = "intro" | "running" | "results";
 
-export function TestRunner({ config, los }: { config: TestConfig; los: CourseIndex["syllabus"]["los"] }) {
+export function TestRunner({ config, los }: { config: TestConfig; los: CourseIndex["outcomes"] }) {
   const p = useProgress();
   const [phase, setPhase] = useState<Phase>("intro");
   const [questions, setQuestions] = useState<ClientQuestion[]>([]);

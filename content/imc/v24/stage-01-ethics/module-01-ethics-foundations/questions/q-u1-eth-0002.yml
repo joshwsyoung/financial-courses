@@ -2,35 +2,35 @@ id: q-u1-eth-0002
 type: mcq
 unit: unit1
 lo:
-  - u1.eth.1
+- 2.1.1
 difficulty: 2
 tags: []
 stem: Why does ethical behaviour matter more in financial services than in many other industries?
 options:
-  - id: a
-    text: Financial products are always more profitable than other products
-  - id: b
-    text: Clients often know less than the professional and cannot easily check the quality of advice
-  - id: c
-    text: Ethics is a legal requirement only in financial services
-  - id: d
-    text: Financial firms have no regulators, so ethics replaces regulation
+- id: a
+  text: Financial products are always more profitable than other products
+- id: b
+  text: Clients often know less than the professional and cannot easily check the quality of advice
+- id: c
+  text: Ethics is a legal requirement only in financial services
+- id: d
+  text: Financial firms have no regulators, so ethics replaces regulation
 correct: b
-explanation: Information asymmetry is the key reason. Clients depend on the professional's honesty because
-  they cannot easily judge advice, and problems can take years to show up.
+explanation: Information asymmetry is the key reason. Clients depend on the professional's honesty because they
+  cannot easily judge advice, and problems can take years to show up.
 distractor_notes:
   a: Profitability is not what makes ethics especially important.
   c: Ethics matters in every industry; finance is not unique in having legal duties.
   d: Financial services are heavily regulated, by the FCA and PRA among others.
 tax_year: null
 syllabus_versions:
-  - "24"
+- '24'
 origin: ai_generated
 reviewed_by: []
 status: review
 provenance:
   sources:
-    - original
+  - original
   licence: CC BY-SA 4.0
   last_verified: 2026-10-20
   author: ai-draft

@@ -1,0 +1,18 @@
+id: cfa-code
+title: The CFA Code of Ethics and Standards of Professional Conduct
+order: 2
+summary: The six components of the Code, the seven Standards and the values beneath them, and how to apply them to real dilemmas at UK investment firms.
+los:
+- 2.1.2
+- 2.2.1
+- 2.2.2
+- 2.2.3
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

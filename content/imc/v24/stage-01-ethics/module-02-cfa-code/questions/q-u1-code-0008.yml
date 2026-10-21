@@ -1,0 +1,39 @@
+id: q-u1-code-0008
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 3
+tags: []
+stem: A wealth manager runs twelve balanced portfolios. A new brochure shows only the three that did best over five
+  years, labelled as 'our balanced track record'. What is the main problem?
+options:
+- id: a
+  text: None, as long as the figures for those three portfolios are accurate
+- id: b
+  text: Picking only the best portfolios gives a misleading picture of performance
+- id: c
+  text: Brochures are not allowed to show past performance at all
+- id: d
+  text: Five years is too short a period to show
+correct: b
+explanation: Standard III(D) requires performance to be presented fairly, accurately and completely. Showing only
+  the winners, and calling it the whole track record, misleads prospective clients even if each number is correct.
+distractor_notes:
+  a: Accurate numbers can still mislead if the selection is not complete or representative.
+  c: Past performance can be shown, provided it is fair and complete and suitable warnings are given.
+  d: The length of the period is not the problem. The cherry-picking is.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

@@ -1,0 +1,20 @@
+id: fca-conduct
+title: Conduct rules, conflicts and the Consumer Duty
+order: 1
+summary: Managing conflicts of interest, the FCA Conduct Rules and the Consumer Duty's expectations for retail customers.
+los:
+- 3.3.3
+- 3.3.6
+- 3.3.8
+- 3.3.9
+- 5.1.2
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.handbook.fca.org.uk/handbook/COCON/2/1.html
+  - https://www.fca.org.uk/firms/consumer-duty
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

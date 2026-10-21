@@ -1,6 +1,5 @@
-# IMC syllabus index. Facts and structure only (spec 4.1).
-# LO ids below are PROVISIONAL (u1.eth.1 style) until mapped to the official LO ids in the
-# published v24 syllabus. LO summaries are our own paraphrases; never paste official LO text.
+# IMC syllabus metadata, from CFA UK's published v24 syllabus documents (facts and structure only).
+# Learning outcomes live in v24/outcomes.yml: official IDs and command words, with our own summaries.
 id: imc
 name: CFA UK Level 4 Certificate in Investment Management
 short_name: IMC
@@ -9,10 +8,10 @@ version: "24"
 valid_from: 2026-12-01
 valid_to: 2027-11-30
 current_dir: v24
-weight_basis: percent
+official_url: https://www.cfauk.org/learn/qualifications/investment-management-certificate
 notes:
-  - Unit figures copied from the draft spec (CFA UK site, Oct 2026, v23). Verify for v24.
-  - Topic weight bands are PLACEHOLDERS until read from the published syllabus.
+  - Pass marks are not published in the syllabus; pass_mark_range is an estimate to verify.
+  - Exams run every working day at Pearson VUE test centres and every day via OnVUE remote proctoring.
 units:
   - id: unit1
     name: The Investment Environment
@@ -20,41 +19,46 @@ units:
     duration_min: 100
     pass_mark_range: [65, 75]
     recommended_hours: 100
+    official_doc: "Unit 1 syllabus, Version 24"
   - id: unit2
     name: Investment Practice
     questions: 105
     duration_min: 140
     pass_mark_range: [60, 70]
     recommended_hours: 140
+    official_doc: "Unit 2 syllabus, Version 24"
+areas:
+  - { id: markets, unit: unit1, name: Financial markets and institutions, questions: [10, 20] }
+  - { id: ethics, unit: unit1, name: Ethics, questions: [5, 15] }
+  - { id: regulation-legal, unit: unit1, name: Regulation and legal concepts, questions: [25, 35] }
+  - { id: clients, unit: unit1, name: Clients, questions: [15, 25] }
+  - { id: taxation, unit: unit1, name: Taxation, questions: [10, 20] }
+  - { id: quant, unit: unit2, name: Quantitative methods, questions: [10, 20] }
+  - { id: economics, unit: unit2, name: Economics, questions: [5, 15] }
+  - { id: accounting, unit: unit2, name: Accounting, questions: [10, 20] }
+  - { id: asset-classes, unit: unit2, name: Asset classes, questions: [25, 30] }
+  - { id: theory-management, unit: unit2, name: Investment theory, management and measurement, questions: [25, 30] }
 topics:
-  - { id: ethics, unit: unit1, name: Ethics and professionalism, weight_band: [20, 30] }
-  - { id: uk-tax, unit: unit1, name: UK taxation, weight_band: [20, 30] }
-  - { id: markets-regulation, unit: unit1, name: Markets and regulation, weight_band: [25, 35] }
-  - { id: client-advice, unit: unit1, name: Client objectives and advice, weight_band: [15, 25] }
-  - { id: investment-maths, unit: unit2, name: Investment maths, weight_band: [10, 20] }
-  - { id: products, unit: unit2, name: Investment products, weight_band: [30, 40] }
-  - { id: theories, unit: unit2, name: Theories and models, weight_band: [10, 20] }
-  - { id: portfolio, unit: unit2, name: Portfolio management, weight_band: [15, 25] }
-  - { id: performance, unit: unit2, name: Performance measurement, weight_band: [5, 15] }
-los:
-  - { id: u1.eth.1, unit: unit1, topic: ethics, verified: false, summary: Tell ethical behaviour apart from legal compliance and explain why finance needs both }
-  - { id: u1.eth.2, unit: unit1, topic: ethics, verified: false, summary: Explain how trust underpins financial services and who the stakeholders are }
-  - { id: u1.eth.3, unit: unit1, topic: ethics, verified: false, summary: Spot conflicts of interest and describe ways firms manage them }
-  - { id: u1.eth.4, unit: unit1, topic: ethics, verified: false, summary: Apply a structured framework to an ethical dilemma }
-  - { id: u1.eth.5, unit: unit1, topic: ethics, verified: false, summary: Describe the FCA individual Conduct Rules and who they apply to }
-  - { id: u1.eth.6, unit: unit1, topic: ethics, verified: false, summary: Describe the Consumer Duty, its cross-cutting rules and four outcomes }
-  - { id: u1.tax.1, unit: unit1, topic: uk-tax, verified: false, summary: Calculate income tax on employment income using the personal allowance and rate bands }
-  - { id: u1.tax.2, unit: unit1, topic: uk-tax, verified: false, summary: Describe ISA subscription limits and the tax treatment of ISA returns }
-  - { id: u1.mkt.1, unit: unit1, topic: markets-regulation, verified: false, summary: Describe the role of the FCA and PRA in UK financial regulation }
-  - { id: u1.adv.1, unit: unit1, topic: client-advice, verified: false, summary: Identify a client's objectives, constraints and attitude to risk }
-  - { id: u2.math.1, unit: unit2, topic: investment-maths, verified: false, summary: Calculate present and future values of single sums }
-  - { id: u2.prod.1, unit: unit2, topic: products, verified: false, summary: Calculate the current yield of a bond }
-  - { id: u2.thy.1, unit: unit2, topic: theories, verified: false, summary: Explain diversification and the difference between systematic and specific risk }
-  - { id: u2.port.1, unit: unit2, topic: portfolio, verified: false, summary: Describe strategic and tactical asset allocation }
-  - { id: u2.perf.1, unit: unit2, topic: performance, verified: false, summary: Calculate a simple holding period return }
+  - { id: financial-markets, number: 1, unit: unit1, area: markets, name: Financial markets and institutions }
+  - { id: ethics, number: 2, unit: unit1, area: ethics, name: Ethics and investment professionalism }
+  - { id: regulation, number: 3, unit: unit1, area: regulation-legal, name: The regulation of financial markets and institutions }
+  - { id: legal-concepts, number: 4, unit: unit1, area: regulation-legal, name: Legal concepts }
+  - { id: client-advice, number: 5, unit: unit1, area: clients, name: Client advice }
+  - { id: uk-tax, number: 6, unit: unit1, area: taxation, name: Taxation in the UK }
+  - { id: quant-methods, number: 7, unit: unit2, area: quant, name: Quantitative methods }
+  - { id: micro-economics, number: 8, unit: unit2, area: economics, name: Micro-economics }
+  - { id: macro-economics, number: 9, unit: unit2, area: economics, name: Macro-economics }
+  - { id: accounting, number: 10, unit: unit2, area: accounting, name: Accounting }
+  - { id: equities, number: 11, unit: unit2, area: asset-classes, name: Equities }
+  - { id: fixed-income, number: 12, unit: unit2, area: asset-classes, name: Fixed income }
+  - { id: derivatives, number: 13, unit: unit2, area: asset-classes, name: Derivatives }
+  - { id: alternatives, number: 14, unit: unit2, area: asset-classes, name: Alternative investments and private markets }
+  - { id: portfolio-management, number: 15, unit: unit2, area: theory-management, name: Portfolio management }
+  - { id: investment-products, number: 16, unit: unit2, area: theory-management, name: Investment products }
+  - { id: performance, number: 17, unit: unit2, area: theory-management, name: Investment performance measurement }
 provenance:
-  sources: ["https://www.cfauk.org"]
-  licence: Facts and structure only; paraphrased. See README licence notes.
-  last_verified: 2026-10-20
+  sources: ["https://www.cfauk.org/learn/qualifications/investment-management-certificate"]
+  licence: Facts and structure from the CFA UK IMC v24 syllabus; no official wording reproduced.
+  last_verified: 2026-10-21
   author: ai-draft
   reviewer: pending

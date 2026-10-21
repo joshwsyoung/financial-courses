@@ -1,0 +1,38 @@
+id: q-u1-eth-0005
+type: mcq
+unit: unit1
+lo:
+- 3.3.6
+- 3.5.28
+difficulty: 2
+tags: []
+stem: Which of the following is the clearest example of a conflict of interest?
+options:
+- id: a
+  text: A fund manager is paid a fixed salary and invests in line with the fund's mandate
+- id: b
+  text: An analyst buys a share for their own account just before publishing a 'buy' recommendation on it
+- id: c
+  text: An adviser recommends a low-cost tracker fund to a client who wants low fees
+- id: d
+  text: A firm publishes its fee schedule on its website
+correct: b
+explanation: The analyst can profit personally from the price rise their own recommendation may cause, so their
+  interest competes with their duty to give objective research.
+distractor_notes:
+  a: A fixed salary and following the mandate do not create a competing interest.
+  c: The recommendation matches the client's stated needs.
+  d: Publishing fees helps transparency; it is not a conflict.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-20
+  author: ai-draft
+  reviewer: pending

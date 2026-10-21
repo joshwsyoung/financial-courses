@@ -1,44 +1,60 @@
 provenance:
-  sources: ["original"]
+  sources:
+  - original
   licence: CC BY-SA 4.0
   last_verified: 2026-10-20
   author: ai-draft
   reviewer: pending
 tasks:
-  - { id: eth-ethics-vs-law, type: read, title: "Ethics is not the same as law", minutes: 2, lo: [u1.eth.1], file: ethics-vs-law.md }
-  - { id: eth-trust-eli5, type: eli5, title: "Trust is the product", minutes: 2, lo: [u1.eth.2], file: trust-eli5.md }
-  - { id: eth-q-legal-unethical, type: question, title: "Check: legal but wrong?", minutes: 1, lo: [u1.eth.1], question: q-u1-eth-0001 }
-  - { id: eth-stakeholders, type: read, title: "Who relies on you", minutes: 2, lo: [u1.eth.2], file: stakeholders.md }
-  - { id: eth-fc-conflict, type: flashcard, title: "Flashcard: conflict of interest", minutes: 1, lo: [u1.eth.3],
-      front: "What is a conflict of interest?",
-      back: "A situation where your own interests, or another client's, could pull you away from acting in the best interests of the person you owe a duty to." }
-  - { id: eth-conflicts, type: read, title: "Conflicts of interest", minutes: 2, lo: [u1.eth.3], file: conflicts.md }
-  - { id: eth-q-conflict-manage, type: question, title: "Check: managing a conflict", minutes: 1, lo: [u1.eth.3], question: q-u1-eth-0004 }
-  - { id: eth-framework-diagram, type: diagram, title: "A five-step decision framework", minutes: 2, lo: [u1.eth.4], file: framework-diagram.md }
-  - { id: eth-framework-worked, type: worked_example, title: "Worked example: the generous fund manager", minutes: 3, lo: [u1.eth.4, u1.eth.3], file: framework-worked.md }
-  - { id: eth-q-framework, type: question, title: "Check: first step", minutes: 1, lo: [u1.eth.4], question: q-u1-eth-0007 }
-  - { id: eth-conduct-rules, type: read, title: "The FCA Conduct Rules", minutes: 2, lo: [u1.eth.5], file: conduct-rules.md }
-  - id: eth-memory-conduct-rules
-    type: memory_aid
-    title: "Remember the six Conduct Rules"
-    minutes: 2
-    lo: [u1.eth.5]
-    memory:
-      intro: "Six rules is a lot to hold in your head. Hang each one on a word in this sentence."
-      device:
-        kind: phrase
-        text: "I Don't Overlook Customers, Markets or Outcomes"
-        letters: IDOCMO
-      ordered: true
-      items:
-        - { label: "Integrity", detail: "Rule 1: act with integrity" }
-        - { label: "Due skill, care and diligence", detail: "Rule 2: act with due skill, care and diligence" }
-        - { label: "Open and cooperative with regulators", detail: "Rule 3: be open and cooperative with the FCA, the PRA and other regulators" }
-        - { label: "Customers' interests, treated fairly", detail: "Rule 4: pay due regard to the interests of customers and treat them fairly" }
-        - { label: "Market conduct standards", detail: "Rule 5: observe proper standards of market conduct" }
-        - { label: "Outcomes for retail customers", detail: "Rule 6: act to deliver good outcomes for retail customers" }
-  - { id: eth-fc-rule-1, type: flashcard, title: "Flashcard: the first Conduct Rule", minutes: 1, lo: [u1.eth.5],
-      front: "What does individual Conduct Rule 1 require?",
-      back: "You must act with integrity." }
-  - { id: eth-consumer-duty, type: read, title: "The Consumer Duty", minutes: 2, lo: [u1.eth.6], file: consumer-duty.md }
-  - { id: eth-q-duty-outcomes, type: question, title: "Check: the four outcomes", minutes: 1, lo: [u1.eth.6], question: q-u1-eth-0011 }
+- id: eth-ethics-vs-law
+  type: read
+  title: Ethics is not the same as law
+  minutes: 2
+  lo:
+  - 2.1.1
+  - 2.1.5
+  file: ethics-vs-law.md
+- id: eth-trust-eli5
+  type: eli5
+  title: Trust is the product
+  minutes: 2
+  lo:
+  - 2.1.1
+  - 2.1.4
+  file: trust-eli5.md
+- id: eth-q-legal-unethical
+  type: question
+  title: 'Check: legal but wrong?'
+  minutes: 1
+  lo:
+  - 2.1.5
+  question: q-u1-eth-0001
+- id: eth-stakeholders
+  type: read
+  title: Who relies on you
+  minutes: 2
+  lo:
+  - 2.1.3
+  file: stakeholders.md
+- id: eth-framework-diagram
+  type: diagram
+  title: A five-step decision framework
+  minutes: 2
+  lo:
+  - 2.2.3
+  file: framework-diagram.md
+- id: eth-framework-worked
+  type: worked_example
+  title: 'Worked example: the generous fund manager'
+  minutes: 3
+  lo:
+  - 2.2.3
+  - 3.5.17
+  file: framework-worked.md
+- id: eth-q-framework
+  type: question
+  title: 'Check: first step'
+  minutes: 1
+  lo:
+  - 2.2.3
+  question: q-u1-eth-0007

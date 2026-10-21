@@ -1,0 +1,39 @@
+id: q-u1-code-0012
+type: mcq
+unit: unit1
+lo:
+- 2.2.2
+difficulty: 2
+tags: []
+stem: A company offers an analyst who covers it a free weekend at a luxury hotel, shortly before she updates her rating.
+  Which value underneath the Code and Standards is most directly at stake?
+options:
+- id: a
+  text: Independence and objectivity
+- id: b
+  text: Confidentiality
+- id: c
+  text: Competence
+- id: d
+  text: Fair dealing between clients
+correct: a
+explanation: A lavish gift from a company you cover could sway your judgement, or look as if it does. Protecting
+  independence and objectivity is the value most directly at stake.
+distractor_notes:
+  b: No client information is being disclosed.
+  c: The gift does not affect her knowledge or skill, only potentially her judgement.
+  d: Fair dealing is about treating clients fairly against each other, not gifts from companies.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

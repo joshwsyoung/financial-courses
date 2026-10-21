@@ -1,0 +1,39 @@
+id: q-u1-code-0010
+type: mcq
+unit: unit1
+lo:
+- 2.2.3
+difficulty: 2
+tags: []
+stem: A pension fund client offers an investment manager a personal annual fee to give its trustees evening training
+  on asset allocation. The work could compete with services her employer sells. What must she do before accepting?
+options:
+- id: a
+  text: Nothing, because the work is done outside office hours
+- id: b
+  text: Get written consent from her employer, having told it the terms
+- id: c
+  text: Tell the client's trustees that she is an employee
+- id: d
+  text: Pass the fee to charity, so that there is no conflict
+correct: b
+explanation: Standard IV(B) covers additional compensation arrangements. Before accepting pay that could compete with
+  her employer or create a conflict, she must get written consent from her employer.
+distractor_notes:
+  a: Working outside office hours does not remove the potential conflict with her employer.
+  c: The trustees probably know this already. The consent needed is her employer's.
+  d: Giving the money away does not remove the competing work or the need for consent.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending

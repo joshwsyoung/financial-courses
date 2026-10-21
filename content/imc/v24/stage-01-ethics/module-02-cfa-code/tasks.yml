@@ -1,0 +1,149 @@
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending
+tasks:
+- id: code-intro
+  type: read
+  title: The Code and the Standards
+  minutes: 2
+  lo:
+  - 2.2.1
+  - 2.2.2
+  file: code-intro.md
+- id: code-fc-components
+  type: flashcard
+  title: 'Flashcard: the six components of the Code'
+  minutes: 1
+  lo:
+  - 2.2.1
+  front: In short form, what are the six components of the CFA Code of Ethics?
+  back: "1. Integrity, competence, diligence and respect. 2. Profession and clients before self. 3. Reasonable care
+    and independent judgement. 4. Act professionally and encourage others to. 5. Support fair, trusted capital markets.
+    6. Keep your competence up to date, and help others do the same."
+- id: code-standards-diagram
+  type: diagram
+  title: The seven Standards at a glance
+  minutes: 2
+  lo:
+  - 2.2.1
+  file: standards-diagram.md
+- id: code-memory-standards
+  type: memory_aid
+  title: Remember the seven Standards
+  minutes: 2
+  lo:
+  - 2.2.1
+  memory:
+    intro: The seven Standards always come in the same order. Each word of this sentence starts with the same letter
+      as one Standard.
+    device:
+      kind: phrase
+      text: 'Please Invest Diligently: Don''t Ignore Client Rights'
+      letters: PIDDICR
+    ordered: true
+    items:
+    - label: Professionalism
+      detail: 'Standard I: law, independence and objectivity, misrepresentation, misconduct, competence'
+    - label: Integrity of capital markets
+      detail: 'Standard II: no use of material non-public information, no market manipulation'
+    - label: Duties to clients
+      detail: 'Standard III: loyalty, fair dealing, suitability, performance figures, confidentiality'
+    - label: Duties to employers
+      detail: 'Standard IV: loyalty to the employer, consent for outside pay, supervision'
+    - label: Investment analysis and actions
+      detail: 'Standard V: Investment Analysis, Recommendations, and Actions. Reasonable basis, clear communication,
+        record keeping'
+    - label: Conflicts of interest
+      detail: 'Standard VI: disclose conflicts, put client trades first, disclose referral fees'
+    - label: Responsibilities as member or candidate
+      detail: 'Standard VII: exam and programme integrity, accurate use of the CFA designation'
+- id: code-q-standards
+  type: question
+  title: 'Check: Code or Standards?'
+  minutes: 1
+  lo:
+  - 2.2.1
+  question: q-u1-code-0001
+- id: code-fc-stricter
+  type: flashcard
+  title: 'Flashcard: when the law and the Standards differ'
+  minutes: 1
+  lo:
+  - 2.2.1
+  - 2.2.3
+  front: The law and the CFA Standards set different requirements. Which do you follow?
+  back: Whichever is stricter. If you learn that others are breaking the law or the Standards, do not take part, and
+    step away from the activity.
+- id: code-markets-clients
+  type: read
+  title: 'Markets and clients: Standards II and III'
+  minutes: 2
+  lo:
+  - 2.2.1
+  - 2.2.3
+  file: markets-clients.md
+- id: code-q-mnpi
+  type: question
+  title: 'Check: piecing together the mosaic'
+  minutes: 1
+  lo:
+  - 2.2.3
+  question: q-u1-code-0004
+- id: code-employers-conflicts
+  type: read
+  title: 'Employers, analysis and conflicts: Standards IV to VII'
+  minutes: 2
+  lo:
+  - 2.2.1
+  - 2.2.3
+  file: employers-conflicts.md
+- id: code-q-priority
+  type: question
+  title: 'Check: whose trade goes first?'
+  minutes: 1
+  lo:
+  - 2.2.3
+  question: q-u1-code-0005
+- id: code-values
+  type: read
+  title: The values underneath, and how to spot them
+  minutes: 2
+  lo:
+  - 2.2.2
+  - 2.1.2
+  file: values.md
+- id: code-worked-dilemma
+  type: worked_example
+  title: 'Worked example: a tip at the barbecue'
+  minutes: 3
+  lo:
+  - 2.2.3
+  - 2.2.2
+  file: worked-dilemma.md
+- id: code-test-fair-dealing
+  type: question
+  title: 'Test: the downgrade'
+  minutes: 1
+  lo:
+  - 2.2.3
+  question: q-u1-code-0006
+- id: code-test-itemset
+  type: question
+  title: 'Test: a week at Severn Lane Wealth'
+  minutes: 3
+  lo:
+  - 2.2.3
+  - 2.2.1
+  question: q-u1-code-0014
+- id: code-test-gapfill
+  type: question
+  title: 'Test: complete the priority rule'
+  minutes: 1
+  lo:
+  - 2.2.3
+  question: q-u1-code-0015

@@ -1,0 +1,38 @@
+id: q-u1-code-0001
+type: mcq
+unit: unit1
+lo:
+- 2.2.1
+difficulty: 1
+tags: []
+stem: Which statement best describes how the CFA Code of Ethics relates to the Standards of Professional Conduct?
+options:
+- id: a
+  text: The Code sets out broad ethical principles, and the Standards turn them into more specific duties
+- id: b
+  text: The Code is UK law, and the Standards are voluntary guidance
+- id: c
+  text: The Code applies to firms, and the Standards apply to individuals
+- id: d
+  text: The Standards replace FCA rules for anyone who is a CFA Institute member
+correct: a
+explanation: The Code is a short set of six high-level principles. The seven Standards set out more specific duties
+  that put those principles into practice. Both apply to CFA Institute members and candidates.
+distractor_notes:
+  b: Neither document is UK law. They are professional standards set by CFA Institute.
+  c: Both the Code and the Standards apply to individual members and candidates.
+  d: Members still have to follow the law and FCA rules. Where the two differ, they follow the stricter.
+tax_year: null
+syllabus_versions:
+- '24'
+origin: ai_generated
+reviewed_by: []
+status: review
+provenance:
+  sources:
+  - original
+  - https://www.cfainstitute.org/standards/professionals/code-ethics-standards
+  licence: CC BY-SA 4.0
+  last_verified: 2026-10-21
+  author: ai-draft
+  reviewer: pending
